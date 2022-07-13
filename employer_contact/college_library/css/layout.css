@@ -1,0 +1,128 @@
+a{
+	text-decoration: none;
+	color: inherit !important;
+}
+/*Page Layout*/
+/*-=========================*/
+
+.jbs-block-two{
+	display: block;
+	width: 100%;
+	background-color: #F5F8F7;
+	padding-bottom: 50px;
+}
+
+.jbs-flex-container{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 40px;
+}
+
+.jbs-one-fl-left-child{
+	display: block;
+	width: 100%;
+}
+
+.jbs-two-fl-right-child{
+	display: block;
+	width: 100%;
+}
+
+.jbs-services-block{
+	display: block;
+	width: 100%;
+	position: relative;
+	border-radius: 10px;
+	font-family: 'basier_circleregular';
+	font-size: 16px;
+	color: var(--battleship-grey);
+	background-color: white;
+	text-align: left;
+	transition: letter-spacing 0.5s ease-in-out;
+	cursor: pointer;
+	margin: 10px 0px;
+}
+
+.jbs-activated .jbs-services-block{
+	background-color: var(--slate);
+	color: white;
+}
+
+.jbs-services-block:hover{
+	letter-spacing: 0.5px;
+}
+
+.jbs-services-block p{
+	display: block;
+	width: 85%;
+	margin: 0px auto;
+	padding: 11px 0px;
+}
+
+.space-dashboard-between{
+	padding-top: 20px;
+}
+
+.college-dash-left-header{
+	font-size: 18px;
+	font-family: 'basier_circlebold';
+	font-size: 18px;
+	color: var(--slate);
+	display: block;
+    width: 85%;
+    margin: 0px auto;
+}
+
+.pad-top-line-one-coolege-dash{
+	padding-top: 39px;
+}
+
+.flex-top-right-card-header{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 3px 0px 10px 0px;
+}
+
+.left-top-card-right-child{
+	display: block;
+	width: max-content;
+	font-size: 14px;
+	color: var(--slate);
+	font-family: 'basier_circleregular';
+}
+
+.right-top-card-right-child{
+	display: block;
+	width: max-content;
+	font-size: 16px;
+	color: var(--slate);
+	font-family: 'basier_circleregular';
+}
+
+.right-top-card-right-child a{
+	text-decoration: underline !important;
+}
+
+.left-top-card-right-child:hover{
+	color: var(--algae);
+}
+
+.right-top-card-right-child:hover{
+	color: var(--algae);
+}
+
+@media(min-width: 680px){
+
+	.jbs-one-fl-left-child{
+		width: 22%;
+	}
+
+	.jbs-two-fl-right-child{
+		width: 75%;
+	}
+
+}

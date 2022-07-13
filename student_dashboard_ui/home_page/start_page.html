@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>6 Ladders</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><!--Jquerry connection-->
+      <link href="../../library/css/fonts.css" rel="stylesheet" type="text/css"><!--Fonts CSS-->
+      <link rel="preconnect" href="https://fonts.googleapis.com"><!--New font headers -->
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--New font headers -->
+      <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet"><!--New font headers -->
+      <link href="css/main.css" rel="stylesheet" type="text/css"><!--Layout Menu-->
+      <link href="css/start_page.css" rel="stylesheet" type="text/css"><!--Start Page-->
+   </head>
+   <body>
+      <div class="fake-back-menu"></div>
+      <!--Mobile menu links container-->
+      <!---==========================-->
+      <div class="main-mobile-links-container">
+         <div class="top-mn-line"></div>
+         <div class="inside-size-container">
+            <div class="links-mobile-containe">
+               <a href="#" class="link-block"><!-- actvie menu class -- active-menu-link -->
+                  <div class="link-menu">How it works</div>
+               </a>
+               <a href="#" class="link-block" >
+                  <div class="link-menu">Universities</div>
+               </a>
+               <a href="#" class="link-block">
+                  <div class="link-menu">Employers</div>
+               </a>
+               <div class="menu-mobile-btns">
+                  <div class="login-btn-menu">Login</div>
+                  <div class="signup-btn-menu">Sign Up </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Menu container-->
+      <!--==============================-->
+      <div class="menu-main-container">
+         <div class="inside-size-container">
+            <div class="flex-menu-container">
+               <!--Logo-->
+               <div class="left-side-menu">
+                  <a href="#">
+                     <img src="../../library/img/logo.svg" alt="6 Ladders">
+                  </a>
+               </div>
+               <!--genrel right menu side-->
+               <div class="second-flex-right-main-side-container">
+                  <!--Links PC-->
+                  <div class="center-side-menu">
+                     <div class="flex-links-main-container">
+                        <a href="#" class="link-block">
+                           <div class="link-menu">How it works</div>
+                        </a>
+                        <a href="#" class="link-block" >
+                           <div class="link-menu">Universities</div>
+                        </a>
+                        <a href="#" class="link-block">
+                           <div class="link-menu">Employers</div>
+                        </a>
+                     </div>
+                  </div>
+                  <!--Buttons PC-->
+                  <div class="right-side-menu">
+                     <div class="flex-container-menu-btns">
+                        <div class="left-side-btn-mn">
+                           <div class="login-btn-menu">Login</div>
+                        </div>
+                        <div class="right-side-btn-mn">
+                           <div class="signup-btn-menu">Sign Up </div>
+                        </div>
+                        <!--Mobile burger-->
+                        <div class="menu-burger-block" id="open-close-menu">
+                           <div class="burger-menu-container-main no-select">
+                              <div class="line"></div>
+                              <div class="line"></div>
+                              <div class="line"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Content-->
+      <!--=============================-->
+      <!--=============================-->
+      <!--=============================-->
+      <div class="svg-back-side-lines" style="background-image: url(./img/mainbacktwo.svg);">
+         <div class="big-start-page-image">
+            <div class="content-container rela-cont">
+               <!--faces-->
+               <div class="face-one">
+                  <img src="./img/face_one.png" alt="alt">
+               </div>
+               <div class="face-two">
+                  <img src="./img/face_two.png" alt="alt">
+               </div>
+               <div class="face-three">
+                  <img src="./img/face_three.png" alt="alt">
+               </div>
+               <div class="centered-start-bl">
+                  <div>
+                     <h1>The Best Way<br><span>College Students</span><br> Are Hired</h1>
+                     <div class="get-started-btn">GET STARTED</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Second block-->
+      <div class="second-start-page-block">
+         <h2 class="sec-header-start-page">Launch your career with<br><span>Six Ladders</span></h2>
+         <div class="content-container">
+            <div class="start-white-block-main">
+               <div class="flex-items-isd-img">
+                  <!--Icon block-->
+                  <div class="icon-sdf-block">
+                     <img src="./img/start_one.svg" alt="alt">
+                     <p>Search for the right jobs experience</p>
+                  </div>
+                  <!--Icon block-->
+                  <div class="icon-sdf-block">
+                     <img src="./img/start_two.svg" alt="alt">
+                     <p>Jobs verified by your college </p>
+                  </div>
+                  <!--Icon block-->
+                  <div class="icon-sdf-block">
+                     <img src="./img/start_three.svg" alt="alt">
+                     <p>No work experience Required </p>
+                  </div>
+               </div>
+            </div>
+            <p class="header-start-afr">Apply to internships, full time<br>& part-time jobs, and remote jobs</p>
+            <div class="bottom-but-cred-ss">GET STARTED</div>
+         </div>
+      </div>
+      <!--Bottom image block-->
+      <div class="bottom-image-block-start-page" style="background-image: url(./img/back-bottom.svg);"></div>
+   </body>
+   <script>
+      var body =  $("body");
+      var burger =  $("#open-close-menu");
+
+      /*MENU BURGER CLOSE_OPEN*/
+      $(function() {
+         burger.click(function() {
+            body.toggleClass("activeted-mobile-menu");
+         });
+      });
+   </script>
+</html>

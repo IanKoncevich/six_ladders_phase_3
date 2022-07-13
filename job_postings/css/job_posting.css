@@ -1,0 +1,100 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+p {
+  margin: 0px;
+  padding: 0px;
+}
+.job-posting-white-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0px auto;
+  background-color: white;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 40px 20px;
+  margin-bottom: 20px;
+}
+.job-posting-page-header-container {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 0px 20px 00px;
+  line-height: 48px;
+}
+.job-posting-page-header-container .left-side-header-jbs-p {
+  width: max-content;
+  max-width: 100%;
+}
+.job-posting-page-header-container .left-side-header-jbs-p p {
+  font-family: 'basier_circlesemibold';
+  font-size: 28px;
+  color: #454D66;
+}
+.job-posting-page-header-container .left-side-header-jbs-p p span {
+  font-family: 'basier_circleregular';
+  font-size: 14px;
+}
+.job-posting-page-header-container a {
+  display: block;
+  width: max-content;
+}
+.job-posting-page-header-container .post-a-job-green-btn {
+  display: block;
+  width: 232px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 32px;
+  background-color: #58B368;
+  font-family: 'basier_circlesemibold';
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+.job-posting-page-header-container .post-a-job-green-btn:hover {
+  background-color: #454D66;
+}
+.flex-headr-jpbs {
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+.flex-headr-jpbs .left-side-header-main-h {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  margin-right: 33px;
+}
+.flex-headr-jpbs .right-side-header-main-h {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  font-family: 'basier_circlesemibold';
+  font-size: 16px;
+}
+.flex-headr-jpbs .right-side-header-main-h .flex-head-jbsp-link {
+  display: flex;
+  color: #58B368;
+}
+.flex-headr-jpbs .right-side-header-main-h .flex-head-jbsp-link svg {
+  padding-top: 12px;
+  padding-right: 10px;
+}
+.flex-headr-jpbs .right-side-header-main-h .flex-head-jbsp-link svg path {
+  stroke: #58B368;
+}
+.flex-headr-jpbs .right-side-header-main-h .flex-head-jbsp-link:hover {
+  color: #454D66;
+}
+.flex-headr-jpbs .right-side-header-main-h .flex-head-jbsp-link:hover svg path {
+  stroke: #454D66;
+}
+@media (min-width: 678px) {
+  .job-posting-page-header-container {
+    padding: 40px 0px 20px 30px;
+  }
+}

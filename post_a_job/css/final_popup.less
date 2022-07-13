@@ -1,0 +1,116 @@
+@import "../../library/css/vars.less";
+
+.final-popup-block{
+    display: block;
+    box-sizing: border-box;
+    padding: 0px;
+
+    & img{
+        display: block;
+        margin: 0px auto;
+        position: relative;
+        max-width: 100%;
+    }
+
+    .popup-final-text{
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: @slate;
+        font-family: @ft-bold;
+        font-size: 28px;
+        padding: 40px 0px 60px 0px;
+    }
+
+    .popup-final-text-signed{
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: @slate;
+        font-family: @ft-bold;
+        font-size: 28px;
+        padding: 40px 0px 12px 0px;
+    }
+
+    .fin-p-text{
+        color: #A3A3A5;
+        font-family: @ft-reg;
+        font-size: @ft-size-text;
+        line-height: 24px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .final-popoup-button{
+        display: block;
+        margin: 0px auto;
+        background-color: @algae;
+        font-family: @ft-semi;
+        font-size: @ft-size-text;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        color: white;
+        border-radius: 32px;
+        width: 240px;
+        max-width: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        &:hover{
+            background-color: @slate;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.text-pop-uni-req-result{
+    font-size: 16px;
+    font-family: @ft-reg;
+    text-align: center;
+    width: 100%;
+    color: #A2A6B3;
+    padding: 20px 0px 50px 0px;
+}
+
+.no-bottom-padding-pp-uni{
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.flex-container-buttons-moal-resp{
+    display: flex;
+    width: max-content;
+    margin: 0px auto;
+    max-width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+    & .final-popoup-button-continue {
+        display: block;
+        margin: 0px auto;
+        background-color: transparent;
+        font-family: 'basier_circlesemibold';
+        font-size: 16px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        color: @algae;
+        text-decoration: underline;
+        border-radius: 32px;
+        width: 240px;
+        max-width: 100%;
+        cursor: pointer;
+
+        &:hover{
+            color: @slate;
+        }
+    }
+}
+
+@media(min-width:678px){
+    .final-popup-block{
+        padding: 40px;
+    }
+}

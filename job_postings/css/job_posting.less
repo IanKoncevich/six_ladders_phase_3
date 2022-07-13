@@ -1,0 +1,121 @@
+@import "../../library/css/vars.less";
+
+p{
+    margin: 0px;
+    padding: 0px;
+}
+.job-posting-white-container{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+
+.job-posting-page-header-container{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 0px 20px 00px;
+    line-height: 48px;
+    
+
+    & .left-side-header-jbs-p{
+        width: max-content;
+        max-width: 100%;
+
+        & p{
+            font-family: @ft-semi;
+            font-size: 28px;
+            color: @slate;
+
+            & span{
+                font-family: @ft-reg;
+                font-size: 14px;
+            }
+        }
+    }
+
+    a{
+        display: block;
+        width: max-content;
+    }
+
+    .post-a-job-green-btn{
+        display: block;
+        width: 232px;
+        height: 48px;
+        line-height: 48px;
+        border-radius: 32px;
+        background-color: @algae;
+        font-family: @ft-semi;
+        font-size: 16px;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+
+        &:hover{
+            background-color: @slate;
+        }
+    }
+}
+
+.flex-headr-jpbs{
+    display: flex;
+    width: max-content;
+    max-width: 100%;
+    flex-wrap: wrap;
+
+    & .left-side-header-main-h{
+        display: block;
+        width: max-content;
+        max-width: 100%;
+        margin-right: 33px;
+    }
+
+    & .right-side-header-main-h{
+        display: block;
+        width: max-content;
+        max-width: 100%;
+        font-family: @ft-semi;
+        font-size: 16px;
+
+        & .flex-head-jbsp-link{
+            display: flex;
+            color: @algae;
+        
+            & svg{
+                padding-top: 12px;
+                padding-right: 10px;
+                & path{
+                    stroke: @algae;
+                }
+            }
+
+            &:hover{
+                color: @slate;
+                & svg{
+                    & path{
+                        stroke: @slate;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+@media(min-width: 678px){
+    .job-posting-page-header-container{
+        padding: 40px 0px 20px 30px;
+    }
+}

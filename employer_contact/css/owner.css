@@ -1,0 +1,66 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.back-image-prf-view-block {
+  margin-top: 0px !important;
+}
+.profile-scr-headr {
+  color: #454D66;
+  font-size: 18px;
+  font-family: 'basier_circlesemibold';
+  padding-bottom: 24px;
+}
+.strong-sm-top-twenty {
+  padding-top: 20px !important;
+}
+.container-prf-jobs-list-block {
+  margin-top: 32px;
+}
+.prf-jobs-list-block {
+  display: block;
+  border: 1px solid #EAEAEA;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 30px;
+  margin-bottom: 12px;
+}
+.jbs-prf-name-txt {
+  font-size: 18px;
+  color: #454D66;
+  font-family: 'basier_circlesemibold';
+  padding-bottom: 12px;
+}
+.jbs-info-flex-dfg {
+  display: flex;
+  width: 100%;
+  position: relative;
+  flex-wrap: wrap;
+}
+.child-dfg-fl {
+  position: relative;
+  width: max-content;
+  margin-right: 40px;
+}
+.child-dfg-fl p {
+  color: #454D66;
+  font-size: 16px;
+  font-family: 'basier_circleregular';
+  line-height: 24px;
+}
+.jbs-dfg-description {
+  color: #a2a6b3;
+  font-size: 14px;
+  font-family: 'basier_circleregular';
+  padding-top: 10px;
+}
+.view-all-jbs-dfg {
+  padding-top: 10px;
+}
+.view-all-jbs-dfg a {
+  color: #454D66 !important;
+  font-size: 16px;
+  font-family: 'basier_circlesemibold';
+  text-decoration: underline;
+}
+.view-all-jbs-dfg a:hover {
+  color: #58B368;
+}

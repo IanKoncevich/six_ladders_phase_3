@@ -1,0 +1,70 @@
+@import "../../library/css/vars.less";
+
+.evnts-pop-slide-content{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: white;
+    height: 100%;
+    overflow: auto;
+    padding-top: 100px;
+}
+
+.hide-back-pop-up{
+    display: block;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+}
+
+.final-popoup-button-nwd{
+    color: white;
+    background-color: @algae;
+    width: max-content;
+    padding: 14px 66px;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: @ft-semi;
+    font-size: 16px;
+    border-radius: 32px;
+    margin-top: 20px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: @slate;
+    }
+}
+
+.flex-pop-right-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    & svg{
+        cursor: pointer;
+        & path{
+            stroke: @slate;
+        }
+
+        &:hover{
+            & path{
+                stroke: #FF6353;
+            }
+        }
+    }
+
+}
+
+@media(min-width: 678px){
+    .evnts-pop-slide-content{
+        width: 50%;
+        padding-top: 30px;
+    }
+}

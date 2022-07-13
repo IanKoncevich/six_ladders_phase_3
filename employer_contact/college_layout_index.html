@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>7 Ladders</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><!--Jquerry connection-->
+      <!--MAIN STYLING, MENU, HEADER-->
+      <link href="./college_library/global_lib/css/layout.css" rel="stylesheet" type="text/css"><!--Layout CSS TOP MENU-->
+      <!--Layout menu left side-->
+      <link href="./college_library/css/layout.css" rel="stylesheet" type="text/css">
+
+      <!--SEcond phase library css-->
+      <link href="../menu_signed_up/css/pagination.css" rel="stylesheet" type="text/css">
+
+      <link href="../library/forms_components/css/forms.css" rel="stylesheet" type="text/css">
+      <link href="css/employer.css" rel="stylesheet" type="text/css"><!--Employer contact page-->
+   </head>
+   <body>
+      <!--Home Page BODY-->
+      <!--==============-->
+      <!--MOBILE MENU CONTAINER - position:absolute; -->
+      <div id="mobile-check-activated">
+         <div class="mobile-link-container">
+            <div class="mobile-child-link-block">
+               <div class="search-container" id="mobile-search-block">
+                  <form action="#">
+                     <div class="flex-form-search">
+                        <div class="left-side-fl-search">
+                           <input type="text" placeholder="Search" class="seacrh-input-main">
+                        </div>
+                        <div class="right-side-fl-search">
+                          <img src="./college_library/img/layout/search.svg" alt="search icon">
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="mobile-child-link-block">
+               <a href="#" class="mobile-menu-link-body">Career Coaching</a>
+            </div>
+            <div class="mobile-child-link-block">
+               <a href="#" class="mobile-menu-link-body">Featured Companies</a>
+            </div>
+            <div class="mobile-child-link-block">
+               <a href="#" class="mobile-menu-link-body">Blog</a>
+            </div>
+            <div class="mobile-child-link-block">
+               <a href="#" class="mobile-menu-link-body">Login / Signup</a>
+            </div>
+            <div class="mobile-child-link-block" id="mobile-button-v-container">
+               <a href="#" class="no-style-link">
+                  <div class="menu-big-button">
+                     Employers/Post a job
+                  </div>
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="page-container">
+         <div class="content-container"><!--Page content width wrap-->
+            <!--PC MENU VIEW-->
+            <div class="main-menu-container">
+               <!--LEFT SIDE MENU BLOCK (logo and search)-->
+               <!--==============-->
+               <div class="left-side-menu-container">
+                  <div class="left-menu-side-container-child">
+                     <div class="logo-menu-container">
+                        <a href="#">
+                           <img src="./college_library/img/layout/logo.svg" alt="logo name" class="logo-main-body">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="right-menu-side-container-child">
+                     <div class="search-container" id="pc-menu-search">
+                        <form action="#">
+                           <div class="flex-form-search">
+                              <div class="left-side-fl-search">
+                                 <input type="text" placeholder="Search" class="seacrh-input-main">
+                              </div>
+                              <div class="right-side-fl-search">
+                                <img src="./college_library/img/layout/search.svg" alt="search icon">
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               <!--RIGHT SIDE MENU BLOCK (page url and post job button)-->
+               <!--==============-->
+               <div class="right-side-menu-container">
+                  <div class="menu-url-item-simple">
+                     <a href="#" class="menu-link">Career Coaching</a>
+                  </div>
+                  <div class="menu-url-item-simple">
+                     <a href="#" class="menu-link">Featured Companies</a>
+                  </div>
+                  <div class="menu-url-item-simple">
+                     <a href="#" class="menu-link">Blog</a>
+                  </div>
+                  <div class="menu-url-item-simple">
+                     <a href="#" class="menu-link">Login / Signup</a>
+                  </div>
+                  <div class="menu-url-item">
+                     <div class="button-bigger-container">
+                        <a href="#" class="no-style-link">
+                           <div class="menu-big-button">
+                              Employers/Post a job
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="menu-url-item-burger no-select" id="toggle-mobile-burger">
+                     <div class="mobile-burger-body">
+                        <div class="line-burg"></div>
+                        <div class="line-burg"></div>
+                        <div class="line-burg"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="space-top-block"></div><!--Display when menu open - mobile-->
+         <!--START PAGE MAIN CONTENT-->
+         <!--======================================-->
+         <div class="jbs-block-two">
+            <div class="content-container">
+               <div class="jbs-flex-container">
+                  <!--JBS LEFT BLOCK NAVIGATION/FILTER-->
+                  <!--======================================-->
+                  <div class="jbs-one-fl-left-child">
+                     <p class="college-dash-left-header">Jobs</p>
+                     <!--LINK BLOCK-->
+                     <a href="#" >
+                        <div class="jbs-services-block">
+                           <p>New jobs</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <!--LINK BLOCK-->
+                     <a href="#">
+                        <div class="jbs-services-block">
+                           <p>Open jobs</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <!--LINK BLOCK-->
+                     <a href="#">
+                        <div class="jbs-services-block">
+                           <p>Closed jobs</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <div class="space-dashboard-between"></div> <!--SPACE BETWEEN BLOCK-->
+                     <p class="college-dash-left-header">Companies</p>
+                     <!--LINK BLOCK-->
+                     <!--LINK BLOCK-->
+                     <a href="#">
+                        <div class="jbs-services-block">
+                           <p>My companies</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <!--LINK BLOCK-->
+                     <a href="#">
+                        <div class="jbs-services-block">
+                           <p>Invite companies</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <!--LINK BLOCK-->
+                     <a href="#">
+                        <div class="jbs-services-block">
+                           <p>Invites from companies</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <div class="space-dashboard-between"></div> <!--SPACE BETWEEN BLOCK-->
+                     <p class="college-dash-left-header">Students</p>
+                     <!--LINK BLOCK-->
+                     <!--LINK BLOCK-->
+                     <a href="#">
+                        <div class="jbs-services-block">
+                           <p>Applications</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <!--LINK BLOCK-->
+                     <a href="#">
+                        <div class="jbs-services-block">
+                           <p>Upload information</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <!--LINK BLOCK-->
+                     <a href="#">
+                        <div class="jbs-services-block">
+                           <p>Reports</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <div class="space-dashboard-between"></div> <!--SPACE BETWEEN BLOCK-->
+                     <!--LINK BLOCK-->
+                     <a href="#">
+                        <div class="jbs-services-block">
+                           <p>Messages</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <div class="space-dashboard-between"></div> <!--SPACE BETWEEN BLOCK-->
+                     <!--LINK BLOCK-->
+                     <a href="#" class="jbs-activated"> <!--ACTIVE MENU BLOCK-->
+                        <div class="jbs-services-block">
+                           <p>Undergrad</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <!--LINK BLOCK-->
+                     <a href="#">
+                        <div class="jbs-services-block">
+                           <p>Grad school</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                  </div>
+                  <!--JBS RIGHT BLOCK JOBS POSTS-->
+                  <!--==============================================-->
+                  <div class="jbs-two-fl-right-child">
+                     <div class="flex-top-right-card-header">
+                        <div class="left-top-card-right-child"><a href="#">&#8249;&nbsp;Go Back</a></div>
+                        <div class="right-top-card-right-child">
+                           <a href="#">Download Data</a>
+                        </div>
+                     </div>
+                     <div class="by-major-rihgt-white-container">
+                        <!--PAGE CONTENT-->
+               <!----------------------------------------------------------------->
+               <div class="sign-content-container">
+                  <div class="white-empl-cnt-container">
+                     <div class="empl-cntc-flex-header-block">
+                        <!--Flex block-->
+                        <div class="head-block-empl-cntc-left">
+                           <p class="empl-cntc-text-head">Events</p>
+                        </div>
+                        <div class="head-block-empl-cntc-right">
+                           <div class="rgt-block-view-child-hd">
+                              <!--Icon link load-->
+                              <a href="#">
+                                 <div class="flex-icon-cntc-empl-hd">
+                                    <div class="lft-child-dtx">
+                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M3 7.5V18.8077C3.00054 18.9911 3.07365 19.1669 3.20337 19.2966C3.33308 19.4264 3.50886 19.4995 3.69231 19.5H20.3333C20.5101 19.5 20.6797 19.4298 20.8047 19.3047C20.9298 19.1797 21 19.0101 21 18.8333V8.25C21 8.05109 20.921 7.86032 20.7803 7.71967C20.6397 7.57902 20.4489 7.5 20.25 7.5H3ZM3 7.5V5.25C3 5.05109 3.07902 4.86032 3.21967 4.71967C3.36032 4.57902 3.55109 4.5 3.75 4.5H8.68934C8.78783 4.5 8.88536 4.5194 8.97635 4.55709C9.06735 4.59478 9.15003 4.65003 9.21967 4.71967L12 7.5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M9.75 13.5H14.25M12 11.25V15.75" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                       </svg>
+                                    </div>
+                                    <div class="rgt-child-dtx">Bulk Upload</div>
+                                 </div>
+                              </a>
+                              <!--Icon link invite-->
+                              <a href="#">
+                                 <div class="flex-icon-cntc-empl-hd centered-marfi-hd-empl">
+                                    <div class="lft-child-dtx">
+                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M16.5 5.25H21M18.75 3V7.5" stroke="#58B368" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M2.90625 20.2491C3.82834 18.6531 5.1542 17.3278 6.75064 16.4064C8.34708 15.485 10.1579 15 12.0011 15C13.8444 15 15.6552 15.4851 17.2516 16.4065C18.848 17.328 20.1739 18.6533 21.0959 20.2493M17.6308 11.0796C17.2297 12.1625 16.5245 13.1066 15.5999 13.7984C14.6753 14.4902 13.5706 14.9004 12.4186 14.9796C11.2666 15.0588 10.1161 14.8037 9.10555 14.245C8.09496 13.6862 7.26719 12.8476 6.72168 11.8298C6.17617 10.812 5.93612 9.65831 6.03037 8.5074C6.12462 7.35648 6.54917 6.25726 7.253 5.34177C7.95683 4.42629 8.91001 3.73348 9.99804 3.34659C11.0861 2.9597 12.2627 2.89518 13.3865 3.16077" stroke="#58B368" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                       </svg>
+                                    </div>
+                                    <div class="rgt-child-dtx">Bulk Upload</div>
+                                 </div>
+                              </a>
+                              <!--BTN-->
+                              <div class="add-empl-btn-hg-xc">Add Employers Contacts</div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--TABLES-->
+                     <!--=======================-->
+                     <div class="flex-main-tables-empl-hds">
+                        <table>
+                           <tr class="header-tr-tbl-filtr-hds">
+                              <th>
+                                 <div class="flex-filts-table-gfds">
+                                    <div class="trd-tanle-line-name">Name</div>
+                                    <div>
+                                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M4.42724 7.42678L7.82372 10.8232C7.92135 10.9209 8.07964 10.9209 8.17727 10.8232L11.5737 7.42678C11.7312 7.26928 11.6197 7 11.3969 7H4.60402C4.38129 7 4.26975 7.26929 4.42724 7.42678Z" fill="#454D66"/>
+                                       </svg>
+                                    </div>
+                                    <!--This filter pop-up controls-->
+                                    <div class="po-up-controls-hgfds"style="display:block;"><!--JS needs to add this [po-up-controls-hgfds] add style "display:block;"-->
+                                       <!--LINK CONTROL-->
+                                       <div class="fex-fliter-link-btn-hgds">
+                                          <div>
+                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.3737 16.5252C17.1394 16.2908 16.7595 16.2908 16.5252 16.5252C16.2908 16.7595 16.2908 17.1394 16.5252 17.3737L17.3737 16.5252ZM20.5757 21.4243C20.8101 21.6586 21.1899 21.6586 21.4243 21.4243C21.6586 21.1899 21.6586 20.8101 21.4243 20.5757L20.5757 21.4243ZM11.1152 19.8304C15.9284 19.8304 19.8304 15.9284 19.8304 11.1152H18.6304C18.6304 15.2657 15.2657 18.6304 11.1152 18.6304V19.8304ZM19.8304 11.1152C19.8304 6.30194 15.9284 2.4 11.1152 2.4V3.6C15.2657 3.6 18.6304 6.96468 18.6304 11.1152H19.8304ZM11.1152 2.4C6.30194 2.4 2.4 6.30194 2.4 11.1152H3.6C3.6 6.96468 6.96468 3.6 11.1152 3.6V2.4ZM2.4 11.1152C2.4 15.9284 6.30194 19.8304 11.1152 19.8304V18.6304C6.96468 18.6304 3.6 15.2657 3.6 11.1152H2.4ZM16.5252 17.3737L20.5757 21.4243L21.4243 20.5757L17.3737 16.5252L16.5252 17.3737Z" fill="#454D66"/>
+                                             </svg>
+                                          </div>
+                                          <div class="thin-main-ft-line-flt">Search</div>
+                                       </div>
+                                       <!--LINK CONTROL-->
+                                       <div class="fex-fliter-link-btn-hgds">
+                                          <div>
+                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5 15.75L17.25 19.5M17.25 19.5L20.9999 15.7506M17.25 19.5V10.5" stroke="#454D66" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M4.5 12H11.2499M4.5 6H17.2499M4.5 18H9.75" stroke="#454D66" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                             </svg>
+                                          </div>
+                                          <div class="thin-main-ft-line-flt">From A to Z</div>
+                                       </div>
+                                       <!--LINK CONTROL-->
+                                       <div class="fex-fliter-link-btn-hgds">
+                                          <div>
+                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5 8.25L17.25 4.5M17.25 4.5L20.9999 8.24934M17.25 4.5V13.4999" stroke="#454C62" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M4.5 12H11.2499M4.5 6H9.74991M4.5 18H17.2499" stroke="#454C62" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                             </svg>
+                                          </div>
+                                          <div class="thin-main-ft-line-flt">Search</div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </th>
+                              <th>
+                                 <div class="flex-filts-table-gfds">
+                                    <div class="trd-tanle-line-name">Email</div>
+                                    <div>
+                                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M4.42724 7.42678L7.82372 10.8232C7.92135 10.9209 8.07964 10.9209 8.17727 10.8232L11.5737 7.42678C11.7312 7.26928 11.6197 7 11.3969 7H4.60402C4.38129 7 4.26975 7.26929 4.42724 7.42678Z" fill="#454D66"/>
+                                       </svg>
+                                    </div>
+                                    <!--This filter pop-up controls-->
+                                    <div class="po-up-controls-hgfds">
+                                       <!--LINK CONTROL-->
+                                       <div class="fex-fliter-link-btn-hgds">
+                                          <div>
+                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.3737 16.5252C17.1394 16.2908 16.7595 16.2908 16.5252 16.5252C16.2908 16.7595 16.2908 17.1394 16.5252 17.3737L17.3737 16.5252ZM20.5757 21.4243C20.8101 21.6586 21.1899 21.6586 21.4243 21.4243C21.6586 21.1899 21.6586 20.8101 21.4243 20.5757L20.5757 21.4243ZM11.1152 19.8304C15.9284 19.8304 19.8304 15.9284 19.8304 11.1152H18.6304C18.6304 15.2657 15.2657 18.6304 11.1152 18.6304V19.8304ZM19.8304 11.1152C19.8304 6.30194 15.9284 2.4 11.1152 2.4V3.6C15.2657 3.6 18.6304 6.96468 18.6304 11.1152H19.8304ZM11.1152 2.4C6.30194 2.4 2.4 6.30194 2.4 11.1152H3.6C3.6 6.96468 6.96468 3.6 11.1152 3.6V2.4ZM2.4 11.1152C2.4 15.9284 6.30194 19.8304 11.1152 19.8304V18.6304C6.96468 18.6304 3.6 15.2657 3.6 11.1152H2.4ZM16.5252 17.3737L20.5757 21.4243L21.4243 20.5757L17.3737 16.5252L16.5252 17.3737Z" fill="#454D66"/>
+                                             </svg>
+                                          </div>
+                                          <div class="thin-main-ft-line-flt">Search</div>
+                                       </div>
+                                       <!--LINK CONTROL-->
+                                       <div class="fex-fliter-link-btn-hgds">
+                                          <div>
+                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5 15.75L17.25 19.5M17.25 19.5L20.9999 15.7506M17.25 19.5V10.5" stroke="#454D66" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M4.5 12H11.2499M4.5 6H17.2499M4.5 18H9.75" stroke="#454D66" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                             </svg>
+                                          </div>
+                                          <div class="thin-main-ft-line-flt">From A to Z</div>
+                                       </div>
+                                       <!--LINK CONTROL-->
+                                       <div class="fex-fliter-link-btn-hgds">
+                                          <div>
+                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5 8.25L17.25 4.5M17.25 4.5L20.9999 8.24934M17.25 4.5V13.4999" stroke="#454C62" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M4.5 12H11.2499M4.5 6H9.74991M4.5 18H17.2499" stroke="#454C62" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                             </svg>
+                                          </div>
+                                          <div class="thin-main-ft-line-flt">Search</div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </th>
+                              <th>
+                                 <div class="flex-filts-table-gfds">
+                                    <div class="trd-tanle-line-name">Job Title</div>
+                                    <div>
+                                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M4.42724 7.42678L7.82372 10.8232C7.92135 10.9209 8.07964 10.9209 8.17727 10.8232L11.5737 7.42678C11.7312 7.26928 11.6197 7 11.3969 7H4.60402C4.38129 7 4.26975 7.26929 4.42724 7.42678Z" fill="#454D66"/>
+                                       </svg>
+                                    </div>
+                                    <!--This filter pop-up controls-->
+                                    <div class="po-up-controls-hgfds">
+                                       <!--LINK CONTROL-->
+                                       <div class="fex-fliter-link-btn-hgds">
+                                          <div>
+                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.3737 16.5252C17.1394 16.2908 16.7595 16.2908 16.5252 16.5252C16.2908 16.7595 16.2908 17.1394 16.5252 17.3737L17.3737 16.5252ZM20.5757 21.4243C20.8101 21.6586 21.1899 21.6586 21.4243 21.4243C21.6586 21.1899 21.6586 20.8101 21.4243 20.5757L20.5757 21.4243ZM11.1152 19.8304C15.9284 19.8304 19.8304 15.9284 19.8304 11.1152H18.6304C18.6304 15.2657 15.2657 18.6304 11.1152 18.6304V19.8304ZM19.8304 11.1152C19.8304 6.30194 15.9284 2.4 11.1152 2.4V3.6C15.2657 3.6 18.6304 6.96468 18.6304 11.1152H19.8304ZM11.1152 2.4C6.30194 2.4 2.4 6.30194 2.4 11.1152H3.6C3.6 6.96468 6.96468 3.6 11.1152 3.6V2.4ZM2.4 11.1152C2.4 15.9284 6.30194 19.8304 11.1152 19.8304V18.6304C6.96468 18.6304 3.6 15.2657 3.6 11.1152H2.4ZM16.5252 17.3737L20.5757 21.4243L21.4243 20.5757L17.3737 16.5252L16.5252 17.3737Z" fill="#454D66"/>
+                                             </svg>
+                                          </div>
+                                          <div class="thin-main-ft-line-flt">Search</div>
+                                       </div>
+                                       <!--LINK CONTROL-->
+                                       <div class="fex-fliter-link-btn-hgds">
+                                          <div>
+                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5 15.75L17.25 19.5M17.25 19.5L20.9999 15.7506M17.25 19.5V10.5" stroke="#454D66" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M4.5 12H11.2499M4.5 6H17.2499M4.5 18H9.75" stroke="#454D66" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                             </svg>
+                                          </div>
+                                          <div class="thin-main-ft-line-flt">From A to Z</div>
+                                       </div>
+                                       <!--LINK CONTROL-->
+                                       <div class="fex-fliter-link-btn-hgds">
+                                          <div>
+                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5 8.25L17.25 4.5M17.25 4.5L20.9999 8.24934M17.25 4.5V13.4999" stroke="#454C62" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M4.5 12H11.2499M4.5 6H9.74991M4.5 18H17.2499" stroke="#454C62" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                             </svg>
+                                          </div>
+                                          <div class="thin-main-ft-line-flt">Search</div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </th>
+                              <th>
+                                 <div class="flex-filts-table-gfds">
+                                    <div class="trd-tanle-line-name">Employer</div>
+                                    <div>
+                                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M4.42724 7.42678L7.82372 10.8232C7.92135 10.9209 8.07964 10.9209 8.17727 10.8232L11.5737 7.42678C11.7312 7.26928 11.6197 7 11.3969 7H4.60402C4.38129 7 4.26975 7.26929 4.42724 7.42678Z" fill="#454D66"/>
+                                       </svg>
+                                    </div>
+                                    <!--This filter pop-up controls-->
+                                    <div class="po-up-controls-hgfds-right">
+                                       <!--LINK CONTROL-->
+                                       <div class="fex-fliter-link-btn-hgds">
+                                          <div>
+                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.3737 16.5252C17.1394 16.2908 16.7595 16.2908 16.5252 16.5252C16.2908 16.7595 16.2908 17.1394 16.5252 17.3737L17.3737 16.5252ZM20.5757 21.4243C20.8101 21.6586 21.1899 21.6586 21.4243 21.4243C21.6586 21.1899 21.6586 20.8101 21.4243 20.5757L20.5757 21.4243ZM11.1152 19.8304C15.9284 19.8304 19.8304 15.9284 19.8304 11.1152H18.6304C18.6304 15.2657 15.2657 18.6304 11.1152 18.6304V19.8304ZM19.8304 11.1152C19.8304 6.30194 15.9284 2.4 11.1152 2.4V3.6C15.2657 3.6 18.6304 6.96468 18.6304 11.1152H19.8304ZM11.1152 2.4C6.30194 2.4 2.4 6.30194 2.4 11.1152H3.6C3.6 6.96468 6.96468 3.6 11.1152 3.6V2.4ZM2.4 11.1152C2.4 15.9284 6.30194 19.8304 11.1152 19.8304V18.6304C6.96468 18.6304 3.6 15.2657 3.6 11.1152H2.4ZM16.5252 17.3737L20.5757 21.4243L21.4243 20.5757L17.3737 16.5252L16.5252 17.3737Z" fill="#454D66"/>
+                                             </svg>
+                                          </div>
+                                          <div class="thin-main-ft-line-flt">Search</div>
+                                       </div>
+                                       <!--LINK CONTROL-->
+                                       <div class="fex-fliter-link-btn-hgds">
+                                          <div>
+                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5 15.75L17.25 19.5M17.25 19.5L20.9999 15.7506M17.25 19.5V10.5" stroke="#454D66" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M4.5 12H11.2499M4.5 6H17.2499M4.5 18H9.75" stroke="#454D66" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                             </svg>
+                                          </div>
+                                          <div class="thin-main-ft-line-flt">From A to Z</div>
+                                       </div>
+                                       <!--LINK CONTROL-->
+                                       <div class="fex-fliter-link-btn-hgds">
+                                          <div>
+                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5 8.25L17.25 4.5M17.25 4.5L20.9999 8.24934M17.25 4.5V13.4999" stroke="#454C62" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M4.5 12H11.2499M4.5 6H9.74991M4.5 18H17.2499" stroke="#454C62" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                             </svg>
+                                          </div>
+                                          <div class="thin-main-ft-line-flt">Search</div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </th>
+                              <th>
+                                 <div class="flex-filts-table-gfds">
+                                    <div class="trd-tanle-line-name">Status</div>
+                                    <div>
+                                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M4.42724 7.42678L7.82372 10.8232C7.92135 10.9209 8.07964 10.9209 8.17727 10.8232L11.5737 7.42678C11.7312 7.26928 11.6197 7 11.3969 7H4.60402C4.38129 7 4.26975 7.26929 4.42724 7.42678Z" fill="#454D66"/>
+                                       </svg>
+                                    </div>
+                                    <!--This filter pop-up controls-->
+                                    <div class="po-up-controls-hgfds-right" style="display:block;"><!--JS needs to add this [po-up-controls-hgfds] add style "display:block;"-->
+                                       <!--LINK CONTROL-->
+                                       <div class="fex-fliter-link-btn-hgds">
+                                          <div>
+                                             <div class="check-box-flex-child">
+                                                <input type="checkbox" id="emory_11" name="emory_11" value="emory_11">
+                                                <label for="emory_11">Active Users</label>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!--LINK CONTROL-->
+                                       <div class="fex-fliter-link-btn-hgds">
+                                          <div>
+                                             <div class="check-box-flex-child">
+                                                <input type="checkbox" id="emory_7" name="emory_7" value="emory_7">
+                                                <label for="emory_7">Not a user</label>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!--LINK CONTROL-->
+                                       <div class="fex-fliter-link-btn-hgds">
+                                          <div>
+                                             <div class="check-box-flex-child">
+                                                <input type="checkbox" id="emory_8" name="emory_8" value="emory_8">
+                                                <label for="emory_8">All</label>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </th>
+                           </tr>
+                           <tr class="lined-empl-sdav">
+                              <td>
+                                 <div class="check-box-flex-child">
+                                    <input type="checkbox" id="emory_1" name="emory_1" value="emory_1">
+                                    <label for="emory_1">Name Surname</label>
+                                 </div>
+                              </td>
+                              <td>kenzi.lawson@exey...</td>
+                              <td>Financial director</td>
+                              <!---->
+                              <td>Sixladder</td>
+                              <td><div class="block-st-empl-lable green-hgsdf">active user</div></td>
+                           </tr>
+                           <tr class="lined-empl-sdav">
+                              <td>
+                                 <div class="check-box-flex-child">
+                                    <input type="checkbox" id="emory_2" name="emory_2" value="emory_2">
+                                    <label for="emory_2">Name Surname</label>
+                                 </div>
+                              </td>
+                              <td>kenzi.lawson@exey...</td>
+                              <td>Financial director</td>
+                              <!---->
+                              <td>Sixladder</td>
+                              <td><div class="block-st-empl-lable red-hgsdf">active user</div></td>
+                           </tr>
+                           <tr class="lined-empl-sdav">
+                              <td>
+                                 <div class="check-box-flex-child">
+                                    <input type="checkbox" id="emory_3" name="emory_3" value="emory_3">
+                                    <label for="emory_3">Name Surname</label>
+                                 </div>
+                              </td>
+                              <td>kenzi.lawson@exey...</td>
+                              <td>Financial director</td>
+                              <!---->
+                              <td>Sixladder</td>
+                              <td><div class="block-st-empl-lable red-hgsdf">active user</div></td>
+                           </tr>
+                           <tr class="lined-empl-sdav">
+                             <td>
+                                 <div class="check-box-flex-child">
+                                    <input type="checkbox" id="emory_4" name="emory_4" value="emory_4">
+                                    <label for="emory_4">Name Surname</label>
+                                 </div>
+                              </td>
+                              <td>kenzi.lawson@exey...</td>
+                              <td>Financial director</td>
+                              <!---->
+                              <td>Sixladder</td>
+                              <td><div class="block-st-empl-lable red-hgsdf">active user</div></td>
+                           </tr>
+                           <tr class="lined-empl-sdav">
+                             <td>
+                                 <div class="check-box-flex-child">
+                                    <input type="checkbox" id="emory_5" name="emory_5" value="emory_5">
+                                    <label for="emory_5">Name Surname</label>
+                                 </div>
+                              </td>
+                              <td>kenzi.lawson@exey...</td>
+                              <td>Financial director</td>
+                              <!---->
+                              <td>Sixladder</td>
+                              <td><div class="block-st-empl-lable red-hgsdf">active user</div></td>
+                           </tr>
+                           <tr class="lined-empl-sdav">
+                              <td>
+                                 <div class="check-box-flex-child">
+                                    <input type="checkbox" id="emory_6" name="emory_6" value="emory_6">
+                                    <label for="emory_6">Name Surname</label>
+                                 </div>
+                              </td>
+                              <td>kenzi.lawson@exey...</td>
+                              <td>Financial director</td>
+                              <!---->
+                              <td>Sixladder</td>
+                              <td><div class="block-st-empl-lable red-hgsdf">active user</div></td>
+                           </tr>
+                        </table>
+                        <div class="flex-selct-all-empld">
+                           <div class="left-side-slct-all-child">
+                              <div class="check-box-flex-child">
+                                 <input type="checkbox" id="demory_6" name="demory_6" value="demory_6">
+                                 <label for="demory_6">Select All</label>
+                              </div>
+                           </div>
+                           <div class="right-side-slct-all-child">
+                              <!--Icon link load-->
+                              <div class="flex-icon-cntc-empl-hd">
+                                 <div class="lft-child-dtx">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M7.25165 18.9259L4.23261 21.4638C4.12328 21.5557 3.98999 21.6145 3.8484 21.6332C3.70681 21.652 3.56281 21.6299 3.43334 21.5696C3.30387 21.5093 3.19431 21.4133 3.11755 21.2928C3.04078 21.1724 3 21.0325 3 20.8897V6C3 5.80109 3.07902 5.61032 3.21967 5.46967C3.36032 5.32902 3.55109 5.25 3.75 5.25H20.25C20.4489 5.25 20.6397 5.32902 20.7803 5.46967C20.921 5.61032 21 5.80109 21 6V18C21 18.1989 20.921 18.3897 20.7803 18.5303C20.6397 18.671 20.4489 18.75 20.25 18.75H7.73426C7.5577 18.75 7.3868 18.8123 7.25165 18.9259Z" stroke="#58B368" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                 </div>
+                                 <div class="rgt-child-dtx">Send message to selected</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="pagination-main-container">
+                        <!--Results query -- pages-->
+                        <p class="results-pagination">Results: 1 - 5 of 13 </p>
+                        <div class="pagination-flex-container">
+                           <!--arrow left-->
+                           <a href="#" class="url-pagi-link">
+                              <div class="pagination-item-block mobile-always-viewed"><!--mobile viewed too-->
+                                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.5 23.5L15.5 18.5L20.5 13.5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                 </svg>
+                              </div>
+                           </a>
+                           <!--pages-->
+                           <a href="#" class="url-pagi-link"><div class="pagination-item-block">1</div></a>
+                           <a href="#" class="url-pagi-link"><div class="pagination-item-block active-page-pag mobile-always-viewed">2</div></a><!--mobile viewed too-->
+                           <a href="#" class="url-pagi-link"><div class="pagination-item-block">3</div></a>
+                           <a href="#" class="url-pagi-link"><div class="pagination-item-block">4</div></a>
+                           <a href="#" class="url-pagi-link"><div class="pagination-item-block mobile-always-viewed">...</div></a><!--mobile viewed too-->
+                           <a href="#" class="url-pagi-link"><div class="pagination-item-block mobile-always-viewed">9</div></a><!--mobile viewed too-->
+                           <!--arrow right-->
+                           <a href="#" class="url-pagi-link">
+                              <div class="pagination-item-block mobile-always-viewed"><!--mobile viewed too-->
+                                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 13.5L20.5 18.5L15.5 23.5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                 </svg>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Footer-->
+      <!--====================================-->
+      <div class="footer-container">
+         <div class="content-container">
+            <div class="flex-footer-contanier">
+               <div class="first-foot-block">
+                  <div class="footer-content-container-body">
+                     <a href="#">
+                        <img src="./college_library/img/layout/logo.svg" alt="logo" class="footer-logo">
+                     </a>
+                     <p class="footer-main-text first-tex-ft-b">For any queries/complains<br><a href="mailto:inquiry@sixladders.com" class="footer-mail">inquiry@sixladders.com</a></p>
+                  </div>
+               </div>
+               <div class="second-foot-block">
+                  <div class="footer-content-container-body">
+                     <p class="main-ft-header">Quick Links</p>
+                     <p class="footer-main-text second-tex-ft-b first-ft-all-top"><a href="#">About Us</a></p>
+                     <p class="footer-main-text second-tex-ft-b"><a href="#">Blog</a></p>
+                     <p class="footer-main-text second-tex-ft-b"><a href="#">Contact</a></p>
+                     <p class="footer-main-text second-tex-ft-b"><a href="#">FAQ</a></p>
+                  </div>
+               </div>
+               <div class="fourth-foot-block">
+                  <div class="footer-content-container-body">
+                     <p class="main-ft-header">Social</p>
+                     <p class="footer-main-text second-tex-ft-b first-ft-all-top"><a href="#">Facebook</a></p>
+                     <p class="footer-main-text second-tex-ft-b"><a href="#">Twitter</a></p>
+                     <p class="footer-main-text second-tex-ft-b"><a href="#">Instagram</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+   <script type="text/javascript" src="./college_library/global_lib/js/main.js"></script><!--Main JS-->
+</html>

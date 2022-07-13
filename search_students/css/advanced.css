@@ -1,0 +1,52 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.all-hide-adv-container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(7, 23, 32, 0.2);
+  z-index: 9999999999999999999999999999;
+  top: 0px;
+  left: 0px;
+}
+.all-hide-adv-container .adv-left-container-main {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 90%;
+  max-width: 90%;
+  min-width: 320px;
+  background-color: white;
+  margin-left: auto;
+  padding: 120px 60px 80px 60px;
+  box-sizing: border-box;
+}
+.all-hide-adv-container .adv-main-fltr-header {
+  color: #454D66;
+  font-size: 28px;
+  font-family: 'basier_circlesemibold';
+}
+.adv-main-fltr-header-sm {
+  font-size: 16px;
+  color: #454D66;
+  font-family: 'basier_circleregular';
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.close-adv-fltr-btn {
+  display: block;
+  color: #454D66;
+  font-size: 16px;
+  font-family: 'basier_circleregular';
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+.close-adv-fltr-btn:hover {
+  color: #FF6353;
+}
+@media (min-width: 678px) {
+  .all-hide-adv-container .adv-left-container-main {
+    max-width: 30%;
+  }
+}

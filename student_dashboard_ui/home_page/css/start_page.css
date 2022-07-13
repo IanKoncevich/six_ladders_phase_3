@@ -1,0 +1,217 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.big-start-page-image {
+  display: block;
+  height: max-content;
+  width: 100%;
+  background-position: center top;
+  background-size: 240%;
+  background-repeat: no-repeat;
+  background-image: none;
+  position: relative;
+}
+.rela-cont {
+  height: 100%;
+  position: relative;
+}
+.centered-start-bl {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+  z-index: 25;
+  position: relative;
+}
+.centered-start-bl h1 {
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 44px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #454D66;
+}
+.centered-start-bl h1 span {
+  color: #58B368 !important;
+}
+.get-started-btn {
+  display: block;
+  margin: 100px auto 0px auto;
+  background-color: #58B368;
+  font-family: 'basier_circlebold';
+  letter-spacing: 0.02em;
+  font-size: 20px !important;
+  border-radius: 32px;
+  padding: 16px 75px;
+  color: white;
+  width: max-content;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.get-started-btn:hover {
+  background-color: #454D66;
+}
+.face-one {
+  display: none;
+  position: absolute;
+  z-index: 15;
+  width: max-content;
+  left: 3%;
+  top: 10%;
+}
+.face-two {
+  display: none;
+  position: absolute;
+  z-index: 15;
+  width: max-content;
+  left: 26%;
+  bottom: 3%;
+}
+.face-three {
+  display: none;
+  position: absolute;
+  z-index: 15;
+  width: max-content;
+  right: 13%;
+  bottom: 28%;
+}
+.svg-back-side-lines {
+  display: block;
+  width: 100%;
+  height: max-content;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 240%;
+}
+.second-start-page-block {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding-top: 90px;
+}
+.sec-header-start-page {
+  display: block;
+  text-align: center;
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 38px;
+}
+.sec-header-start-page span {
+  color: #58B368 !important;
+}
+.start-white-block-main {
+  display: block;
+  width: 100%;
+  margin: 60px 0px 40px 0px;
+}
+.flex-items-isd-img {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.icon-sdf-block {
+  display: block;
+  width: 100%;
+  background-color: white;
+  border-radius: 32px;
+  box-shadow: 0px 4px 32px rgba(234, 234, 234, 0.5);
+  padding: 30px 20px;
+  box-sizing: border-box;
+  margin-bottom: 35px;
+}
+.icon-sdf-block img {
+  display: block;
+  margin: 0px auto;
+  max-width: 100%;
+  position: relative;
+}
+.icon-sdf-block p {
+  padding-top: 40px;
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 20px;
+  color: #454D66;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.header-start-afr {
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding: 40px 0px 60px 0px;
+  color: #454D66;
+  font-size: 24px;
+  font-family: 'Dela Gothic One', cursive;
+}
+.bottom-but-cred-ss {
+  display: block;
+  margin: 0px auto 0px auto;
+  background-color: #58B368;
+  font-family: 'basier_circlebold';
+  letter-spacing: 0.02em;
+  font-size: 20px !important;
+  border-radius: 32px;
+  padding: 16px 75px;
+  color: white;
+  width: max-content;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: none;
+}
+.bottom-but-cred-ss:hover {
+  background-color: #454D66;
+}
+.bottom-image-block-start-page {
+  padding-top: 310px;
+}
+.bottom-image-block-start-page {
+  display: block;
+  width: 100%;
+  padding-top: 210px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 678px) {
+  .big-start-page-image {
+    background-size: contain;
+  }
+  .svg-back-side-lines {
+    background-size: cover;
+    background-position: center bottom 60px;
+  }
+  .centered-start-bl {
+    padding: 150px 0px;
+  }
+  .centered-start-bl h1 {
+    font-size: 44px;
+  }
+  .sec-header-start-page {
+    font-size: 48px;
+  }
+  .start-white-block-main {
+    display: block;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 32px rgba(234, 234, 234, 0.5);
+    border-radius: 40px;
+    box-sizing: border-box;
+    padding: 68px 49px;
+    margin: 60px 0px 40px 0px;
+  }
+  .icon-sdf-block {
+    display: block;
+    width: 30%;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .big-start-page-image {
+    background-size: contain;
+    background-image: url(../img/gen_png-back.png);
+  }
+}

@@ -1,0 +1,65 @@
+@import "../../library/css/vars.less";
+
+.find-best-candidate-container{
+    display: block;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px 0px;
+
+    & img{
+        width: max-content;
+        max-width: 100%;
+    }
+
+    .find-cnd-b-header{
+        color: @slate;
+        font-size: 28px;
+        font-family: @ft-semi;
+        padding: 40px 0px 12px 0px;
+    }
+
+    .find-cnd-b-text{
+        font-size: 16px;
+        font-family: @ft-reg;
+        color: #A2A6B3;
+    }
+
+    & a{
+        display: block;
+        width: max-content;
+    }
+
+    .btn-cent-find-c-container{
+        display: block;
+        width: max-content;
+        margin: 0px auto;
+        margin-top: 40px;
+    }
+    .post-a-jb-fnd{
+        display: block;
+        margin: 0px auto;
+        height: 48px;
+        color: @algae;
+        font-family: @ft-semi;
+        font-size: 16px;
+        border-radius: 32px;
+        width: 232px;
+        border: 1px solid @algae;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 48px;
+
+        &:hover{
+            color: @slate;
+            border-color: @slate;
+        }
+    }
+}
+
+@media(min-width: 678px){
+    .find-best-candidate-container{
+        padding: 50px 100px;
+    }
+}

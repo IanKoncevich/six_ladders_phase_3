@@ -1,0 +1,40 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.flex-input-adv-s-search input {
+  color: white !important;
+}
+.std-reg-asd-btn {
+  display: block;
+  width: max-content;
+  color: white;
+  border-radius: 32px;
+  background-color: #58B368;
+  padding: 12px 32px;
+  box-sizing: border-box;
+  font-family: 'basier_circlesemibold';
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+.std-reg-asd-btn:hover {
+  background-color: #454D66;
+  cursor: pointer;
+}
+.flex-st-sdf-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.results-std-reg-asdf {
+  color: #454D66;
+  font-family: 'basier_circlesemibold';
+  font-size: 20px;
+}
+@media (min-width: 678px) {
+  .std-reg-asd-btn {
+    margin-bottom: 0px;
+    margin-left: 20px;
+  }
+  .flex-st-sdf-container {
+    justify-content: right;
+  }
+}

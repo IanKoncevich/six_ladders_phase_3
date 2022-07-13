@@ -1,0 +1,447 @@
+@import "../../library/css/vars.less";
+
+.messagner-white-container{
+    display: block;
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+.one-msg-container-main{
+    border-bottom:  1px solid #EAEAEA;
+    padding-top: 24px;
+}
+
+.one-msg-container-main:nth-child(1){
+    padding-top: 0px;
+}
+
+.flex-msg-container-main{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.msg-linkc-container{
+    display: flex;
+    width: 100%;
+    padding: 40px 20px 0px 20px;
+    border-bottom:  1px solid #EAEAEA;
+    box-sizing: border-box;
+}
+
+.link-mesanger-filtr{
+    display: block;
+    width: max-content;
+    color: @slate;
+    font-family: @ft-reg;
+    font-size: 16px;
+    opacity: 0.3;
+    padding-bottom: 15px;
+    margin-right: 40px;
+
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.activated-msg-link{
+
+   &  .link-mesanger-filtr{
+        opacity: 1 !important;
+        border-bottom: 2px solid @algae;
+    }
+}
+
+.messages-main-m-container{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px 30px;
+}
+
+.msg-user-data{
+    display: flex;
+    flex-wrap: wrap;
+    width: max-content;
+    position: relative;
+
+    & .main-msg-avatar{
+        display: block;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: 24px;
+    }
+
+    
+    & .main-msg-avatar-messanger{
+        display: block;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: 24px;
+    }
+
+    & .msg-name-univer{
+        & p{
+            color: @slate;
+            font-family: @ft-semi;
+            font-size: 18px;
+            margin-bottom: 7px;
+        }
+    }
+}
+
+.msg-main-text{
+    display: block;
+    width: 100%;
+    padding: 24px 0px;
+    font-family: @ft-reg;
+    font-size: 16px;
+    color: @slate;
+}
+
+/* UNVIVERIDTY TEXT ITEM*/
+/*=============================================*/
+.univer-colored{
+    color: @algae;
+}
+.flex-univer-item-name{
+    position: relative;
+    display: flex;
+    width: max-content;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    
+    & div{
+        font-size: 16px;
+        font-family: @ft-reg;
+        line-height: 24px 
+    }
+}
+
+.university-svg-icon{
+    margin-right: 12px;
+}
+
+.msg-controls{
+    display: flex;
+    width: max-content;
+    flex-wrap: wrap;
+    padding: 20px 0px 0px 0px;
+
+}
+
+.decorated-link{
+    cursor: pointer;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.link-star-msg{
+    color: @slate;
+    font-family: @ft-semi !important;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.add-to-short-list{
+    margin-top: 12px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.contact-button-main{
+    display: flex;
+    height: 48px;
+    line-height: 48px;
+    border: 1px solid @algae;
+    font-family: @ft-semi;
+    color: @algae;
+    font-size: 16px;
+    padding: 0px 24px;
+    border-radius: 32px;
+    cursor: pointer;
+   
+
+    .left-side-cnt-text{
+        display: block;
+        width: max-content;
+    }
+    
+    .left-side-cnt-svg{
+        display: block;
+        width: max-content;
+        padding: 0px 0px 0px 10px;
+    
+        & svg{
+            margin-top: 13px;
+    
+            & path{
+                stroke: @algae;
+            }
+        }
+    }
+
+    &:hover{
+        border-color: @slate;
+        color: @slate;
+
+        .left-side-cnt-svg{
+            & svg{
+                & path{
+                    stroke: @slate;
+                }
+            }
+        }
+    }
+}
+
+.contact-btn-all-data-container{
+    display: block;
+    position: relative;
+    margin-right: 24px;
+}
+
+
+.contsct-btn-nbs-container{
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    min-height: 30px;
+    width: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 6px;
+        background-color: white;
+        -webkit-box-shadow: 0px 3px 17px -2px rgba(69, 77, 102, 0.42);
+        -moz-box-shadow: 0px 3px 17px -2px rgba(69, 77, 102, 0.42);
+        box-shadow: 0px 3px 17px -2px rgba(69, 77, 102, 0.42);
+        z-index: 9999;
+
+    & a{
+        display: block;
+        color: @slate;
+        font-size: 16px;
+        font-family: @ft-reg;
+        margin-bottom: 20px;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    & a:last-child{
+        margin-bottom: 0px;
+    }
+}
+
+.modal-contol-opened_ctn{
+    &  .contsct-btn-nbs-container{
+        display: block !important;
+    }
+}
+
+
+.contact-button-main-messagner{
+   
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    border: 1px solid @algae;
+    font-family: @ft-semi;
+    color: @algae;
+    font-size: 16px;
+    padding: 0px 24px;
+    border-radius: 32px;
+    cursor: pointer;
+    margin-right: 24px;
+    margin-top: 20px;
+
+    &:hover{
+        border-color: @slate;
+        color: @slate;
+    }
+}
+
+.contact-msg-main-button-two{
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    font-family: @ft-semi;
+    color: white;
+    font-size: 16px;
+    padding: 0px 24px;
+    border-radius: 32px;
+    background-color: @algae;
+    cursor: pointer;
+
+    &:hover{
+       background-color: @slate;
+    }
+}
+
+.short-listed{
+    color: #FFB74B !important;
+}
+
+.sent-time-ago{
+    display: flex;
+    line-height: 24px;
+    color: #A2A6B3;
+    font-family: @ft-reg;
+    font-size: 16px;
+    padding-bottom: 24px;
+
+    & span{
+        color: @slate;
+    }
+}
+
+.flex-messanger-name-status{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.pad-right-messanger-p{
+    margin-right: 16px;
+}
+
+.one-msg-container-main-messanger{
+    border-bottom:  1px solid @algae;
+    padding-bottom: 32px;
+}
+
+.send-message-mn{
+    color: @slate;
+    font-family: @ft-semi;
+    font-size: 16px;
+    padding: 40px 0px 16px 0px;
+}
+
+.main-msen-form-cont{
+    & form{
+        display: block;
+        width: 100%;
+        position: relative;
+
+        & input{
+            display: block;
+            width: 100%;
+            font-family: @ft-reg;
+            font-size: 16px;
+            color: @slate;
+            border: none;
+            border-bottom: 1px solid #EAEAEA;
+            padding: 10px 0px;
+        }
+
+        & textarea{
+            width: 100% !important;
+            min-height: 50px;
+            background-color: white;
+            border: none;
+            color: #A2A6B3;
+            font-family: @ft-reg;
+            font-size: 16px;
+            margin-top: 30px;
+
+        }
+    }
+}
+
+.buttons-filters-flex-container-msgv{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: max-content;
+    max-width: 100%;
+    padding: 24px 0px 24px 0px;
+
+    & .flter-uprove-button{
+        display: block;
+        width: max-content;
+        height: 48px;
+        border-radius: 32px;
+        background-color: @algae;
+        font-family: @ft-semi;
+        color: white;
+        line-height: 48px;
+        text-align: center;
+        padding: 0px 24px;
+        box-sizing: border-box;
+        margin-right:40px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: @slate;
+        }
+    }
+
+    & .filter-cancel-button{
+        display: block;
+        width: max-content;
+        height: 48px;
+        border-radius: 32px;
+        background-color: transparent;
+        font-family: @ft-semi;
+        color: @slate;
+        line-height: 48px;
+        text-align: center;
+        box-sizing: border-box;
+        text-decoration: underline;
+        cursor: pointer;
+
+        &:hover{
+            color: #FF6353;
+        }
+    }
+}
+
+.message-main-m-container{
+    display: block;
+    width: 100%;
+    position: relative;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.msg-wdth-send{
+    min-width: 220px;
+}
+
+
+
+@media(min-width: 678px){
+
+    .msg-controls{
+        padding: 0px;
+    }
+
+    .add-to-short-list{
+        margin-bottom: 0px;
+    }
+
+    .msg-main-text{
+        width: 70%;
+    }
+
+    
+.contsct-btn-nbs-container{
+    margin-left: auto;
+    right: 0px !important;
+    }
+}

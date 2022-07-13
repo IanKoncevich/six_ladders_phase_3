@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+    <g fill="none" fill-rule="evenodd">
+        <g fill-rule="nonzero">
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <path fill="#FFF" stroke="#B9BFD0" stroke-width="2.4" d="M39.82 18.85c-.152 12.945-9.025 20.818-21.97 20.97C20.328 44.726 25.423 46 31.13 46c2.677 0 5.28-.713 7.567-2.067l7.238 2.002-2.002-7.238C45.287 36.41 46 33.807 46 31.13c0-5.708-1.275-9.803-6.18-12.28z" transform="translate(-950 -1035) translate(0 516) translate(165 50) translate(760 424) translate(20 40) translate(7 7)"/>
+                                <path fill="#FFF" stroke="#B9BFD0" stroke-width="2.4" d="M35.129 17.564C35.129 7.88 27.249 0 17.564 0 7.88 0 0 7.88 0 17.564c0 3.157.84 6.23 2.436 8.928L.065 35.064l8.572-2.37c2.698 1.595 5.771 2.435 8.927 2.435 9.686 0 17.565-7.88 17.565-17.565z" transform="translate(-950 -1035) translate(0 516) translate(165 50) translate(760 424) translate(20 40) translate(7 7)"/>
+                                <path fill="#FFCA7B" d="M18.912 24.348v2.695h-2.695v-2.695h2.695zM17.564 8.086c2.973 0 5.391 2.418 5.391 5.39 0 1.51-.639 2.96-1.753 3.979l-2.29 2.095v2.102h-2.695v-3.288l3.165-2.898c.566-.518.878-1.224.878-1.99 0-1.486-1.21-2.695-2.696-2.695-1.486 0-2.695 1.21-2.695 2.696h-2.695c0-2.973 2.418-5.391 5.39-5.391z" transform="translate(-950 -1035) translate(0 516) translate(165 50) translate(760 424) translate(20 40) translate(7 7)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

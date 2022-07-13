@@ -1,0 +1,69 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.edt-lin-sty-one {
+  width: 100%;
+  border-bottom: 1px solid #eaeaea;
+  margin-top: 24px;
+}
+.amge-choose-block-edt-prf {
+  margin-top: 28px;
+  display: block;
+  width: 112px;
+  height: 112px;
+  background-position: center;
+  background-size: 51px;
+  background-repeat: no-repeat;
+  background-color: #454D66;
+  border-radius: 50%;
+  position: relative;
+}
+.edit-cion-image-edt-prf {
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  bottom: 0px ;
+  right: 10px;
+  cursor: pointer;
+}
+.edit-cion-image-edt-prf svg circle {
+  fill: #58B368;
+}
+.edit-cion-image-edt-prf:hover svg circle {
+  fill: #454D66;
+  stroke: white;
+}
+.edt-ptf-width-container {
+  display: block;
+  padding-top: 36px;
+  width: 55%;
+  position: relative;
+}
+.location-icon-edt-cointainer {
+  display: block;
+  width: max-content;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.pad-top-edit-inp-line {
+  padding-top: 32px;
+}
+.label-top-input-block textarea {
+  width: 100%;
+  position: relative;
+  border: 1px solid #EAEAEA;
+  box-sizing: border-box;
+  font-family: 'basier_circleregular';
+  color: #454D66;
+}
+.edit-background-prf-edit {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.edit-background-prf-edit:hover svg circle {
+  stroke: white;
+}

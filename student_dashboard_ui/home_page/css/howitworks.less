@@ -1,0 +1,92 @@
+@import "../../library/css/vars.less";
+
+.how-it-works{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 34px;
+    text-align: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: @slate;
+    padding: 120px 0px 0px 0px;
+
+    & span{
+        color: @algae !important;
+    }
+}
+
+.flex-how-it-container{
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ch-how-its{
+    display: block;
+    width: 100%;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.numbeer-how-its{
+    color: @algae;
+    font-size: 84px;
+    padding-bottom: 40px;
+    font-family: 'Dela Gothic One', cursive;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 34;
+}
+
+.text-how-its{
+    display: block;
+    color: @slate;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.block-side-howits{
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    height: max-content;
+    top: 200px;
+    z-index: 24;
+}
+
+.all-back-image-view{
+    display: block;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.pc-image-howts-block{
+    padding: 0px 0px 100px 0px;
+}
+
+#hide-me-cvbnd{
+    display: block;
+}
+
+#hide-image-cvbnb{
+    display: none;
+}
+
+@media(min-width: 678px){
+    #hide-me-cvbnd{
+        display: none;
+    }
+
+    #hide-image-cvbnb{
+        display: block;
+    }
+}

@@ -1,0 +1,323 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.white-emory-container {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 22px;
+}
+.back-image-emory {
+  display: block;
+  width: 100%;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 140px;
+}
+.emory-texts-container {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.flex-emory-header {
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  position: relative;
+  flex-wrap: wrap;
+}
+.left-side-flemo {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  position: relative;
+  color: #454D66;
+  font-size: 28px;
+  font-family: 'basier_circlesemibold';
+  margin-right: 24px;
+}
+.right-side-flemo {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  background: #DEF0E1;
+  border-radius: 8px;
+  height: 36px;
+  line-height: 36px;
+  width: max-content;
+  color: #58B368;
+  font-family: 'basier_circlesemibold';
+  font-size: 16px;
+  padding: 0px 24px;
+}
+.right-side-flemo svg {
+  margin-top: 6px;
+  padding-right: 8px;
+}
+.flex-items-icons-container-em {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-top: 32px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #EAEAEA;
+}
+.container-flex-line-emory {
+  margin-right: 40px;
+  margin-top: 15px;
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  position: relative;
+  color: #454D66;
+  font-family: 'basier_circleregular';
+  font-size: 16px;
+  line-height: 24px;
+}
+.container-flex-line-emory svg {
+  margin-right: 8px;
+}
+.container-flex-line-emory a:hover {
+  text-decoration: underline;
+}
+.grey-am-test-descr {
+  font-family: 'basier_circleregular';
+  font-size: 16px;
+  padding: 32px 0px 0px 0px;
+  color: #A2A6B3;
+}
+/*Second floor*/
+.mid-emory-hader-block {
+  display: block;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  border-bottom: 1px solid #EAEAEA;
+  padding-bottom: 24px;
+}
+.mid-emory-hader-block p {
+  color: #454D66;
+  font-size: 18px;
+  font-family: 'basier_circlesemibold';
+}
+.em-flex-examples-categ {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 32px;
+}
+.em-flex-child-em-f {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  color: #454D66;
+  font-size: 16px;
+  height: 24px;
+  line-height: 24px;
+  font-family: 'basier_circleregular';
+  margin-bottom: 12px;
+}
+.em-flex-child-em-f svg {
+  margin-right: 12px;
+}
+.elips-emory-dc {
+  width: 8px;
+  height: 8px;
+  position: relative;
+  background-color: #454D66;
+  border-radius: 50%;
+  margin-top: 9px;
+  margin-right: 16px;
+}
+.emmore-link {
+  display: block;
+  padding-top: 24px;
+  color: #454D66;
+  font-size: 16px;
+  font-family: 'basier_circlesemibold';
+  text-decoration: underline;
+  width: max-content;
+}
+.emmore-link a {
+  display: block;
+  width: max-content;
+}
+.emmore-link:hover {
+  color: #58B368;
+}
+.spns-em-text-h {
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  flex-wrap: wrap;
+  color: #454D66;
+  padding: 41px 0px 50px 0px;
+}
+.spns-em-text-h p {
+  margin-right: 50px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-family: 'basier_circlesemibold';
+}
+.spns-em-text-h p span {
+  font-family: 'basier_circleregular';
+}
+.em-gren-btn {
+  display: block;
+  border-radius: 32px;
+  background-color: #58B368;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 96px;
+  box-sizing: border-box;
+  font-family: 'basier_circlesemibold';
+  cursor: pointer;
+  margin-right: 28px;
+}
+.em-gren-btn:hover {
+  background-color: #454D66;
+}
+.flex-emmain-btns-cont {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.left-side-btn-emory {
+  display: flex;
+  width: max-content;
+  flex-wrap: wrap;
+}
+.right-side-btn-emory {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  line-height: 24px;
+  color: #454D66;
+  font-size: 16px;
+  font-family: 'basier_circleregular';
+}
+.right-side-btn-emory svg {
+  margin-right: 8px;
+}
+.right-side-btn-emory:hover {
+  text-decoration: underline;
+}
+.contact-btn-all-data-container {
+  display: block;
+  position: relative;
+}
+.contact-button-main {
+  display: flex;
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #58B368;
+  font-family: 'basier_circlesemibold';
+  color: #58B368;
+  font-size: 16px;
+  padding: 0px 24px;
+  border-radius: 32px;
+  cursor: pointer;
+  margin: 15px 0px;
+}
+.contact-button-main .left-side-cnt-text {
+  display: block;
+  width: max-content;
+}
+.contact-button-main .left-side-cnt-svg {
+  display: block;
+  width: max-content;
+  padding: 0px 0px 0px 10px;
+}
+.contact-button-main .left-side-cnt-svg svg {
+  margin-top: 13px;
+}
+.contact-button-main .left-side-cnt-svg svg path {
+  stroke: #58B368;
+}
+.contact-button-main:hover {
+  border-color: #454D66;
+  color: #454D66;
+}
+.contact-button-main:hover .left-side-cnt-svg svg path {
+  stroke: #454D66;
+}
+.contsct-btn-nbs-container {
+  display: none;
+  position: absolute;
+  top: -120px;
+  left: 0px;
+  min-height: 30px;
+  width: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 17px -2px rgba(69, 77, 102, 0.42);
+  -moz-box-shadow: 0px 3px 17px -2px rgba(69, 77, 102, 0.42);
+  box-shadow: 0px 3px 17px -2px rgba(69, 77, 102, 0.42);
+  z-index: 9999;
+}
+.contsct-btn-nbs-container a {
+  display: block;
+  color: #454D66;
+  font-size: 16px;
+  font-family: 'basier_circleregular';
+  margin-bottom: 20px;
+}
+.contsct-btn-nbs-container a:hover {
+  text-decoration: underline;
+}
+.contsct-btn-nbs-container a:last-child {
+  margin-bottom: 0px;
+}
+.modal-contol-opened .contsct-btn-nbs-container {
+  display: block !important;
+}
+.request-sent-amory {
+  height: 36px;
+  line-height: 36px;
+  background-color: #FDF7ED;
+  color: #FFB74B;
+  font-size: 16px;
+  font-family: 'basier_circleregular';
+  padding: 0px 89px;
+  border-radius: 8px;
+  margin-top: 6px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+@media (min-width: 678px) {
+  .right-side-flemo {
+    margin-top: 0px;
+  }
+  .container-flex-line-emory {
+    margin-top: 0px;
+  }
+  .emory-texts-container {
+    padding: 30px;
+  }
+  .em-flex-examples-categ {
+    width: 70%;
+  }
+  .em-flex-child-em-f {
+    width: 50%;
+  }
+  .spns-em-text-h p {
+    margin-bottom: 0px;
+  }
+  .contact-button-main {
+    margin: 0px 0px;
+  }
+  .request-sent-amory {
+    margin-bottom: 0px;
+  }
+}

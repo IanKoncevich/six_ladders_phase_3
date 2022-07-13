@@ -1,0 +1,240 @@
+@import "../../library/css/vars.less";
+
+html, body{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p{
+    margin: 0px;
+    padding: 0px;
+    font-family: @ft-reg;
+    color: @slate;
+}
+
+body{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/mobile_back.svg);
+    background-color: #FAFAFB;
+}
+
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+input[type="text"], input[type="password"], textarea, select { 
+    outline: none;
+}/*No border browser input onclick*/
+
+
+.no-select {
+	-webkit-tap-highlight-color: transparent;
+}
+
+/*Landing css*/
+
+.back-all-contianer{
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    max-width: 1600px;
+   
+}
+
+.content-container{
+    display:block;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    padding: 40px 30px 20px 30px;
+    height: 100%;
+}
+
+.inside-container{
+    display: block;
+    width: max-content;
+    max-width: 100%;
+}
+
+.logo-block{
+    & img{
+        width: 148px;
+        height: 40px;
+    }
+}
+
+.lnd-main-header{
+    display: block;
+    position: relative;
+    color: @slate;
+    font-family: @ft-semi;
+    font-size: 38px;
+    padding: 32px 0px 52px 0px;
+}
+
+.lnd-main-text{
+    display: block;
+    color: #646464;
+    font-size: 18px;
+    font-family: @ft-reg;
+    line-height: 29px;
+}
+
+.forom-header{
+    color: @slate;
+    font-family: @ft-semi;
+    font-size: 16px;
+    padding-top: 81px;
+}
+
+.forom-header{
+    padding-bottom: 28px;
+}
+
+.flex-form-lnd-container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    padding-bottom: 40px;
+
+    & button{
+        display: block;
+        border: none;
+        background-color: @algae;
+        font-family: @ft-semi;
+        font-size: 18px;
+        color: white;
+        padding: 16.5px 20px 16px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: @slate;
+        }
+    }
+}
+
+.lnd-m-form-conatainer{
+    padding-bottom: 40px;
+}
+
+/*FORM*/
+
+.three-row-flex-filter-lnd{
+    display: flex;
+    width: 100%;
+    margin-right: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & .filter-child-block-app-drop-down{
+        display: block;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    & .filter-child-block-app{
+        display: block;
+        width: 100%;
+        margin-bottom: 24px;
+
+        & label{
+            display: block;
+            font-family: @ft-reg;
+            font-size: 16px;
+            color: @slate;
+            height: 40px;
+        }
+
+        & select{
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+            display: block;
+            background-color: white;
+            border-radius: 4px;
+            border: 1px solid #EAEAEA;
+            padding: 18px 20px;
+            font-family: @ft-reg;
+            font-size: 16px;
+            color: @slate;
+
+            -moz-appearance:none; /* Firefox */
+            -webkit-appearance:none; /* Safari and Chrome */
+            appearance:none;
+
+            background-image: url(../img/arrow-select.svg);
+            background-repeat: no-repeat;
+            background-position-x: calc(100% - 20px);
+            background-position-y: 15px;
+        }
+
+        & input{
+            position: relative;
+            width:100%;
+            box-sizing: border-box;
+            display: block;
+            background-color: white;
+            border-radius: 4px;
+            border: 1px solid #EAEAEA;
+            padding: 17px 20px;
+            font-family: @ft-reg;
+            font-size: 16px;
+            color: @slate;
+        }
+    }
+}
+
+.lnd-priv-line{
+    text-decoration: underline;
+}
+
+@media(min-width: 460px){
+    .back-all-contianer{
+        height: 100%;
+    }
+}
+
+@media(min-width: 678px){
+   
+    .content-container{
+        padding: 80px 112px 0px 112px;
+    }
+    
+    .lnd-main-header{
+        font-size: 64px;
+    }
+
+
+    .three-row-flex-filter-lnd{
+        width: max-content;
+
+        & .filter-child-block-app{
+            & input{
+                width: 358px;
+             
+            }
+        }
+       
+    }
+}
+
+@media(min-width: 1000px){
+    .inside-container{
+        max-width: 70%;
+    }
+
+    body{
+        background-image: url(../img/background.svg);
+    }
+}

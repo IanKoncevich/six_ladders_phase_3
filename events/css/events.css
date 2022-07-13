@@ -1,0 +1,228 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.events-npost-container {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin: 0px auto;
+  text-align: center;
+  padding: 50px 0px;
+}
+.events-npost-container img {
+  display: block;
+  margin: 0px auto;
+  position: relative;
+}
+.event-np-header {
+  color: #454D66;
+  font-size: 28px;
+  font-family: 'basier_circlesemibold';
+  padding-top: 48px;
+}
+.event-np-text {
+  display: block;
+  margin: 0px auto;
+  width: 100%;
+  color: #A2A6B3;
+  font-family: 'basier_circleregular';
+  font-size: 16px;
+  padding: 12px 0px 64px 0px;
+}
+.even-np-btn {
+  display: block;
+  width: max-content;
+  padding: 14px 81px;
+  box-sizing: border-box;
+  max-width: 100%;
+  position: relative;
+  border-radius: 32px;
+  border: 1px solid #58B368;
+  font-family: 'basier_circlesemibold';
+  color: #58B368;
+  margin: 0px auto;
+  cursor: pointer;
+}
+.even-np-btn:hover {
+  color: #454D66;
+  border-color: #454D66;
+}
+.no-top-brb-rad {
+  border-top-left-radius: 0px !important ;
+  border-top-right-radius: 0px !important ;
+}
+/*TOP BREADCRUMBS*/
+.uni-gen-name-sg {
+  margin-right: 20px;
+}
+.flex-cand-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.short-listed-cand {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  color: #FFB74B;
+  font-family: 'basier_circleregular';
+  line-height: 24px;
+}
+.short-candi-item {
+  margin-right: 10px;
+}
+.hired-account-candid {
+  color: #58B368 !important;
+}
+.top-candi-oagiantion-container {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #EAEAEA;
+  padding: 30px;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+  background-color: white;
+  border-top-left-radius: 8px ;
+  border-top-right-radius: 8px;
+}
+.top-vand-no-border {
+  border-top-left-radius: 0px ;
+  border-top-right-radius: 0px;
+}
+.flex-link-container-block-cand {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.active-bred-cand-top {
+  border-bottom: 2px solid #58B368 !important;
+  opacity: 1 !important;
+  color: #454D66 !important;
+}
+.link-cand-top-line {
+  box-sizing: border-box;
+  font-family: 'basier_circleregular';
+  color: #454C62;
+  opacity: 0.3;
+  display: block;
+  line-height: 24px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid transparent;
+  margin-right: 5%;
+  cursor: pointer;
+  width: max-content;
+  white-space: nowrap;
+}
+.link-cand-top-line:hover {
+  color: #454D66;
+  opacity: 1;
+}
+/*Line data view*/
+.events-info-flex-block {
+  display: flex;
+  width: max-content;
+  max-width: 100%
+    ;
+  position: relative;
+  flex-wrap: wrap;
+}
+.image-block-image-events {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 54%;
+  border-radius: 5px;
+}
+.text-events-block-sd {
+  padding-left: 0px;
+  margin-top: 20px;
+}
+.text-date-envts-fdfd {
+  max-width: 90%;
+  overflow: hidden;
+  font-size: 10px;
+}
+.evnt-title {
+  color: #454D66;
+  font-family: 'basier_circlesemibold';
+  font-size: 16px;
+  padding-bottom: 16px;
+}
+.evnt-date {
+  font-family: 'basier_circleregular';
+  font-size: 16px;
+  padding-bottom: 16px;
+}
+.flex-even-block-kjhd {
+  display: block;
+  width: max-content;
+  box-sizing: border-box;
+  max-width: 100%;
+  color: #454D66;
+  font-family: 'basier_circlesemibold';
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.svg-view-evnts-v {
+  padding-right: 13px;
+}
+.label-connected-uni-flex {
+  cursor: pointer;
+}
+.flex-event-ccnct-item {
+  display: flex;
+}
+.text-view-data-sign {
+  color: #58B368;
+  font-family: 'basier_circleregular';
+  font-size: 16px;
+}
+.svgs-event-gfgf {
+  position: relative;
+  margin-top: 6px;
+  margin-right: 6px;
+}
+.pending-orange-dhteh {
+  background-color: #FDF7ED !important;
+}
+.orange-tedt-jssj {
+  color: #FFB74B !important;
+}
+@media (min-width: 678px) {
+  .event-np-text {
+    width: 70%;
+  }
+  .short-listed-cand {
+    width: max-content;
+  }
+  .text-events-block-sd {
+    padding-left: 30px;
+    margin-top: 0px;
+  }
+  .image-block-image-events {
+    width: 300px;
+    box-sizing: border-box;
+    border-radius: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-bottom: 24%;
+  }
+  .flex-link-container-block-cand {
+    display: flex;
+  }
+  .flex-even-block-kjhd {
+    display: flex;
+  }
+  .text-date-envts-fdfd {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1080px) {
+  .candi-tech-inf-grad {
+    margin-bottom: 0px;
+  }
+}

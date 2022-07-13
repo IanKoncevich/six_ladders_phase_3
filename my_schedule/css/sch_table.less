@@ -1,0 +1,169 @@
+@import "../../library/css/vars.less";
+
+.sck-table-view{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+.flex-tavl-cfgh-asd{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    & .flex-tavl-cfgh-asd-child-left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: max-content;
+        max-width:100%;
+        padding: 0px 40px 0px 0px;
+    }
+
+    & .flex-tavl-cfgh-asd-child-right{
+        display: block;
+        width: 100%;
+        max-width:100%;
+    }
+}
+
+.date-main-tl-asd{
+    display: block;
+    width: max-content;
+    text-align: right;
+
+    & .day-name-asdf{
+        color: @slate;
+        font-size: 16px;
+        font-family: @ft-reg;
+        padding-bottom: 7px;
+    }
+
+    .day-name-asdf-today{
+        color: @slate;
+        font-size: 14px;
+        font-family: @ft-reg;
+        padding-top: 7px;
+    }
+
+    & .day-name-asdf-numb{
+        display: block;
+        font-family: @ft-bold;
+        color: @slate;
+        font-size: 28px;
+    }
+}
+
+.rgt-fine-sorrow-flex{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: left;
+    margin-bottom: 12px;
+}
+
+.label-status-srw{
+    display: block;
+    width: 200px;
+    border-radius: 4px;
+    border-left: 5px solid rgba(255, 186, 83, 1);
+    height: 40px;
+    background-color: #FFF5E5;
+    line-height: 40px;
+    font-size: 16px;
+    font-family: @ft-reg;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.name-srw-txt-block{
+    padding: 0px 16px;
+    box-sizing: border-box;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-family: @ft-reg;
+    width: 200px;
+    color: rgba(162, 166, 179, 1);
+}
+
+.date-time-srw-block-flex{
+    display: flex;
+    width: max-content;
+    align-items: center;
+    height: 40px;
+    max-width: 100%;
+    min-width: 200px;
+    box-sizing: border-box;
+    padding-right: 32px;
+
+    & div{
+        font-size: 16px;
+        font-family: @ft-reg;
+    }
+
+    & .icon-dtm-srw{
+        display: block;
+        margin-right: 8px;
+    }
+
+    & a{
+        color: @algae;
+    }
+}
+
+.controls-rsd-12-asd{
+    display: flex;
+    width: max-content;
+    align-items: center;
+    cursor: pointer;
+
+    & svg{
+        & path{
+            stroke: @slate;
+        }
+    }
+
+    &:hover{
+        & svg{
+            & path{
+                stroke: @algae;
+            }
+        }
+    }
+}
+
+.blue-strong-asd{
+    border-color: #6685E5 !important;
+    background-color: #E8EDFB !important;
+}
+
+.green-strong-asd{
+    border-color: #58B368 !important;
+    background-color: #DEF0E1 !important;
+}
+.violet-strong-asd{
+    border-color: rgba(205, 141, 255, 1) !important;
+    background-color: #F8EEFF !important;
+}
+
+.awaiting-orange-asdf{
+    font-family: @ft-semi !important;
+    color: #FFB74B !important;
+}
+
+.lnt-btw-days{
+    display: block;
+    width: 100%;
+    background-color: rgba(234, 234, 234, 1);
+    height: 1px;
+    margin: 30px 0px;
+}

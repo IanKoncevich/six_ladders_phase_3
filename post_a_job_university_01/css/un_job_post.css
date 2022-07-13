@@ -1,0 +1,127 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.big-content-forms-container-nw-un-p {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0px auto;
+  background-color: white;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 40px 20px;
+  margin-bottom: 20px;
+}
+.all-containers-form-container-ns-new {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 32px;
+}
+/*GREN ALERT INSIDE*/
+.flex-gr-ak-pgs-p {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.left-side-gr-alrt {
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  position: relative;
+  flex-wrap: nowrap;
+}
+.left-side-gr-alrt .gr-al-icon-contianer {
+  display: block;
+  position: relative;
+  width: max-content;
+}
+.gr-al-text-container {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  position: relative;
+  font-family: 'basier_circlesemibold';
+  color: #58B368;
+  margin-left: 10px;
+  line-height: 24px;
+}
+.right-side-gr-alrt {
+  display: none;
+  width: max-content;
+  min-width: max-content;
+  max-width: 100%;
+  position: relative;
+  flex-wrap: wrap;
+}
+.right-side-gr-alrt .edit-al-gr-icon {
+  display: block;
+  position: relative;
+  width: max-content;
+}
+.right-side-gr-alrt .edit-al-gr-text {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  position: relative;
+  font-family: 'basier_circlesemibold';
+  color: #454D66;
+  margin-left: 10px;
+  line-height: 24px;
+}
+.right-side-gr-alrt:hover .edit-al-gr-text {
+  text-decoration: underline;
+}
+.mobile-al-gr-edit a {
+  color: #454D66 !important;
+  text-decoration: underline;
+}
+.notifications-spce-betwen-news {
+  margin-bottom: 60px;
+  margin-top: 32px;
+}
+/*EDIT MODAL*/
+.modal-eg-nw-header {
+  font-size: 18px;
+  font-family: 'basier_circlesemibold';
+  color: #454D66;
+  padding-bottom: 40px;
+}
+.marg-nw-op-modal {
+  margin-top: 80px !important;
+}
+.special-line-label .check-box-flex-child label {
+  line-height: 24px;
+}
+.add-more-univer-link-flex {
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  position: relative;
+  flex-wrap: nowrap;
+  padding-top: 15px;
+}
+.add-more-univer-link-flex .icon-add-more-un {
+  display: block;
+  width: max-content;
+}
+.add-more-univer-link-flex .text-add-more-un {
+  color: #58B368;
+  font-size: 16px;
+  font-family: 'basier_circlesemibold';
+  line-height: 24px;
+  margin-left: 10px;
+}
+@media (min-width: 678px) {
+  .mobile-al-gr-edit {
+    display: none;
+  }
+  .right-side-gr-alrt {
+    display: flex;
+  }
+  /*EDIT MODAL*/
+  .modal-eg-nw-header {
+    font-size: 28px;
+  }
+}

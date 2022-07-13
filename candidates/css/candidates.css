@@ -1,0 +1,115 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.uni-iamge-gerb-photo img {
+  border-radius: 50%;
+}
+.connect-candidate-ftp {
+  padding: 14px 34px;
+  background-color: #58B368;
+  color: white;
+  font-size: 16px;
+  font-family: 'basier_circlesemibold';
+  border-radius: 32px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.connect-candidate-ftp:hover {
+  background-color: #454D66;
+}
+.controls-uni-connected {
+  margin-top: 12px;
+}
+.candi-tech-info {
+  font-family: 'basier_circleregular';
+  font-size: 16px;
+  color: #454D66;
+  padding-bottom: 10px;
+}
+.candi-tech-info span {
+  font-family: 'basier_circlesemibold';
+}
+.candi-tech-inf-grad {
+  font-family: 'basier_circleregular';
+  font-size: 16px;
+  color: #A2A6B3;
+  margin-bottom: 20px;
+}
+.candi-tech-inf-grad span {
+  color: #454D66;
+}
+.uni-gen-name-sg {
+  margin-right: 20px;
+}
+.flex-cand-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.short-listed-cand {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  color: #FFB74B;
+  font-family: 'basier_circleregular';
+  line-height: 24px;
+}
+.short-candi-item {
+  margin-right: 10px;
+}
+.hired-account-candid {
+  color: #58B368 !important;
+}
+.top-candi-oagiantion-container {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #EAEAEA;
+  padding: 30px;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+  background-color: white;
+  border-top-left-radius: 8px ;
+  border-top-right-radius: 8px;
+}
+.top-vand-no-border {
+  border-top-left-radius: 0px ;
+  border-top-right-radius: 0px;
+}
+.flex-link-container-block-cand {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.active-bred-cand-top {
+  border-bottom: 2px solid #58B368 !important;
+  opacity: 1 !important;
+  color: #454D66 !important;
+}
+.link-cand-top-line {
+  box-sizing: border-box;
+  font-family: 'basier_circleregular';
+  color: #454C62;
+  opacity: 0.3;
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid transparent;
+  margin-right: 5%;
+  cursor: pointer;
+  width: max-content;
+  white-space: nowrap;
+}
+.link-cand-top-line:hover {
+  color: #454D66;
+  opacity: 1;
+}
+@media (min-width: 1080px) {
+  .candi-tech-inf-grad {
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 678px) {
+  .short-listed-cand {
+    width: max-content;
+  }
+}

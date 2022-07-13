@@ -1,0 +1,62 @@
+@import "../../library/css/vars.less";
+
+.all-hide-adv-container{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(7, 23, 32, 0.2);
+    z-index: 9999999999999999999999999999;
+    top:0px;
+    left: 0px;
+
+    & .adv-left-container-main{
+        display: block;
+        position: relative;
+        height: 100%;
+        width: 90%;
+        max-width: 90%;
+        min-width: 320px;
+        background-color: white;
+        margin-left: auto;
+        padding: 120px 60px 80px 60px;
+        box-sizing: border-box;
+    }
+
+    & .adv-main-fltr-header{
+        color: @slate;
+        font-size: 28px;
+        font-family: @ft-semi;
+    }
+}
+
+.adv-main-fltr-header-sm{
+    font-size: 16px;
+    color: @slate;
+    font-family: @ft-reg;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.close-adv-fltr-btn{
+    display: block;
+    color: @slate;
+    font-size: 16px;
+    font-family: @ft-reg;
+    padding-bottom: 15px;
+    cursor: pointer;
+
+    &:hover{
+        color: #FF6353;
+    }
+}
+
+
+@media(min-width: 678px){
+    .all-hide-adv-container{
+        & .adv-left-container-main{
+            max-width: 30%;
+        }
+      
+    }
+}

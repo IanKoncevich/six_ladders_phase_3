@@ -1,0 +1,42 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.final-popup-block {
+  display: block;
+  box-sizing: border-box;
+  padding: 40px;
+}
+.final-popup-block img {
+  display: block;
+  margin: 0px auto;
+  position: relative;
+  max-width: 100%;
+}
+.final-popup-block .popup-final-text {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #454D66;
+  font-family: 'basier_circlebold';
+  font-size: 28px;
+  padding: 40px 0px 60px 0px;
+}
+.final-popup-block .final-popoup-button {
+  display: block;
+  margin: 0px auto;
+  background-color: #58B368;
+  font-family: 'basier_circlesemibold';
+  font-size: 16px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: white;
+  border-radius: 32px;
+  width: 240px;
+  max-width: 100%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.final-popup-block .final-popoup-button:hover {
+  background-color: #454D66;
+  letter-spacing: 1px;
+}

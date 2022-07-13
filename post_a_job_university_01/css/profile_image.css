@@ -1,0 +1,132 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.edit-profile-im-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.edit-profile-im-container img {
+  width: 204px;
+  border-radius: 50%;
+  border: 3px solid #454D66;
+}
+.flex-zoom-im-container {
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  padding-top: 34px;
+}
+.left-side-zm-im-block {
+  display: block;
+  width: 20px;
+  min-width: max-content;
+  font-family: 'basier_circleregular';
+  color: #454D66;
+  font-size: 16px;
+}
+.center-side-zm-im-block {
+  display: block;
+  position: relative;
+  width: 60%;
+}
+.right-side-zm-im-block {
+  display: block;
+  width: 20px;
+  min-width: max-content;
+}
+.right-side-zm-im-block svg {
+  cursor: pointer;
+}
+.slider-zoom {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 3px;
+  background: #EAEAEA;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+.slider-zoom:hover {
+  opacity: 1;
+}
+.slider-zoom::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #454D66;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.slider-zoom::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #454D66;
+  cursor: pointer;
+}
+.zoom-buttons-flex {
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  padding-top: 60px;
+  flex-wrap: wrap;
+}
+.zm-btn-left-side {
+  display: block;
+  width: 100%;
+}
+.zm-btn-right-side {
+  width: 100%;
+}
+.delete-photo-zn-btn {
+  color: #454D66;
+  font-size: 16px;
+  font-family: 'basier_circleregular';
+  padding: 14px 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.delete-photo-zn-btn:hover {
+  text-decoration: underline;
+}
+.change-photo-zn-btn {
+  color: #454D66;
+  font-size: 16px;
+  font-family: 'basier_circleregular';
+  padding: 14px 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-right: 32px;
+}
+.confirm-photo-zn-btn {
+  color: white;
+  background-color: #58B368;
+  border-radius: 32px;
+  font-size: 16px;
+  font-family: 'basier_circleregular';
+  padding: 14px 65px;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: max-content;
+}
+.confirm-photo-zn-btn:hover {
+  background-color: #454D66;
+}
+@media (min-width: 678px) {
+  .zm-btn-left-side {
+    display: block;
+    width: max-content;
+  }
+  .zm-btn-right-side {
+    display: flex;
+    width: max-content;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

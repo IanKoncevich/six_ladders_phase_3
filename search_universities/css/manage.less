@@ -1,0 +1,119 @@
+@import "../../library/css/vars.less";
+
+.white-manage-container{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 22px;
+    padding: 30px 30px 60px 30px;
+}
+
+.mng-width-insd-container{
+    display: block;
+    width: 100%;
+}
+
+.mng-width-insd-container-popoup{
+    display: block;
+    width: 100%;
+}
+
+.check-box-flex-child{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.mng-main-header-txt{
+    display: block;
+    position: relative;
+    color: @slate;
+    font-family: @ft-semi;
+    font-size: 28px;
+}
+
+.mng-main-description-txt{
+    padding-top: 10px;
+    font-family: @ft-reg;
+    font-size: 14px;
+    color: #A2A6B3;
+}
+
+.mng-check-flex-line{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.left-side-mng-text{
+    color: @slate;
+    font-family: @ft-reg;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.right-side-mng-check{
+    color: @slate;
+    font-family: @ft-reg;
+    font-size: 16px;
+    & a{
+        text-decoration: underline;
+        &:hover{
+            color: @algae;
+        }
+    }
+}
+
+.mng-statu-requ-nb{
+    color: @algae;
+    font-family: @ft-reg;
+    font-size: 16px;
+}
+
+.mng-checks-container-m{
+    display: block;
+    padding-top: 25px;
+}
+
+.mng-reuest-chng{
+    display: block;
+    width: max-content;
+    color: @algae;
+    font-family: @ft-reg;
+    font-size: 16px;
+    text-decoration: underline;
+    padding-top: 20px;
+    cursor: pointer;
+
+    &:hover{
+        color: @slate;
+    }
+}
+
+.mng-accept-btn{
+    display: block;
+    background-color: @algae;
+    color: white;
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 32px;
+    font-size: 16px;
+    font-family: @ft-semi;
+    padding: 0px 143px;
+    box-sizing: border-box;
+    width: max-content;
+    max-width: 100%;
+    position: relative;
+    margin: 100px auto 0px auto;
+}
+
+@media(min-width: 678px){
+
+    .mng-width-insd-container{
+        width: 70%;
+    }
+}

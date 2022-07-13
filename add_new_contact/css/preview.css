@@ -1,0 +1,35 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.preview-pat-header-tp {
+  margin-bottom: 32px;
+}
+.as-to-text-top-block {
+  padding-top: 16px;
+}
+.tex-tprevie-adpb-tp {
+  display: block;
+  padding-top: 32px;
+}
+.flex-half-to-half-tp {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+.half-tp-block {
+  display: block;
+  width: 100%;
+}
+.mobile-top-ptp-show {
+  padding-top: 32px;
+}
+@media (min-width: 678px) {
+  .half-tp-block {
+    display: block;
+    width: 47.5%;
+  }
+  .mobile-top-ptp-show {
+    padding-top: 0px;
+  }
+}

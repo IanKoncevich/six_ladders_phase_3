@@ -1,0 +1,10 @@
+Hi, pagination example in:
+[
+	Route: my_universities/index.html
+]
+
+Menu account pop-up, modal:
+[
+        Route: menu_signed_up/index.html
+]
+

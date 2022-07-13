@@ -1,0 +1,366 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.messagner-white-container {
+  display: block;
+  width: 100%;
+  position: relative;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.one-msg-container-main {
+  border-bottom: 1px solid #EAEAEA;
+  padding-top: 24px;
+}
+.one-msg-container-main:nth-child(1) {
+  padding-top: 0px;
+}
+.flex-msg-container-main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.msg-linkc-container {
+  display: flex;
+  width: 100%;
+  padding: 40px 20px 0px 20px;
+  border-bottom: 1px solid #EAEAEA;
+  box-sizing: border-box;
+}
+.link-mesanger-filtr {
+  display: block;
+  width: max-content;
+  color: #454D66;
+  font-family: 'basier_circleregular';
+  font-size: 16px;
+  opacity: 0.3;
+  padding-bottom: 15px;
+  margin-right: 40px;
+}
+.link-mesanger-filtr:hover {
+  opacity: 1;
+}
+.activated-msg-link .link-mesanger-filtr {
+  opacity: 1 !important;
+  border-bottom: 2px solid #58B368;
+}
+.messages-main-m-container {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px 30px;
+}
+.msg-user-data {
+  display: flex;
+  flex-wrap: wrap;
+  width: max-content;
+  position: relative;
+}
+.msg-user-data .main-msg-avatar {
+  display: block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 24px;
+}
+.msg-user-data .main-msg-avatar-messanger {
+  display: block;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 24px;
+}
+.msg-user-data .msg-name-univer p {
+  color: #454D66;
+  font-family: 'basier_circlesemibold';
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+.msg-main-text {
+  display: block;
+  width: 100%;
+  padding: 24px 0px;
+  font-family: 'basier_circleregular';
+  font-size: 16px;
+  color: #454D66;
+}
+/* UNVIVERIDTY TEXT ITEM*/
+/*=============================================*/
+.univer-colored {
+  color: #58B368;
+}
+.flex-univer-item-name {
+  position: relative;
+  display: flex;
+  width: max-content;
+  flex-wrap: nowrap;
+  max-width: 100%;
+}
+.flex-univer-item-name div {
+  font-size: 16px;
+  font-family: 'basier_circleregular';
+  line-height: 24px;
+}
+.university-svg-icon {
+  margin-right: 12px;
+}
+.msg-controls {
+  display: flex;
+  width: max-content;
+  flex-wrap: wrap;
+  padding: 20px 0px 0px 0px;
+}
+.decorated-link {
+  cursor: pointer;
+}
+.decorated-link:hover {
+  text-decoration: underline;
+}
+.link-star-msg {
+  color: #454D66;
+  font-family: 'basier_circlesemibold' !important;
+  font-size: 16px;
+  line-height: 24px;
+}
+.add-to-short-list {
+  margin-top: 12px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+.contact-button-main {
+  display: flex;
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #58B368;
+  font-family: 'basier_circlesemibold';
+  color: #58B368;
+  font-size: 16px;
+  padding: 0px 24px;
+  border-radius: 32px;
+  cursor: pointer;
+}
+.contact-button-main .left-side-cnt-text {
+  display: block;
+  width: max-content;
+}
+.contact-button-main .left-side-cnt-svg {
+  display: block;
+  width: max-content;
+  padding: 0px 0px 0px 10px;
+}
+.contact-button-main .left-side-cnt-svg svg {
+  margin-top: 13px;
+}
+.contact-button-main .left-side-cnt-svg svg path {
+  stroke: #58B368;
+}
+.contact-button-main:hover {
+  border-color: #454D66;
+  color: #454D66;
+}
+.contact-button-main:hover .left-side-cnt-svg svg path {
+  stroke: #454D66;
+}
+.contact-btn-all-data-container {
+  display: block;
+  position: relative;
+  margin-right: 24px;
+}
+.contsct-btn-nbs-container {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  min-height: 30px;
+  width: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 17px -2px rgba(69, 77, 102, 0.42);
+  -moz-box-shadow: 0px 3px 17px -2px rgba(69, 77, 102, 0.42);
+  box-shadow: 0px 3px 17px -2px rgba(69, 77, 102, 0.42);
+  z-index: 9999;
+}
+.contsct-btn-nbs-container a {
+  display: block;
+  color: #454D66;
+  font-size: 16px;
+  font-family: 'basier_circleregular';
+  margin-bottom: 20px;
+}
+.contsct-btn-nbs-container a:hover {
+  text-decoration: underline;
+}
+.contsct-btn-nbs-container a:last-child {
+  margin-bottom: 0px;
+}
+.modal-contol-opened_ctn .contsct-btn-nbs-container {
+  display: block !important;
+}
+.contact-button-main-messagner {
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #58B368;
+  font-family: 'basier_circlesemibold';
+  color: #58B368;
+  font-size: 16px;
+  padding: 0px 24px;
+  border-radius: 32px;
+  cursor: pointer;
+  margin-right: 24px;
+  margin-top: 20px;
+}
+.contact-button-main-messagner:hover {
+  border-color: #454D66;
+  color: #454D66;
+}
+.contact-msg-main-button-two {
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  font-family: 'basier_circlesemibold';
+  color: white;
+  font-size: 16px;
+  padding: 0px 24px;
+  border-radius: 32px;
+  background-color: #58B368;
+  cursor: pointer;
+}
+.contact-msg-main-button-two:hover {
+  background-color: #454D66;
+}
+.short-listed {
+  color: #FFB74B !important;
+}
+.sent-time-ago {
+  display: flex;
+  line-height: 24px;
+  color: #A2A6B3;
+  font-family: 'basier_circleregular';
+  font-size: 16px;
+  padding-bottom: 24px;
+}
+.sent-time-ago span {
+  color: #454D66;
+}
+.flex-messanger-name-status {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+.pad-right-messanger-p {
+  margin-right: 16px;
+}
+.one-msg-container-main-messanger {
+  border-bottom: 1px solid #58B368;
+  padding-bottom: 32px;
+}
+.send-message-mn {
+  color: #454D66;
+  font-family: 'basier_circlesemibold';
+  font-size: 16px;
+  padding: 40px 0px 16px 0px;
+}
+.main-msen-form-cont form {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.main-msen-form-cont form input {
+  display: block;
+  width: 100%;
+  font-family: 'basier_circleregular';
+  font-size: 16px;
+  color: #454D66;
+  border: none;
+  border-bottom: 1px solid #EAEAEA;
+  padding: 10px 0px;
+}
+.main-msen-form-cont form textarea {
+  width: 100% !important;
+  min-height: 50px;
+  background-color: white;
+  border: none;
+  color: #A2A6B3;
+  font-family: 'basier_circleregular';
+  font-size: 16px;
+  margin-top: 30px;
+}
+.buttons-filters-flex-container-msgv {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  width: max-content;
+  max-width: 100%;
+  padding: 24px 0px 24px 0px;
+}
+.buttons-filters-flex-container-msgv .flter-uprove-button {
+  display: block;
+  width: max-content;
+  height: 48px;
+  border-radius: 32px;
+  background-color: #58B368;
+  font-family: 'basier_circlesemibold';
+  color: white;
+  line-height: 48px;
+  text-align: center;
+  padding: 0px 24px;
+  box-sizing: border-box;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.buttons-filters-flex-container-msgv .flter-uprove-button:hover {
+  background-color: #454D66;
+}
+.buttons-filters-flex-container-msgv .filter-cancel-button {
+  display: block;
+  width: max-content;
+  height: 48px;
+  border-radius: 32px;
+  background-color: transparent;
+  font-family: 'basier_circlesemibold';
+  color: #454D66;
+  line-height: 48px;
+  text-align: center;
+  box-sizing: border-box;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.buttons-filters-flex-container-msgv .filter-cancel-button:hover {
+  color: #FF6353;
+}
+.message-main-m-container {
+  display: block;
+  width: 100%;
+  position: relative;
+  border: 1px solid #EAEAEA;
+  border-radius: 8px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.msg-wdth-send {
+  min-width: 220px;
+}
+@media (min-width: 678px) {
+  .msg-controls {
+    padding: 0px;
+  }
+  .add-to-short-list {
+    margin-bottom: 0px;
+  }
+  .msg-main-text {
+    width: 70%;
+  }
+  .contsct-btn-nbs-container {
+    margin-left: auto;
+    right: 0px !important;
+  }
+}

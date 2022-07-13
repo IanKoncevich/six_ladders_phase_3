@@ -1,0 +1,334 @@
+@import "../../library/css/vars.less";
+/*REDECLARE FILTERS INPUT CSS*/
+/*================================StART======================*/
+.check-box-flex-child{
+    margin-bottom: 0px !important;
+}
+/*================================END======================*/
+.white-empl-cnt-container{
+    position: relative;
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+.empl-cntc-flex-header-block{
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-block-empl-cntc-left{
+    display: block;
+    width: max-content;
+    max-width: 100%;
+    position: relative;
+}
+
+.head-block-empl-cntc-right{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.empl-cntc-text-head{
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    color: @slate;
+    font-family: @ft-bold;
+    font-size: 20px;
+}
+
+.rgt-block-view-child-hd{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+
+    & a{
+        display: block;
+        width: max-content;
+        max-width: 100%;
+        position: relative;
+    }
+}
+
+
+
+.flex-icon-cntc-empl-hd{
+    display: flex;
+    width: max-content;
+    max-width: 100%;
+    position: relative;
+    color: @algae;
+    font-size: 16px;
+    font-family: @ft-semi;
+    line-height: 24px;
+
+    & .lft-child-dtx{
+        margin-right: 12px;
+    
+        & svg{
+            & path{
+                stroke: @algae;
+            }
+        }
+    }
+
+    &:hover{
+        color: @slate;
+        text-decoration: underline;
+        & .lft-child-dtx{
+            & svg{
+                & path{
+                    stroke: @slate;
+                }
+            }
+        }
+    }
+}
+
+.centered-marfi-hd-empl{
+    margin: 0px 40px;
+}
+
+.add-empl-btn-hg-xc{
+    color: white;
+    font-family: @ft-semi;
+    font-size: 16px;
+    background-color: @algae;
+    border-radius: 32px;
+    padding: 14px 29px;
+    width: max-content;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &:hover{
+        background-color: @slate;
+    }
+}
+
+.flex-main-tables-empl-hds{
+    padding-top: 32px;
+    overflow: auto;
+
+    & .check-box-flex-child{
+        margin-bottom: 0px !important;
+        text-decoration: none !important;
+        font-weight: 100 !important;
+    }
+
+    & table{
+        width: 100%;
+        min-width: 679px;
+        font-family: @ft-reg;
+        font-size: 16px;
+        color: @slate;
+        border-collapse: collapse;
+       
+
+        & tr{
+            text-align: left;
+        }
+
+        & .header-tr-tbl-filtr-hds{
+            text-align: left;
+            color: @slate;
+            font-size: 16px;
+
+
+            & th{
+                padding-bottom: 24px;
+            }
+
+            & .trd-tanle-line-name{
+                font-family: @ft-semi;
+            }
+        }
+    }
+
+    .lined-empl-sdav{
+        border-bottom: 1px solid rgba(234, 234, 234, 1);
+        & td{
+            padding: 24px 0px!important;
+        }   
+    }
+}
+
+.block-st-empl-lable{
+    display: block;
+    border-radius: 4px;
+    padding: 2px 9px;
+    box-sizing: border-box;
+    width: max-content;
+}
+
+.green-hgsdf{
+    background-color: #DEF0E1;
+    color: @algae;
+}
+
+.red-hgsdf{
+    background-color:  #FDF7ED;
+    color: #FF6353;
+}
+
+.flex-filts-table-gfds{
+    display: flex;
+    cursor: pointer;
+    position: relative;
+
+    & svg{
+        margin-top: 2px;
+        margin-left: 6px;
+    }
+
+}
+
+
+.po-up-controls-hgfds{
+    display: none;
+    padding: 23px;
+    box-sizing: border-box;
+    width: max-content;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 34px;
+    left: 32px;
+    filter: drop-shadow(2px 5px 30px rgba(185, 191, 208, 0.3));
+    border-radius: 16px;
+    padding-right: 77px;
+    box-sizing: border-box;
+
+    &::before{
+        position: absolute;
+        display: block;
+        content: "";
+        background-color: rgb(255, 255, 255);
+        width: 20px;
+        height: 20px;
+        top: -5px;
+        left: 15px;
+        transform: rotate(45deg);
+    }
+
+    & .fex-fliter-link-btn-hgds{
+        display: flex;
+        color: @slate;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 12px;
+
+        & div{
+            font-family: @ft-reg !important;
+        }
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    & .fex-fliter-link-btn-hgds:last-child{
+        margin-bottom: 0px !important;
+    }
+
+}
+
+/*=================================*/
+/*=========================================*/
+
+.po-up-controls-hgfds-right{
+    display: none;
+    padding: 23px;
+    box-sizing: border-box;
+    width: max-content;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 34px;
+    right: 32px;
+    filter: drop-shadow(2px 5px 30px rgba(185, 191, 208, 0.3));
+    border-radius: 16px;
+    padding-right: 77px;
+    box-sizing: border-box;
+
+    &::before{
+        position: absolute;
+        display: block;
+        content: "";
+        background-color: rgb(255, 255, 255);
+        width: 20px;
+        height: 20px;
+        top: -5px;
+        right: 15px;
+        transform: rotate(45deg);
+    }
+
+    & .fex-fliter-link-btn-hgds{
+        display: flex;
+        color: @slate;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 12px;
+
+        & div{
+            font-family: @ft-reg !important;
+        }
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    & .fex-fliter-link-btn-hgds:last-child{
+        margin-bottom: 0px !important;
+    }
+
+}
+
+.thin-main-ft-line-flt{
+    line-height: 24px;
+    font-family: @ft-reg !important;
+    font-weight: 100 !important; 
+    margin-left: 15px; 
+}
+
+
+.flex-selct-all-empld{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 24px;
+
+    & .left-side-slct-all-child{
+        display: block;
+        width: max-content;
+    }
+
+    & .right-side-slct-all-child{
+        display: block;
+        width: max-content;
+
+        & .flex-icon-cntc-empl-hd{
+            cursor: pointer;
+        }
+    }
+}
+@media(min-width: 1060px){
+    .empl-cntc-flex-header-block{
+        flex-wrap: nowrap;
+    }
+
+    .head-block-empl-cntc-right{
+        flex-wrap: nowrap;
+    }
+}

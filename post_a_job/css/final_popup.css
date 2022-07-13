@@ -1,0 +1,104 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.final-popup-block {
+  display: block;
+  box-sizing: border-box;
+  padding: 0px;
+}
+.final-popup-block img {
+  display: block;
+  margin: 0px auto;
+  position: relative;
+  max-width: 100%;
+}
+.final-popup-block .popup-final-text {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #454D66;
+  font-family: 'basier_circlebold';
+  font-size: 28px;
+  padding: 40px 0px 60px 0px;
+}
+.final-popup-block .popup-final-text-signed {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #454D66;
+  font-family: 'basier_circlebold';
+  font-size: 28px;
+  padding: 40px 0px 12px 0px;
+}
+.final-popup-block .fin-p-text {
+  color: #A3A3A5;
+  font-family: 'basier_circleregular';
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.final-popup-block .final-popoup-button {
+  display: block;
+  margin: 0px auto;
+  background-color: #58B368;
+  font-family: 'basier_circlesemibold';
+  font-size: 16px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: white;
+  border-radius: 32px;
+  width: 240px;
+  max-width: 100%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.final-popup-block .final-popoup-button:hover {
+  background-color: #454D66;
+  letter-spacing: 1px;
+}
+.text-pop-uni-req-result {
+  font-size: 16px;
+  font-family: 'basier_circleregular';
+  text-align: center;
+  width: 100%;
+  color: #A2A6B3;
+  padding: 20px 0px 50px 0px;
+}
+.no-bottom-padding-pp-uni {
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+}
+.flex-container-buttons-moal-resp {
+  display: flex;
+  width: max-content;
+  margin: 0px auto;
+  max-width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+.flex-container-buttons-moal-resp .final-popoup-button-continue {
+  display: block;
+  margin: 0px auto;
+  background-color: transparent;
+  font-family: 'basier_circlesemibold';
+  font-size: 16px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #58B368;
+  text-decoration: underline;
+  border-radius: 32px;
+  width: 240px;
+  max-width: 100%;
+  cursor: pointer;
+}
+.flex-container-buttons-moal-resp .final-popoup-button-continue:hover {
+  color: #454D66;
+}
+@media (min-width: 678px) {
+  .final-popup-block {
+    padding: 40px;
+  }
+}

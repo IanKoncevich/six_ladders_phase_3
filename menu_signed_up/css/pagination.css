@@ -1,0 +1,86 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.results-pagination {
+  font-family: 'basier_circleregular';
+  font-size: 16px;
+  color: #A2A6B3;
+  position: relative;
+  margin-bottom: 25px;
+  text-align: center;
+  width: 100%;
+}
+.pagination-main-container {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin: 0px auto;
+  box-sizing: border-box;
+  padding: 50px 0px 20px 0px;
+}
+.pagination-flex-container {
+  display: flex;
+  margin: 0px auto;
+  width: max-content;
+  position: relative;
+  flex-wrap: nowrap;
+}
+.pagination-flex-container a {
+  display: block;
+  width: max-content;
+}
+.active-page-pag {
+  background-color: #58B368;
+  color: white !important;
+  border-radius: 4px;
+  text-decoration: none !important;
+}
+.mobile-always-viewed {
+  display: block !important;
+}
+.pagination-item-block {
+  display: none;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+  font-size: 14px;
+  color: #454D66;
+  line-height: 36px;
+  font-family: 'basier_circleregular';
+}
+.pagination-item-block svg {
+  cursor: pointer;
+}
+.pagination-item-block svg path {
+  stroke: #454D66;
+}
+.pagination-item-block svg:hover path {
+  stroke: #58B368;
+}
+.pagination-item-block:hover {
+  text-decoration: underline;
+}
+.url-pagi-link:last-child .pagination-item-block {
+  margin: 0px 0px;
+}
+.url-pagi-link:first-child .pagination-item-block {
+  margin: 0px 0px;
+}
+@media (min-width: 678px) {
+  .pagination-item-block {
+    display: block;
+  }
+  .results-pagination {
+    font-family: 'basier_circleregular';
+    font-size: 16px;
+    color: #A2A6B3;
+    position: absolute;
+    left: 0px;
+    margin-top: 7px;
+    text-align: left;
+    width: max-content;
+  }
+}

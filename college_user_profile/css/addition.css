@@ -1,0 +1,43 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.colleg-add-maj-gre-pl {
+  color: #58B368;
+  font-size: 16px;
+  font-family: 'basier_circlesemibold';
+  text-decoration: none;
+  cursor: pointer;
+}
+.colleg-add-maj-gre-pl:hover {
+  text-decoration: underline;
+  color: #454D66;
+}
+.flex-dfgh-container-qasd {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.major-line-data-fl-child-asd {
+  width: 47.5%;
+  display: block;
+  color: #454D66;
+  font-size: 16px;
+  font-family: 'basier_circleregular';
+  margin-bottom: 12px;
+}
+.majors-all-view-link {
+  font-size: 16px;
+  font-family: 'basier_circlesemibold';
+  margin-top: 12px;
+}
+.majors-all-view-link a {
+  text-decoration: underline;
+  color: #454D66 !important;
+}
+.majors-all-view-link a:hover {
+  color: #58B368 !important;
+}
+.top-padt-sdf-32 {
+  margin-top: 32px;
+}

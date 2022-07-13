@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>7 Ladders</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><!--Jquerry connection-->
+      <!--MAIN STYLING, MENU, HEADER-->
+      <link href="./college_library/global_lib/css/layout.css" rel="stylesheet" type="text/css"><!--Layout CSS TOP MENU-->
+      <!--Layout menu left side-->
+      <link href="./college_library/css/layout.css" rel="stylesheet" type="text/css">
+
+      <!--SEcond phase library css-->
+      <link href="../menu_signed_up/css/pagination.css" rel="stylesheet" type="text/css">
+
+      <link href="../library/forms_components/css/forms.css" rel="stylesheet" type="text/css">
+      <link href="css/employer.css" rel="stylesheet" type="text/css"><!--Employer contact page-->
+      <link href="../my_profile/css/main.css" rel="stylesheet" type="text/css"><!--Main css my profile-->
+      <link href="css/owner.css" rel="stylesheet" type="text/css"><!--Profile css - this page-->
+   </head>
+   <body>
+      <!--Home Page BODY-->
+      <!--==============-->
+      <!--MOBILE MENU CONTAINER - position:absolute; -->
+      <div id="mobile-check-activated">
+         <div class="mobile-link-container">
+            <div class="mobile-child-link-block">
+               <div class="search-container" id="mobile-search-block">
+                  <form action="#">
+                     <div class="flex-form-search">
+                        <div class="left-side-fl-search">
+                           <input type="text" placeholder="Search" class="seacrh-input-main">
+                        </div>
+                        <div class="right-side-fl-search">
+                          <img src="./college_library/img/layout/search.svg" alt="search icon">
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="mobile-child-link-block">
+               <a href="#" class="mobile-menu-link-body">Career Coaching</a>
+            </div>
+            <div class="mobile-child-link-block">
+               <a href="#" class="mobile-menu-link-body">Featured Companies</a>
+            </div>
+            <div class="mobile-child-link-block">
+               <a href="#" class="mobile-menu-link-body">Blog</a>
+            </div>
+            <div class="mobile-child-link-block">
+               <a href="#" class="mobile-menu-link-body">Login / Signup</a>
+            </div>
+            <div class="mobile-child-link-block" id="mobile-button-v-container">
+               <a href="#" class="no-style-link">
+                  <div class="menu-big-button">
+                     Employers/Post a job
+                  </div>
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="page-container">
+         <div class="content-container"><!--Page content width wrap-->
+            <!--PC MENU VIEW-->
+            <div class="main-menu-container">
+               <!--LEFT SIDE MENU BLOCK (logo and search)-->
+               <!--==============-->
+               <div class="left-side-menu-container">
+                  <div class="left-menu-side-container-child">
+                     <div class="logo-menu-container">
+                        <a href="#">
+                           <img src="./college_library/img/layout/logo.svg" alt="logo name" class="logo-main-body">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="right-menu-side-container-child">
+                     <div class="search-container" id="pc-menu-search">
+                        <form action="#">
+                           <div class="flex-form-search">
+                              <div class="left-side-fl-search">
+                                 <input type="text" placeholder="Search" class="seacrh-input-main">
+                              </div>
+                              <div class="right-side-fl-search">
+                                <img src="./college_library/img/layout/search.svg" alt="search icon">
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               <!--RIGHT SIDE MENU BLOCK (page url and post job button)-->
+               <!--==============-->
+               <div class="right-side-menu-container">
+                  <div class="menu-url-item-simple">
+                     <a href="#" class="menu-link">Career Coaching</a>
+                  </div>
+                  <div class="menu-url-item-simple">
+                     <a href="#" class="menu-link">Featured Companies</a>
+                  </div>
+                  <div class="menu-url-item-simple">
+                     <a href="#" class="menu-link">Blog</a>
+                  </div>
+                  <div class="menu-url-item-simple">
+                     <a href="#" class="menu-link">Login / Signup</a>
+                  </div>
+                  <div class="menu-url-item">
+                     <div class="button-bigger-container">
+                        <a href="#" class="no-style-link">
+                           <div class="menu-big-button">
+                              Employers/Post a job
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="menu-url-item-burger no-select" id="toggle-mobile-burger">
+                     <div class="mobile-burger-body">
+                        <div class="line-burg"></div>
+                        <div class="line-burg"></div>
+                        <div class="line-burg"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="space-top-block"></div><!--Display when menu open - mobile-->
+         <!--START PAGE MAIN CONTENT-->
+         <!--======================================-->
+         <div class="jbs-block-two">
+            <div class="content-container">
+               <div class="jbs-flex-container">
+                  <!--JBS LEFT BLOCK NAVIGATION/FILTER-->
+                  <!--======================================-->
+                  <div class="jbs-one-fl-left-child">
+                     <p class="college-dash-left-header">Jobs</p>
+                     <!--LINK BLOCK-->
+                     <a href="#" >
+                        <div class="jbs-services-block">
+                           <p>New jobs</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <!--LINK BLOCK-->
+                     <a href="#">
+                        <div class="jbs-services-block">
+                           <p>Open jobs</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <!--LINK BLOCK-->
+                     <a href="#">
+                        <div class="jbs-services-block">
+                           <p>Closed jobs</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <div class="space-dashboard-between"></div> <!--SPACE BETWEEN BLOCK-->
+                     <p class="college-dash-left-header">Companies</p>
+                     <!--LINK BLOCK-->
+                     <!--LINK BLOCK-->
+                     <a href="#">
+                        <div class="jbs-services-block">
+                           <p>My companies</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <!--LINK BLOCK-->
+                     <a href="#">
+                        <div class="jbs-services-block">
+                           <p>Invite companies</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <!--LINK BLOCK-->
+                     <a href="#">
+                        <div class="jbs-services-block">
+                           <p>Invites from companies</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <div class="space-dashboard-between"></div> <!--SPACE BETWEEN BLOCK-->
+                     <p class="college-dash-left-header">Students</p>
+                     <!--LINK BLOCK-->
+                     <!--LINK BLOCK-->
+                     <a href="#">
+                        <div class="jbs-services-block">
+                           <p>Applications</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <!--LINK BLOCK-->
+                     <a href="#">
+                        <div class="jbs-services-block">
+                           <p>Upload information</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <!--LINK BLOCK-->
+                     <a href="#">
+                        <div class="jbs-services-block">
+                           <p>Reports</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <div class="space-dashboard-between"></div> <!--SPACE BETWEEN BLOCK-->
+                     <!--LINK BLOCK-->
+                     <a href="#">
+                        <div class="jbs-services-block">
+                           <p>Messages</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <div class="space-dashboard-between"></div> <!--SPACE BETWEEN BLOCK-->
+                     <!--LINK BLOCK-->
+                     <a href="#" class="jbs-activated"> <!--ACTIVE MENU BLOCK-->
+                        <div class="jbs-services-block">
+                           <p>Undergrad</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                     <!--LINK BLOCK-->
+                     <a href="#">
+                        <div class="jbs-services-block">
+                           <p>Grad school</p>
+                        </div>
+                     </a>
+                     <!--LINK BLOCK------END------------->
+                  </div>
+                  <!--JBS RIGHT BLOCK JOBS POSTS-->
+                  <!--==============================================-->
+                  <div class="jbs-two-fl-right-child">
+                     <div class="flex-top-right-card-header">
+                        <div class="left-top-card-right-child"><a href="#">&#8249;&nbsp;Go Back</a></div>
+                        <div class="right-top-card-right-child">
+                           <a href="#">Download Data</a>
+                        </div>
+                     </div>
+                     <div class="by-major-rihgt-white-container">
+                        <!--PAGE CONTENT-->
+                        <!----------------------------------------------------------------->
+                        <div class="sign-content-container">
+                           <div class="white-empl-cnt-container strong-sm-top-twenty">
+                              <div class="back-image-prf-view-block" style="background-image: url(../my_profile/img/back.png);">
+                                 <div class="green-image-block" style="background-image: url(../my_profile/img/back.png);">
+                                 </div>
+                              </div>
+                              <!--Company info block-->
+                              <!----------------------------------->
+                              <p class="info-profile-header-txt">Company Name</p>
+                              <div class="flex-info-cmp-prf-b">
+                                 <!--Block info-->
+                                 <div class="flex-icon-prf-block-st">
+                                    <div>
+                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M12 12.75C13.6569 12.75 15 11.4069 15 9.75C15 8.09315 13.6569 6.75 12 6.75C10.3431 6.75 9 8.09315 9 9.75C9 11.4069 10.3431 12.75 12 12.75Z" stroke="#454C62" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M19.5 9.75C19.5 16.5 12 21.75 12 21.75C12 21.75 4.5 16.5 4.5 9.75C4.5 7.76088 5.29018 5.85322 6.6967 4.4467C8.10322 3.04018 10.0109 2.25 12 2.25C13.9891 2.25 15.8968 3.04018 17.3033 4.4467C18.7098 5.85322 19.5 7.76088 19.5 9.75Z" stroke="#454C62" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                       </svg>
+                                    </div>
+                                    <div>&nbsp;Naperville</div>
+                                 </div>
+                                 <!--Block info-->
+                                 <div class="flex-icon-prf-block-st">
+                                    <div>
+                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M4.33864 16.6794C4.05495 16.8507 3.9638 17.2195 4.13506 17.5032C4.30631 17.7869 4.67511 17.878 4.9588 17.7068L4.33864 16.6794ZM5.71509 16.5494L5.40501 16.0357L5.40501 16.0357L5.71509 16.5494ZM6.02283 15.8684L6.61326 15.7616L6.61326 15.7616L6.02283 15.8684ZM5.41722 12.5179L6.00765 12.4112L6.00765 12.4112L5.41722 12.5179ZM5.48601 12.0875L4.95824 11.802L4.95824 11.802L5.48601 12.0875ZM6.48776 10.2352L5.96 9.94973L5.96 9.94973L6.48776 10.2352ZM6.65364 10.0358L6.27699 9.56873L6.27699 9.56873L6.65364 10.0358ZM8.18704 8.79917L7.81039 8.33212L7.81039 8.33212L8.18704 8.79917ZM8.91789 8.73475L9.20704 8.20902L9.20704 8.20902L8.91789 8.73475ZM9.59233 9.10569L9.30317 9.63142L9.30318 9.63142L9.59233 9.10569ZM9.89329 9.45606L9.32996 9.66261L9.32996 9.66261L9.89329 9.45606ZM10.0221 9.80734L10.5854 9.60078L10.5854 9.60078L10.0221 9.80734ZM11.213 9.90612L10.6914 9.60958L10.6914 9.60958L11.213 9.90612ZM11.6557 9.12749L12.1773 9.42404L12.1773 9.42404L11.6557 9.12749ZM12.5854 8.8996L12.9107 8.39545L12.9107 8.39545L12.5854 8.8996ZM13.9367 9.7716L13.6114 10.2758L13.6114 10.2758L13.9367 9.7716ZM14.9305 9.04966L15.5105 8.89612L15.5105 8.89612L14.9305 9.04966ZM15.2835 8.28673L15.5419 8.82822L15.5419 8.82822L15.2835 8.28673ZM17.1459 7.39788L17.4043 7.93937L17.4043 7.93937L17.1459 7.39788ZM17.5099 6.68408L16.9198 6.79286L16.9198 6.79286L17.5099 6.68408ZM17.7161 4.4934C17.656 4.16752 17.3432 3.95205 17.0173 4.01212C16.6914 4.0722 16.4759 4.38508 16.536 4.71096L17.7161 4.4934ZM17.5218 19.1791C17.7559 19.4136 18.1358 19.414 18.3703 19.1799C18.6049 18.9458 18.6053 18.5659 18.3712 18.3314L17.5218 19.1791ZM16.5807 17.3867L17.0054 16.9629L17.0054 16.9629L16.5807 17.3867ZM16.1145 17.1934L16.1145 16.5934H16.1145V17.1934ZM15.0425 17.1934L15.0425 16.5934L15.0425 16.5934L15.0425 17.1934ZM14.3909 16.4388L14.9845 16.5262L14.9845 16.5262L14.3909 16.4388ZM14.6141 14.923L15.2077 15.0104L15.2077 15.0104L14.6141 14.923ZM14.961 14.435L14.6835 13.903L14.6835 13.903L14.961 14.435ZM17.1982 13.2678L17.4757 13.7997L17.4757 13.7997L17.1982 13.2678ZM17.941 13.3599L17.5418 13.8079L17.5418 13.8079L17.941 13.3599ZM19.9081 15.916C20.1555 16.1364 20.5348 16.1146 20.7552 15.8671C20.9756 15.6197 20.9537 15.2405 20.7063 15.02L19.9081 15.916ZM20.4 12C20.4 16.6392 16.6392 20.4 12 20.4V21.6C17.3019 21.6 21.6 17.3019 21.6 12H20.4ZM12 20.4C7.36081 20.4 3.6 16.6392 3.6 12H2.4C2.4 17.3019 6.69807 21.6 12 21.6V20.4ZM3.6 12C3.6 7.36081 7.36081 3.6 12 3.6V2.4C6.69807 2.4 2.4 6.69807 2.4 12H3.6ZM12 3.6C16.6392 3.6 20.4 7.36081 20.4 12H21.6C21.6 6.69807 17.3019 2.4 12 2.4V3.6ZM4.9588 17.7068L6.02517 17.063L5.40501 16.0357L4.33864 16.6794L4.9588 17.7068ZM6.02517 17.063C6.2435 16.9312 6.41664 16.7362 6.52166 16.5038L5.42813 16.0097C5.42324 16.0205 5.41518 16.0296 5.40501 16.0357L6.02517 17.063ZM6.52166 16.5038C6.62668 16.2714 6.65863 16.0126 6.61326 15.7616L5.4324 15.9751C5.43451 15.9868 5.43303 15.9988 5.42813 16.0097L6.52166 16.5038ZM6.61326 15.7616L6.00765 12.4112L4.82678 12.6246L5.4324 15.9751L6.61326 15.7616ZM6.00765 12.4112C6.00528 12.3981 6.00744 12.3846 6.01377 12.3729L4.95824 11.802C4.82232 12.0534 4.77596 12.3435 4.82678 12.6246L6.00765 12.4112ZM6.01377 12.3729L7.01552 10.5206L5.96 9.94973L4.95824 11.802L6.01377 12.3729ZM7.01552 10.5206C7.01922 10.5137 7.02424 10.5077 7.03029 10.5028L6.27699 9.56873C6.14712 9.67347 6.03936 9.80298 5.96 9.94973L7.01552 10.5206ZM7.03029 10.5028L8.56369 9.26622L7.81039 8.33212L6.27699 9.56873L7.03029 10.5028ZM8.56369 9.26622C8.57274 9.25891 8.58376 9.25447 8.59534 9.25345L8.48998 8.05809C8.24128 8.08001 8.00472 8.17539 7.81039 8.33212L8.56369 9.26622ZM8.59534 9.25345C8.60692 9.25243 8.61855 9.25488 8.62874 9.26048L9.20704 8.20902C8.98828 8.08871 8.73868 8.03617 8.48998 8.05809L8.59534 9.25345ZM8.62874 9.26048L9.30317 9.63142L9.88148 8.57996L9.20704 8.20902L8.62874 9.26048ZM9.30318 9.63142C9.31558 9.63824 9.32509 9.64932 9.32996 9.66261L10.4566 9.2495C10.352 8.96421 10.1477 8.7264 9.88148 8.57996L9.30318 9.63142ZM9.32996 9.66261L9.45877 10.0139L10.5854 9.60078L10.4566 9.2495L9.32996 9.66261ZM9.45877 10.0139C9.5414 10.2393 9.68676 10.4363 9.8777 10.5818L10.6049 9.62723C10.596 9.62046 10.5893 9.61128 10.5854 9.60078L9.45877 10.0139ZM9.8777 10.5818C10.0686 10.7272 10.2972 10.8151 10.5364 10.8349L10.6356 9.63903C10.6245 9.6381 10.6138 9.63401 10.6049 9.62723L9.8777 10.5818ZM10.5364 10.8349C10.7756 10.8548 11.0155 10.8058 11.2278 10.6938L10.6678 9.63245C10.6579 9.63767 10.6468 9.63995 10.6356 9.63903L10.5364 10.8349ZM11.2278 10.6938C11.4401 10.5817 11.616 10.4113 11.7346 10.2027L10.6914 9.60958C10.6859 9.6193 10.6777 9.62723 10.6678 9.63245L11.2278 10.6938ZM11.7346 10.2027L12.1773 9.42404L11.1341 8.83095L10.6914 9.60958L11.7346 10.2027ZM12.1773 9.42404C12.1812 9.4171 12.1865 9.41104 12.1929 9.40624L11.4694 8.44885C11.3328 8.55208 11.2187 8.6821 11.1341 8.83095L12.1773 9.42404ZM12.1929 9.40624C12.1993 9.40143 12.2065 9.39797 12.2143 9.39607L11.9286 8.23058C11.7623 8.27135 11.606 8.34562 11.4694 8.44885L12.1929 9.40624ZM12.2143 9.39607C12.222 9.39417 12.2301 9.39388 12.238 9.3952L12.4366 8.21176C12.2678 8.18341 12.0949 8.18981 11.9286 8.23058L12.2143 9.39607ZM12.238 9.3952C12.2458 9.39652 12.2533 9.39943 12.26 9.40375L12.9107 8.39545C12.7668 8.30261 12.6055 8.24011 12.4366 8.21176L12.238 9.3952ZM12.26 9.40375L13.6114 10.2758L14.262 9.26745L12.9107 8.39545L12.26 9.40375ZM13.6114 10.2758C13.8247 10.4134 14.0747 10.4833 14.3285 10.4763L14.2954 9.27679C14.2836 9.27712 14.272 9.27386 14.262 9.26745L13.6114 10.2758ZM14.3285 10.4763C14.5824 10.4693 14.8281 10.3857 15.0335 10.2365L14.3283 9.26562C14.3187 9.27257 14.3072 9.27647 14.2954 9.27679L14.3285 10.4763ZM15.0335 10.2365C15.239 10.0873 15.3945 9.87938 15.4796 9.64016L14.349 9.23785C14.3451 9.24899 14.3378 9.25867 14.3283 9.26562L15.0335 10.2365ZM15.4796 9.64016C15.5647 9.40095 15.5755 9.14159 15.5105 8.89612L14.3505 9.20319C14.3535 9.21462 14.353 9.2267 14.349 9.23785L15.4796 9.64016ZM15.5105 8.89612C15.507 8.88291 15.5083 8.8689 15.514 8.85651L14.4249 8.3526C14.3018 8.6188 14.2754 8.91965 14.3505 9.20319L15.5105 8.89612ZM15.514 8.85651C15.5197 8.84411 15.5296 8.8341 15.5419 8.82822L15.0251 7.74524C14.7604 7.87158 14.5481 8.0864 14.4249 8.3526L15.514 8.85651ZM15.5419 8.82822L17.4043 7.93937L16.8874 6.8564L15.0251 7.74524L15.5419 8.82822ZM17.4043 7.93937C17.6541 7.82014 17.8576 7.62188 17.9834 7.37529L16.9144 6.83012C16.9085 6.84161 16.899 6.85084 16.8874 6.8564L17.4043 7.93937ZM17.9834 7.37529C18.1092 7.1287 18.1501 6.84752 18.0999 6.5753L16.9198 6.79286C16.9222 6.80554 16.9202 6.81864 16.9144 6.83012L17.9834 7.37529ZM18.0999 6.5753L17.7161 4.4934L16.536 4.71096L16.9198 6.79286L18.0999 6.5753ZM18.3712 18.3314L17.0054 16.9629L16.156 17.8106L17.5218 19.1791L18.3712 18.3314ZM17.0054 16.9629C16.8885 16.8457 16.7496 16.7528 16.5968 16.6894L16.137 17.7978C16.1441 17.8008 16.1506 17.8051 16.156 17.8106L17.0054 16.9629ZM16.5968 16.6894C16.4439 16.626 16.28 16.5934 16.1145 16.5934L16.1145 17.7934C16.1222 17.7934 16.1299 17.7949 16.137 17.7978L16.5968 16.6894ZM16.1145 16.5934H15.0425V17.7934H16.1145V16.5934ZM15.0425 16.5934C15.0341 16.5934 15.0257 16.5915 15.0181 16.588L14.5187 17.6792C14.683 17.7544 14.8617 17.7934 15.0425 17.7934L15.0425 16.5934ZM15.0181 16.588C15.0104 16.5845 15.0036 16.5794 14.9981 16.5731L14.0899 17.3573C14.208 17.4942 14.3543 17.6039 14.5187 17.6792L15.0181 16.588ZM14.9981 16.5731C14.9926 16.5667 14.9885 16.5592 14.9862 16.5511L13.8339 16.8863C13.8844 17.0598 13.9717 17.2205 14.0899 17.3573L14.9981 16.5731ZM14.9862 16.5511C14.9838 16.543 14.9833 16.5345 14.9845 16.5262L13.7973 16.3514C13.771 16.5302 13.7835 16.7127 13.8339 16.8863L14.9862 16.5511ZM14.9845 16.5262L15.2077 15.0104L14.0205 14.8356L13.7973 16.3514L14.9845 16.5262ZM15.2077 15.0104C15.209 15.0012 15.2125 14.9925 15.2179 14.9849L14.2399 14.2896C14.1246 14.4517 14.0495 14.6388 14.0205 14.8356L15.2077 15.0104ZM15.2179 14.9849C15.2233 14.9774 15.2303 14.9712 15.2386 14.9669L14.6835 13.903C14.5072 13.995 14.3551 14.1275 14.2399 14.2896L15.2179 14.9849ZM15.2386 14.9669L17.4757 13.7997L16.9206 12.7358L14.6835 13.903L15.2386 14.9669ZM17.4757 13.7997C17.4863 13.7942 17.4982 13.7921 17.5101 13.7935L17.6578 12.6027C17.4043 12.5712 17.1471 12.6176 16.9206 12.7358L17.4757 13.7997ZM17.5101 13.7935C17.5219 13.795 17.5329 13.8 17.5418 13.8079L18.3401 12.9119C18.1493 12.742 17.9114 12.6341 17.6578 12.6027L17.5101 13.7935ZM17.5418 13.8079L19.9081 15.916L20.7063 15.02L18.3401 12.9119L17.5418 13.8079Z" fill="#454C62"/>
+                                       </svg>
+                                    </div>
+                                    <div>&nbsp;Wisconsin</div>
+                                 </div>
+                                 <!--Block info-->
+                                 <div class="flex-icon-prf-block-st">
+                                    <div>
+                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M20.4 12C20.4 16.6392 16.6392 20.4 12 20.4V21.6C17.3019 21.6 21.6 17.3019 21.6 12H20.4ZM12 20.4C7.36081 20.4 3.6 16.6392 3.6 12H2.4C2.4 17.3019 6.69807 21.6 12 21.6V20.4ZM3.6 12C3.6 7.36081 7.36081 3.6 12 3.6V2.4C6.69807 2.4 2.4 6.69807 2.4 12H3.6ZM12 3.6C16.6392 3.6 20.4 7.36081 20.4 12H21.6C21.6 6.69807 17.3019 2.4 12 2.4V3.6ZM3 12.6H21V11.4H3V12.6ZM15.15 12.0005C15.15 14.3578 14.7397 16.4635 14.1001 17.9574C13.7798 18.7055 13.4138 19.2725 13.038 19.6437C12.6647 20.0125 12.3147 20.1589 12 20.1589V21.3589C12.7209 21.3589 13.3573 21.0151 13.8813 20.4974C14.4028 19.9823 14.8449 19.2666 15.2032 18.4297C15.9208 16.7538 16.35 14.4803 16.35 12.0005H15.15ZM12 20.1589C11.6853 20.1589 11.3353 20.0125 10.962 19.6437C10.5862 19.2725 10.2202 18.7055 9.89992 17.9574C9.26027 16.4635 8.85 14.3578 8.85 12.0005H7.65C7.65 14.4803 8.0792 16.7538 8.79678 18.4297C9.15511 19.2666 9.5972 19.9823 10.1187 20.4974C10.6427 21.0151 11.2791 21.3589 12 21.3589V20.1589ZM8.85 12.0005C8.85 9.64314 9.26027 7.53744 9.89992 6.04349C10.2202 5.29544 10.5862 4.72844 10.962 4.35718C11.3353 3.98845 11.6853 3.84205 12 3.84205V2.64205C11.2791 2.64205 10.6427 2.98581 10.1187 3.50349C9.5972 4.01863 9.15511 4.73426 8.79678 5.57117C8.0792 7.24714 7.65 9.52065 7.65 12.0005H8.85ZM12 3.84205C12.3147 3.84205 12.6647 3.98845 13.038 4.35718C13.4138 4.72844 13.7798 5.29544 14.1001 6.04349C14.7397 7.53744 15.15 9.64314 15.15 12.0005H16.35C16.35 9.52065 15.9208 7.24714 15.2032 5.57117C14.8449 4.73426 14.4028 4.01863 13.8813 3.50349C13.3573 2.98581 12.7209 2.64205 12 2.64205V3.84205Z" fill="#454C62"/>
+                                       </svg>
+                                    </div>
+                                    <div>&nbsp;website.com</div>
+                                 </div>
+                              </div>
+                              <div class="txt-company-info-block">
+                                 <!--Flex lined info-->
+                                 <div class="info-text-card-container">
+                                    <p class="info-card-text-prf"><span>Industry&nbsp;</span>Industry</p>
+                                    <p class="info-card-text-prf"><span>Type&nbsp;</span>Public</p>
+                                 </div>
+                                 <div class="info-text-card-container">
+                                    <p class="info-card-text-prf"><span>Company Size&nbsp;</span>10-49</p>
+                                    <p class="info-card-text-prf"><span>Company Specialties&nbsp;</span>Specialty 1,&nbsp;Specialty 2</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--SUMMARY-->
+                           <!--==========================================================================-->
+                           <!--==========================================================================-->
+                           <div class="white-empl-cnt-container">
+                              <p class="profile-scr-headr">Company Summary</p>
+                              <div class="line-rpf-styling"></div>
+                              <!--Long card text-->
+                              <p class="card-prf-info-description">
+                                 The extraordinary energy of our talented community propels our work forward. 
+                                 Though our areas of expertise vary, we find shared purpose in our mission to 
+                                 “create, preserve, teach, and apply knowledge in the service of humanity.” 
+                                 The extraordinary energy of our talented community propels our work forward. 
+                                 Though our areas of expertise vary, we find shared purpose in our mission to 
+                                 “create, preserve, teach, and apply knowledge in the service of humanity.”
+                              </p>
+                           </div>
+                           <!--Jobs-->
+                           <!--==========================================================================-->
+                           <!--==========================================================================-->
+                           <div class="white-empl-cnt-container">
+                              <p class="profile-scr-headr">Other open jobs by this Company (9)</p>
+                              <div class="line-rpf-styling"></div>
+                              <!---JOBS LIST-->
+                              <!--------------------------->
+                              <div class="container-prf-jobs-list-block">
+                                 <!--Job-->
+                                 <div class="prf-jobs-list-block">
+                                    <p class="jbs-prf-name-txt">Marketing Assistant</p>
+                                    <div class="jbs-info-flex-dfg">
+                                       <div class="child-dfg-fl">
+                                          <p>Company Name</p>
+                                       </div>
+                                       <div class="child-dfg-fl">
+                                          <!--Block info-->
+                                          <div class="flex-icon-prf-block-st">
+                                             <div>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path d="M12 12.75C13.6569 12.75 15 11.4069 15 9.75C15 8.09315 13.6569 6.75 12 6.75C10.3431 6.75 9 8.09315 9 9.75C9 11.4069 10.3431 12.75 12 12.75Z" stroke="#454C62" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M19.5 9.75C19.5 16.5 12 21.75 12 21.75C12 21.75 4.5 16.5 4.5 9.75C4.5 7.76088 5.29018 5.85322 6.6967 4.4467C8.10322 3.04018 10.0109 2.25 12 2.25C13.9891 2.25 15.8968 3.04018 17.3033 4.4467C18.7098 5.85322 19.5 7.76088 19.5 9.75Z" stroke="#454C62" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                             </div>
+                                             <div>&nbsp;Naperville</div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <p class="jbs-dfg-description">
+                                       We are looking for an enthusiastic Marketing Specialist to help us in our overall marketing efforts. 
+                                    </p>
+                                 </div>
+                                 <!--Job-->
+                                 <div class="prf-jobs-list-block">
+                                    <p class="jbs-prf-name-txt">Marketing Assistant</p>
+                                    <div class="jbs-info-flex-dfg">
+                                       <div class="child-dfg-fl">
+                                          <p>Company Name</p>
+                                       </div>
+                                       <div class="child-dfg-fl">
+                                          <!--Block info-->
+                                          <div class="flex-icon-prf-block-st">
+                                             <div>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path d="M12 12.75C13.6569 12.75 15 11.4069 15 9.75C15 8.09315 13.6569 6.75 12 6.75C10.3431 6.75 9 8.09315 9 9.75C9 11.4069 10.3431 12.75 12 12.75Z" stroke="#454C62" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M19.5 9.75C19.5 16.5 12 21.75 12 21.75C12 21.75 4.5 16.5 4.5 9.75C4.5 7.76088 5.29018 5.85322 6.6967 4.4467C8.10322 3.04018 10.0109 2.25 12 2.25C13.9891 2.25 15.8968 3.04018 17.3033 4.4467C18.7098 5.85322 19.5 7.76088 19.5 9.75Z" stroke="#454C62" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                             </div>
+                                             <div>&nbsp;Naperville</div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <p class="jbs-dfg-description">
+                                       We are looking for an enthusiastic Marketing Specialist to help us in our overall marketing efforts. 
+                                    </p>
+                                 </div>
+                              </div>
+                              <p class="view-all-jbs-dfg"><a href="#">View all</a></p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Footer-->
+      <!--====================================-->
+      <div class="footer-container">
+         <div class="content-container">
+            <div class="flex-footer-contanier">
+               <div class="first-foot-block">
+                  <div class="footer-content-container-body">
+                     <a href="#">
+                        <img src="./college_library/img/layout/logo.svg" alt="logo" class="footer-logo">
+                     </a>
+                     <p class="footer-main-text first-tex-ft-b">For any queries/complains<br><a href="mailto:inquiry@sixladders.com" class="footer-mail">inquiry@sixladders.com</a></p>
+                  </div>
+               </div>
+               <div class="second-foot-block">
+                  <div class="footer-content-container-body">
+                     <p class="main-ft-header">Quick Links</p>
+                     <p class="footer-main-text second-tex-ft-b first-ft-all-top"><a href="#">About Us</a></p>
+                     <p class="footer-main-text second-tex-ft-b"><a href="#">Blog</a></p>
+                     <p class="footer-main-text second-tex-ft-b"><a href="#">Contact</a></p>
+                     <p class="footer-main-text second-tex-ft-b"><a href="#">FAQ</a></p>
+                  </div>
+               </div>
+               <div class="fourth-foot-block">
+                  <div class="footer-content-container-body">
+                     <p class="main-ft-header">Social</p>
+                     <p class="footer-main-text second-tex-ft-b first-ft-all-top"><a href="#">Facebook</a></p>
+                     <p class="footer-main-text second-tex-ft-b"><a href="#">Twitter</a></p>
+                     <p class="footer-main-text second-tex-ft-b"><a href="#">Instagram</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+   <script type="text/javascript" src="./college_library/global_lib/js/main.js"></script><!--Main JS-->
+</html>

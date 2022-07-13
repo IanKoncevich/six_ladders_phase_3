@@ -1,0 +1,46 @@
+@import "../../library/css/vars.less";
+
+.final-popup-block{
+    display: block;
+    box-sizing: border-box;
+    padding: 40px;
+
+    & img{
+        display: block;
+        margin: 0px auto;
+        position: relative;
+        max-width: 100%;
+    }
+
+    .popup-final-text{
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: @slate;
+        font-family: @ft-bold;
+        font-size: 28px;
+        padding: 40px 0px 60px 0px;
+    }
+
+    .final-popoup-button{
+        display: block;
+        margin: 0px auto;
+        background-color: @algae;
+        font-family: @ft-semi;
+        font-size: @ft-size-text;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        color: white;
+        border-radius: 32px;
+        width: 240px;
+        max-width: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        &:hover{
+            background-color: @slate;
+            letter-spacing: 1px;
+        }
+    }
+}

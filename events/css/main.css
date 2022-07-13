@@ -1,0 +1,372 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.ndf-ev-flex-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ndf-left-even-child {
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  margin-top: 8px;
+  padding-right: 10px;
+}
+.marin-specific-ntf-top {
+  margin-top: 12px;
+}
+.ndf-right-even-child {
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  margin-top: 15px;
+}
+.ndf-main-title {
+  color: #454D66;
+  font-family: 'basier_circlesemibold';
+  font-size: 22px;
+  margin-right: 25px;
+}
+.flex-public-ntf {
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  position: relative;
+  line-height: 24px;
+  color: #58B368;
+  font-family: 'basier_circlesemibold';
+  font-size: 16px;
+}
+.ntf-child-flex-view {
+  margin-left: 6px;
+}
+.edit-svg-ntf {
+  cursor: pointer;
+  margin-right: 24px;
+}
+.edit-svg-ntf svg path {
+  stroke: #58B368;
+}
+.edit-svg-ntf:hover svg path {
+  stroke: #454D66;
+}
+.edit-svg-nft-two {
+  cursor: pointer;
+}
+.edit-svg-nft-two svg path {
+  stroke: #FF6353;
+}
+.edit-svg-nft-two:hover svg path {
+  stroke: #454D66;
+}
+.ndf-date-text {
+  padding: 29px 0px 22px 0px;
+  font-size: 16px;
+  color: #454D66;
+}
+.ntf-location-flex {
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  color: #454D66;
+  font-family: 'basier_circleregular';
+  padding-bottom: 34px;
+}
+.left-side-chilf-ntf {
+  display: block;
+  width: max-content;
+}
+.right-side-chilf-ntf {
+  display: block;
+  width: max-content;
+  line-height: 24px;
+  margin-left: 12px;
+}
+.ntf-text-bordered {
+  display: block;
+  padding: 32px 0px;
+  border-top: 1px solid #A2A6B3;
+  border-bottom: 1px solid #A2A6B3;
+}
+.ntf-text-bordered p {
+  color: #A2A6B3;
+  font-size: 16px;
+  font-family: 'basier_circleregular';
+}
+.ntf-univerities {
+  display: block;
+  color: #A2A6B3;
+  margin-top: 32px;
+}
+.ntf-univerities span {
+  color: #454D66;
+}
+.ntf-big-margin {
+  margin-top: 20px;
+}
+.header-ntf-bot-b {
+  display: block;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #A2A6B3;
+}
+.header-ntf-bot-b p {
+  font-family: 'basier_circlesemibold';
+  color: #454D66;
+  font-size: 18px;
+}
+.ntf-see-full {
+  display: block;
+  color: #454D66;
+  font-family: 'basier_circlesemibold';
+  font-size: 16px;
+  margin-top: 16px;
+}
+.ntf-see-full a {
+  text-decoration: underline;
+}
+.flex-ntf-event-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.flex-ntf-event-list div {
+  margin-right: 25px;
+}
+.border-line-ftn-hgf {
+  padding-top: 32px;
+  border-bottom: 1px solid #A2A6B3;
+}
+.ntf-flex-inages-main-cont {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+.image-main-view-ntf {
+  display: block;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 34%;
+  border-radius: 4px;
+  position: relative;
+}
+.ntf-overlay-text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  left: 0px;
+  color: #58B368;
+  font-size: 16px;
+  font-family: 'basier_circlesemibold';
+}
+.ntf-overlay-text:hover {
+  text-decoration: underline;
+}
+.pc-ntf-dd {
+  display: none;
+}
+.mobile-ntf-dd .ntf-overlay-text {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 0px;
+  color: white;
+  font-size: 16px;
+  font-family: 'basier_circlesemibold';
+}
+.mobile-ntf-dd .ntf-overlay-text:hover {
+  text-decoration: underline;
+}
+.flex-ntf-bottom-hed-btn {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.evn-fnt-invite-button {
+  display: block;
+  color: #58B368;
+  font-size: 16px;
+  font-family: 'basier_circlesemibold';
+  padding: 14px 96px;
+  box-sizing: border-box;
+  max-width: 100%;
+  border-radius: 32px;
+  border: 1px solid #58B368;
+}
+.btn-htf-top-spcae {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.flex-ntf-users-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 23px;
+}
+.user-ntf-block-nn {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.flex-user-block-ntfg {
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  position: relative;
+}
+.image-user-ntf-block {
+  width: 60px !important;
+  height: 60px !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.ntf-usr-ma-name {
+  font-size: 16px;
+  color: #454D66;
+  font-family: 'basier_circleregular';
+  line-height: 24px;
+}
+.ntf-usr-man-data-text {
+  margin-left: 17px;
+}
+.ntf-usr-ma-descr {
+  font-family: 'basier_circleregular';
+  font-size: 14px;
+  margin-top: 4px;
+  color: #A2A6B3;
+}
+.user-ntf-block-nn {
+  margin-bottom: 20px;
+}
+.ntf-main-btn-close-vv {
+  display: block;
+  border-radius: 32px;
+  background-color: #58B368;
+  font-family: 'basier_circlesemibold';
+  font-size: 16px;
+  color: white;
+  padding: 14px 70px;
+  box-sizing: border-box;
+  width: max-content;
+  margin-top: 50px;
+}
+.bit-dndn-header-kk {
+  color: #454D66;
+  font-size: 22px;
+  font-family: 'basier_circlesemibold';
+  padding-top: 32px;
+}
+.fgf-text-kile {
+  color: #A2A6B3;
+  font-size: 16px;
+  font-family: 'basier_circleregular';
+  padding-bottom: 12px;
+}
+.link-ftn-more {
+  color: #58B368;
+  font-size: 16px;
+  font-family: 'basier_circlesemibold';
+}
+.link-ftn-more a {
+  text-decoration: underline;
+}
+.form-add-more-tag-nft {
+  display: flex;
+  margin-right: 20px;
+  cursor: pointer;
+  border: 1px solid #C8C8C8;
+  box-sizing: border-box;
+  border-radius: 24px;
+  padding: 0px 24px;
+  height: 40px;
+  line-height: 39px;
+  margin-bottom: 16px;
+  color: #58B368;
+  font-family: 'basier_circleregular';
+  font-size: 16px;
+}
+.form-add-more-tag-nft div svg {
+  margin-top: 7px;
+  margin-right: 12px;
+}
+.form-add-more-tag-nft div svg path {
+  stroke: #58B368;
+}
+.form-add-more-tag-nft:hover {
+  color: #454D66;
+}
+.form-add-more-tag-nft:hover div svg {
+  margin-top: 7px;
+  margin-right: 12px;
+}
+.form-add-more-tag-nft:hover div svg path {
+  stroke: #454D66;
+}
+.mar-bo-null {
+  margin-bottom: 0px !important;
+}
+.flex-name-delete {
+  display: flex;
+  width: max-content;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  position: relative;
+}
+.margin-delte-user-left-m {
+  margin-left: 15px;
+}
+.margin-delte-user-left-m svg {
+  cursor: pointer;
+}
+.margin-delte-user-left-m svg path {
+  stroke: #FF6353;
+}
+.margin-delte-user-left-m:hover svg path {
+  stroke: #454D66;
+}
+@media (min-width: 970px) {
+  .user-ntf-block-nn {
+    width: 50%;
+  }
+  .btn-htf-top-spcae {
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 678px) {
+  .ndf-right-even-child {
+    margin-top: 0px;
+  }
+  .image-main-view-ntf {
+    width: 24%;
+    padding-top: 18%;
+  }
+  .pc-ntf-dd {
+    display: block;
+  }
+  .mobile-ntf-dd .ntf-overlay-text {
+    display: none;
+  }
+}
+@media (min-width: 362px) {
+  .ndf-right-even-child {
+    margin-top: 0px;
+  }
+}

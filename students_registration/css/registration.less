@@ -1,0 +1,48 @@
+@import "../../library/css/vars.less";
+
+.flex-input-adv-s-search{
+    & input{
+        color: white !important;
+    }
+}
+
+.std-reg-asd-btn{
+    display: block;
+    width: max-content;
+    color: white;
+    border-radius: 32px;
+    background-color: @algae;
+    padding: 12px 32px;
+    box-sizing: border-box;
+    font-family: @ft-semi;
+    margin-left: 0px;
+    margin-bottom: 10px;
+
+    &:hover{
+        background-color: @slate;
+        cursor: pointer;
+    }
+}
+
+.flex-st-sdf-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.results-std-reg-asdf{
+    color: @slate;
+    font-family: @ft-semi;
+    font-size: 20px;
+}
+
+@media(min-width: 678px){
+    .std-reg-asd-btn{
+        margin-bottom: 0px;
+        margin-left: 20px;
+    }
+
+    .flex-st-sdf-container{
+        justify-content: right;
+    }
+}

@@ -1,0 +1,49 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.no-bottom-tnt-line-tem {
+  border-bottom: none !important;
+  padding-bottom: 0px !important;
+}
+.no-bottom-line-strong {
+  border-bottom: none !important;
+}
+.top-text-ar-edot-add {
+  padding-top: 32px;
+}
+.acc-cuxt-text-bttom-ntn {
+  font-size: 16px;
+  font-family: 'basier_circleregular';
+  color: #A2A6B3;
+  padding-top: 12px;
+}
+.sign-out-acc-link-btn {
+  color: #454D66;
+  font-size: 16px;
+  text-decoration: underline;
+  font-family: 'basier_circlesemibold';
+  line-height: 40px;
+}
+.sign-out-acc-link-btn:hover {
+  color: #ff6353;
+}
+.close-accont-btn-assg-pgs {
+  width: max-content;
+  color: #ff6353;
+  font-size: 16px;
+  text-decoration: underline;
+  font-family: 'basier_circlesemibold';
+  line-height: 40px;
+  cursor: pointer;
+}
+.close-accont-btn-assg-pgs:hover {
+  color: #454D66;
+}
+.pad-top-cust-tnt-acc {
+  padding-top: 32px;
+}
+.input-reminder-sm-tnt {
+  font-family: 'basier_circleregular';
+  font-size: 12px;
+  color: #a2a6b3;
+  line-height: 28px;
+}

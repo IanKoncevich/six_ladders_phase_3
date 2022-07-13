@@ -1,0 +1,118 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.notificatins-header {
+  color: #454D66;
+  font-family: 'basier_circlesemibold';
+  font-size: 28px;
+  padding: 40px 0px 24px 0px;
+}
+.notifications-wite-back-block {
+  position: relative;
+  display: block;
+  margin: 0px auto;
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 40px 20px;
+  margin-bottom: 20px;
+}
+.header-notifications-bnd {
+  color: #454D66;
+  font-size: 22px;
+  font-family: 'basier_circlesemibold';
+  padding-bottom: 12px;
+}
+.text-sm-ntf-bnd {
+  color: #A2A6B3;
+  font-size: 16px;
+  font-family: 'basier_circleregular';
+}
+.line-grey-ntf-bnd {
+  margin: 32px 0px;
+  height: 1px;
+  background-color: #eaeaea;
+}
+.ntf-date-bnd {
+  color: #A2A6B3;
+  font-size: 14px;
+  font-family: 'basier_circleregular';
+  padding-bottom: 24px;
+}
+.flex-ntf-bnd-flex-container {
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.left-flex-bnd-child {
+  display: flex;
+  width: max-content;
+  align-items: center;
+}
+.right-flex-bnd-child {
+  display: block;
+  width: max-content;
+}
+.flex-bnd-icon-text-container {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 15px;
+}
+.lft-bnd-icon-xt-s {
+  display: block;
+  width: max-content;
+}
+.rgt-bnd-icon-xt-s {
+  display: block;
+  width: max-content;
+  color: #454D66;
+  font-size: 12px;
+  line-height: 24px;
+  font-family: 'basier_circleregular';
+  margin-left: 12px;
+}
+.flex-bnt-ntf-container-close {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.left-bnt-container-main-b {
+  margin-right: 32px;
+}
+.right-bnt-container-main-b {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.right-bnt-container-main-b svg path {
+  stroke: #454D66;
+}
+.right-bnt-container-main-b:hover svg path {
+  stroke: #FF6353;
+}
+.btn-gree-ntf-bnd {
+  color: #58B368;
+  font-family: 'basier_circlesemibold';
+  padding: 7px 37px;
+  box-sizing: border-box;
+  border-radius: 32px;
+  border: 1px solid #58B368;
+  cursor: pointer;
+}
+.btn-gree-ntf-bnd:hover {
+  color: #454D66;
+  border-color: #454D66;
+}
+@media (min-width: 678px) {
+  .btn-gree-ntf-bnd {
+    padding: 14px 37px;
+  }
+  .flex-bnd-icon-text-container {
+    margin-bottom: 0px;
+  }
+  .rgt-bnd-icon-xt-s {
+    font-size: 16px;
+  }
+}

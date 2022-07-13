@@ -1,0 +1,220 @@
+@import "../../library/css/vars.less";
+
+.active-job-container-block{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #EAEAEA;
+    padding-bottom: 16px;
+    position: relative;
+    padding-top: 16px;
+}
+
+.active-job-container-block:nth-child(1){
+    padding-top: 0px;
+}
+
+.flex-posting-line-coontainer{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.act-jbs-names{
+    display: block;
+    width: 100%;
+    min-width: max-content;
+    max-width: 100%;
+    padding-bottom: 25px;
+}
+
+.act-jbs-data{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: max-content;
+    max-width: 100%;
+    padding-bottom: 25px;
+
+    & .data-act-item{
+        display: block;
+        width: 50%;
+        min-width: max-content;
+        max-width: 100%;
+    }
+}
+
+.act-jbs-buttons{
+    padding-bottom: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-width: max-content;
+    max-width: 100%;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.act-m-name-main{
+    display: block;
+    color: @slate;
+    font-size: 18px;
+    font-family: @ft-semi;
+    padding-bottom: 8px;
+}
+
+.act-m-date-main{
+    display: block;
+    color: #A2A6B3;
+    font-size: 14px;
+    font-family: @ft-reg;
+}
+
+.act-jbs-data-head{
+    display: block;
+    color: @slate;
+    font-size: 16px;
+    font-family: @ft-semi;
+    padding-bottom: 8px;
+}
+
+.act-jbs-data-text{
+    display: block;
+    color: @slate;
+    font-size: 16px;
+    font-family: @ft-reg;
+}
+
+.main-button-act-jbs{
+    box-sizing: border-box;
+    height: 48px;
+    border-radius: 32px;
+    border: 1px solid @algae;
+    text-align: center;
+    line-height: 47px;
+    color: @algae;
+    font-family: @ft-semi;
+    font-size: 16px;
+    padding: 0px 24px;
+
+    &:hover{
+        color: @slate;
+        border-color: @slate;
+    }
+}
+
+.act-drop-md-button{
+    display: block;
+    cursor: pointer;
+
+    & svg{
+        & path{
+            stroke: @slate;
+        }
+    }
+    &:hover{
+        & svg{
+            & path{
+                stroke: @algae;
+            }
+        }
+    }
+}
+
+//LINE CONTROLS=========================================
+
+.controls-line-modal{
+    display: none;
+    position: absolute;
+    right: 0px;
+    margin-top: -10px;
+    width: max-content;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 16px;
+    filter: drop-shadow(2px 5px 30px rgba(185, 191, 208, 0.3));
+    z-index: 9999;
+
+    &::before{
+        content: '';
+        position: absolute;
+        margin-top: -26px;
+        right: 23px;
+        width: 20px;
+        height: 20px;
+        background-color: rgb(255, 255, 255);
+        transform: rotate(45deg);
+    }
+}
+
+.contolrs-flex-cont-md{
+    display: flex;
+    min-width: max-content;
+    color: @slate;
+
+    & .image-items-flcntr{
+        display: block;
+
+        & svg{
+            & path{
+                stroke: @slate;
+            }
+        }
+    }
+
+    & .text-items-flcntr{
+        color: inherit;
+        font-size: 16px;
+        font-family: @ft-reg;
+        padding-left: 20px;
+        line-height: 24px;
+    }
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.red-icon-flts{
+    color: #FF6353 !important;
+    & svg{
+        & path{
+            stroke: #FF6353 !important;
+        }
+    }
+   
+}
+
+
+.modal-spcae-benween-buttons{
+    height: 10px;
+}
+
+.modal-contol-opened{
+    .controls-line-modal{
+        display: block;
+    }
+}
+    
+@media(min-width: 678px){
+    .flex-posting-line-coontainer{
+        flex-wrap: nowrap;
+    }
+
+    
+    .act-jbs-names{
+        width: 35%;
+        padding-bottom: 0px;
+    }
+
+    .act-jbs-data{
+        width: 35%;
+        padding-bottom: 0px;
+    }
+
+    .act-jbs-buttons{
+        width: 20%;
+        padding-bottom: 0px;
+    }
+}

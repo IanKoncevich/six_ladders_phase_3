@@ -1,0 +1,56 @@
+@import "../../library/css/vars.less";
+
+.border-line-noplease{
+    border-bottom: none !important;
+}
+
+.main-radio-header{
+    color: @slate;
+    font-family: @ft-reg;
+}
+
+.top-mnbvc{
+    padding-top: 32px;
+}
+
+.load-new-image{
+    display: block;
+    text-align: center;
+    padding: 14px 25px;
+    background-color: @slate;
+    font-family: 'basier_circlesemibold';
+    font-size: 16px;
+    color: white;
+    border-radius: 32px;
+    border: none;
+    cursor: pointer;
+    margin-top: 0px;
+
+    &:hover{
+        background-color: @algae;
+    }
+}
+
+.avatar-show-image-block{
+    display: block;
+    background-color: @slate;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 50%;
+    margin-bottom: 32px;
+
+    & img{
+        display: block;
+        width: 45px;
+    }
+}
+
+@media(min-width: 678px){
+    .load-new-image{
+        margin-top: 38px;
+    }
+}

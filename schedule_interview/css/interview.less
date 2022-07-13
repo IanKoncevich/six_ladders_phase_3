@@ -1,0 +1,243 @@
+@import "../../library/css/vars.less";
+
+.sch-intereview-header{
+    color: @slate;
+    font-size: 28px;
+    font-family: @ft-semi;
+    padding-bottom: 8px;
+}
+
+.sch-interview-subheader{
+    font-family: @ft-reg;
+    font-size: 16px;
+    color: @slate;
+    padding-bottom: 40px;
+}
+
+.flex-inouts-schedule{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    color: @slate;
+
+    & label{
+        display: block;
+        color: @slate;
+        font-family: @ft-reg;
+        line-height: 24px;
+    }
+
+    & div{
+        box-sizing: border-box;
+        color: @slate !important;
+        margin-right: 18px;
+    }
+}
+
+.line-data-input-sched{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: 18px;
+}
+
+.left-inout-ch{
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    font-family: @ft-reg;
+    font-size: 16px;
+    
+    & input{
+        border-color: transparent !important; 
+        box-sizing: border-box;
+        width: 33%;
+    }
+
+    & input::placeholder{
+        color: #A2A6B3;
+    }
+
+}
+
+.right-inout-ch{
+    display: block;
+    position: relative;
+    margin-top: -1px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.main-inp-md-schc{
+    width: 100%;
+    min-width: max-content;
+    margin-bottom: 15px;
+}
+
+.flex-text-md-sch-int{
+    display: flex;
+    width: 100%;
+    padding-top: 24px;
+    flex-wrap: nowrap;
+}
+
+.left-shsh-child{
+    display: block;
+    width: max-content;
+}
+
+.right-shsh-child{
+    display: block;
+    width: max-content;
+}
+
+.left-shsh-child{
+    display: block;
+}
+
+.right-shsh-child{
+    font-size: 16px;
+    color: #A2A6B3;
+    font-family: @ft-reg;
+    margin-left: 10px;
+    line-height: 24px;
+}
+
+.line-link-sch-modal{
+    display: block;
+    padding-top: 34px;
+
+    & label{
+        display: block;
+        color: @slate;
+        font-family: @ft-reg;
+        margin-bottom: 12px;
+    }
+
+    & input{
+        padding: 20px 20px;
+        border: 1px solid #EAEAEA;
+        border-radius: 4px;
+        min-width: 200px;
+    }
+
+    & input::placeholder{
+        color: #A2A6B3;
+    }
+}
+
+.link-schd-vid{
+    display: block;
+    width: max-content;
+}
+
+.flex-chf-container{
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: @ft-reg;
+    text-decoration: underline;
+    margin-top: 20px;
+    color: @algae;
+
+    & svg{
+        & path{
+            stroke: @algae;
+        }
+    }
+
+    &:hover{
+        color: @slate;
+
+        
+    & svg{
+        & path{
+            stroke: @slate;
+        }
+    }
+    }
+}
+
+.ftr-svg-da{
+    margin-right: 10px;
+}
+
+.line-button-container-chch-md{
+    display: block;
+    width: 100%;
+    padding-top: 60px;
+}
+
+.confrim-vibrtn-ch-md{
+    display: block;
+    padding: 14px 101px;
+    box-sizing: border-box;
+    background-color: @algae;
+    border-radius: 32px;
+    color: white;
+    font-family: @ft-semi;
+    font-size: 16px;
+    width: max-content;
+    margin: 0px auto;
+    cursor: pointer;
+
+    &:hover{
+        background-color: @slate;
+    }
+}
+
+.flex-line-label-scgd{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 12px;
+    width: max-content;
+}
+
+
+/*Drop down*/
+/*==============*/
+
+.label-top-input-block-se{
+    display: block;
+    width: 100%;
+    position: relative;
+    font-family: 'basier_circleregular';
+    font-size: 16px;
+
+    & select{
+        appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(../../library/img/select_arrow.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 24px) center;
+    display: block;
+    padding: 18px 20px;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: inherit;
+    width: 100%;
+    color: @slate;
+    }
+}
+
+.schedule-model-diff-width{
+    width: 90% !important;
+}
+@media(min-width: 1254px){
+    .flex-inouts-schedule{
+        flex-wrap: nowrap;
+    }
+
+    .main-inp-md-schc{
+        margin-bottom: 0px;
+    }
+
+    .schedule-model-diff-width{
+        width: 70% !important;
+    }
+}
