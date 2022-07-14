@@ -1,0 +1,59 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.frex-btns-dfdss {
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+}
+.cust-view-btn-qwe {
+  display: block;
+  text-align: center;
+  width: max-content;
+  padding: 4px 20px;
+  box-sizing: border-box;
+  border: 1px solid #454D66;
+  color: #454D66;
+  font-family: 'basier_circlesemibold';
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cust-view-btn-qwe:hover {
+  background: #454D66;
+  color: white;
+}
+.cust-view-btn-qwe-2 {
+  display: block;
+  text-align: center;
+  width: max-content;
+  padding: 4px 20px;
+  box-sizing: border-box;
+  border: 1px solid #FF6353;
+  color: #FF6353;
+  font-family: 'basier_circlesemibold';
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0px 12px;
+}
+.cust-view-btn-qwe-2:hover {
+  background: #FF6353;
+  color: white;
+}
+.cust-view-btn-qwe-3 {
+  display: block;
+  text-align: center;
+  width: max-content;
+  padding: 4px 20px;
+  box-sizing: border-box;
+  border: 1px solid #58B368;
+  color: #58B368;
+  font-family: 'basier_circlesemibold';
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cust-view-btn-qwe-3:hover {
+  background: #58B368;
+  color: white;
+}
