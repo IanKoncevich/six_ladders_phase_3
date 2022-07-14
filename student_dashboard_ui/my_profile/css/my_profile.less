@@ -516,6 +516,7 @@ textarea {
     box-sizing: border-box;
     width: 100%;
     margin-bottom: 12px;
+    position: relative;
 }
 
 .job-block-main-stdd:last-child{
@@ -588,10 +589,40 @@ textarea {
     font-size: 16px;
     padding-top: 16px;
 }
+
+.job-saved-item-bl{
+    display: block;
+    position: absolute;
+    top:-10px;
+    left: -15px;
+}
+
+.load-pdf-file-btn-off-jbs{
+    cursor: pointer;
+    margin-top: 24px;
+    color: @slate;
+    font-size: 18px;
+    font-family: @ft-semi;
+
+    &:hover{
+        color: @algae !important;
+    }
+
+    & span{
+        font-family: @ft-reg !important;
+        text-decoration: underline;
+    }
+}
 @media(min-width: 450px){
     .left-side-label-resume{
         margin-bottom: 0px;
         padding-right: 32px;
+    }
+
+    .job-saved-item-bl{
+        top:20px !important;
+        left: auto;
+        right: 20px !important;
     }
 }
 
