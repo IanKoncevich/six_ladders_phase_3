@@ -217,6 +217,37 @@
 .upload-sv-btn .right-side-inge-btn {
   padding-left: 12px;
 }
+.delete-sv-btn {
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  background-color: transparent;
+  border-radius: 32px;
+  padding: 12px 42px 7px  42px;
+  color: #FF6353;
+  font-size: 16px;
+  font-family: 'basier_circlesemibold';
+  line-height: 24px;
+  cursor: pointer;
+}
+.delete-sv-btn:hover {
+  text-decoration: underline;
+}
+.delete-sv-btn .right-side-inge-btn {
+  padding-left: 12px;
+}
+.marg-top-asdfg {
+  margin-top: 32px;
+}
+.label-top-input-block {
+  position: relative;
+}
+.svg-input-block-nbvc {
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 50px;
+}
 /*EDUCTAION PAGE*/
 /*=============================*/
 .flex-lined-text-container {
@@ -285,6 +316,10 @@
 }
 .add-work-experience:hover .flex-item-expr .left-expr-item svg path {
   stroke: #454D66;
+}
+.loaded-text-fgh {
+  color: #454D66;
+  font-family: 'basier_circlesemibold';
 }
 @media (min-width: 450px) {
   .left-side-label-resume {
