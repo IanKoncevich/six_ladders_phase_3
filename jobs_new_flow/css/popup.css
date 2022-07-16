@@ -1,0 +1,26 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.pad-top-off-letter {
+  padding-top: 32px;
+}
+.download-file-mod-a {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  background-color: #454D66;
+  color: white;
+  font-family: 'basier_circlesemibold';
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 0px;
+  padding: 17px 13px;
+  cursor: pointer;
+}
+.download-file-mod-a:hover {
+  background-color: #58B368;
+}
+@media (min-width: 678px) {
+  .download-file-mod-a {
+    margin-top: 35px;
+  }
+}
