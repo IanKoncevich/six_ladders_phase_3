@@ -1,0 +1,67 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.job-vew-main-container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 32px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+.ntf-text-bordered {
+  border-color: #EAEAEA !important;
+}
+.noborder-main-sdf {
+  border: none !important;
+  padding-bottom: 0px !important;
+}
+.main-colore-ee {
+  color: #454D66 !important;
+}
+.flex-container-llklk {
+  display: flex;
+  position: relative;
+}
+.right-marg-more-ww {
+  margin-right: 40px;
+}
+.grey-color-main {
+  color: #A2A6B3 !important;
+}
+.header-ntf-bot-b {
+  border-color: #EAEAEA !important;
+}
+.flex-buttons-main-sdsf {
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  flex-wrap: wrap;
+  padding-top: 60px;
+}
+.btn-aplly-sdd {
+  display: block;
+  background-color: #58B368;
+  font-family: 'basier_circlesemibold';
+  color: white;
+  border-radius: 32px;
+  line-height: 48px;
+  height: 48x;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 0px 77px;
+  cursor: pointer;
+  margin-right: 40px;
+}
+.btn-aplly-sdd:hover {
+  background-color: #454D66;
+}
+.btn-aplly-like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.btn-aplly-like:hover svg path {
+  fill: #454D66;
+}
