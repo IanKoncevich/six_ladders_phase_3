@@ -11,6 +11,9 @@
 
       <link href="../../menu_signed_up/css/pagination.css" rel="stylesheet" type="text/css"><!--Pagination-->
       <link href="css/jobs.css" rel="stylesheet" type="text/css"><!--JOBS-->
+
+      <link href="../../search_universities/css/search.css" rel="stylesheet" type="text/css"><!--Search-->
+      <link href="../../search_students/css/std_main.css" rel="stylesheet" type="text/css"><!--Search-->
    </head>
    <body>
    <!--TOP PAGE SECTION -- MAIN MENU-->
@@ -144,9 +147,25 @@
          <!--Button-->
          <div class="jbs-search-btn-main">SEARCH</div>
       </div>
-      <div class="jobs-container-content" style="padding-bottom: 0px;padding-top:50px;">
-         <p class="header-page-jobs">New Jobs Postings in Oxford College </p>
+      <div class="jobs-container-content" style="padding-bottom: 0px;padding-top:0px;">
+         <div class="flex-applications-filter-container">
+            <div class="left-side-appl-filts">
+               <p class="jobs-foun-amoun">New Jobs Postings in Oxford College&nbsp;<span>(34)</span></p>
+            </div>
+            <div class="right-side-appl-filts">
+               <!--DROP DOWN FILTRATE-->
+               <div class="sort-by-appl-container">
+                  <label for="sortings">Filter by:</label>
+                  <select id="sortings">
+                     <option value="0">Most Revelant</option>
+                     <option value="1">Most Revelant2</option>
+                     <option value="2">Most Revelant3</option>
+                   </select>
+               </div>
+            </div>
+         </div>
       </div>
+     
       <div class="jobs-container-content">
          <!--Page content-->
          <div class="flex-contant-page-jbs">
