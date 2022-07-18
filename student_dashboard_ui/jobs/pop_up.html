@@ -15,6 +15,8 @@
 
       <link href="../../events/css/main.css" rel="stylesheet" type="text/css"><!--Events css-->
       <link href="css/jobsdas.css" rel="stylesheet" type="text/css"><!--Events css-->
+
+      <link href="../../post_a_job/css/final_popup.css" rel="stylesheet" type="text/css"><!--Pop Up-->
    </head>
    <body>
    <!--TOP PAGE SECTION -- MAIN MENU-->
@@ -279,6 +281,30 @@
             </div>
          </div>
          
+      </div>
+      <div id="genralModal" class="modal-main" style="display: flex;"><!--HARDCODE display:flex; use js for some logic (flex not a block)-->
+         <!-- Modal content -->
+         <div class="modal-content">
+            <span class="close">×</span>
+            <div class="final-popup-block">
+               <img src="img/pop-up.svg" alt="The Job has been posted!">
+               <p class="popup-final-text no-bottom-padding-pp-uni">Congratulations on your hire!</p>
+               <p class="text-pop-uni-req-result">
+                  We will notify the school about your hire. 
+                  In the meantime would you like to continue looking for 
+                  candidates or would you like to close this job post?
+               </p>
+               <div class="flex-container-buttons-moal-resp center-align-ites">
+                  <div>
+                     <div class="final-popoup-button-psearch">Continue Searching</div>
+                  </div>
+                  <div>
+                     <div class="final-popoup-button-dsac">Close Job Post</div>
+                  </div>
+               </div>
+            </div>
+            <!--------------END--------------->
+         </div>
       </div>
    </body>
    <script type="text/javascript" src="../../menu_logout/js/menu.js"></script><!--Menu JS-->

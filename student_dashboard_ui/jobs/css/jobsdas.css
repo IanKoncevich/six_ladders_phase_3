@@ -65,3 +65,53 @@
 .btn-aplly-like:hover svg path {
   fill: #454D66;
 }
+.final-popoup-button-psearch {
+  display: block;
+  margin: 0px auto;
+  background-color: transparent;
+  font-family: 'basier_circlemedium';
+  font-size: 16px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #58B368;
+  border-radius: 32px;
+  max-width: 100%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  box-sizing: border-box;
+  margin-bottom: 23px;
+}
+.final-popoup-button-psearch:hover {
+  text-decoration: underline;
+}
+.center-align-ites {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.final-popoup-button-dsac {
+  display: block;
+  margin: 0px auto;
+  background-color: #58B368;
+  font-family: 'basier_circlesemibold';
+  padding: 0px 40px;
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: white;
+  border-radius: 32px;
+  max-width: 100%;
+  cursor: pointer;
+}
+.final-popoup-button-dsac:hover {
+  background-color: #454D66;
+}
+@media (min-width: 678px) {
+  .final-popoup-button-psearch {
+    margin-right: 48px;
+    margin-bottom: 0px;
+  }
+}
