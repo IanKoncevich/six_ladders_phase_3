@@ -5,11 +5,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><!--Jquerry connection-->
-      <link href="../library/css/fonts.css" rel="stylesheet" type="text/css"><!--Fonts CSS-->
-      <link href="../menu_signed_up/css/main.css" rel="stylesheet" type="text/css"><!--Menu CSS layout-->
-      <link href="css/manage.css" rel="stylesheet" type="text/css"><!--Manage connections University-->
-      <link href="../library/forms_components/css/forms.css" rel="stylesheet" type="text/css"><!--FORMS MODULES-->
-      <link href="../post_a_job/css/final_popup.css" rel="stylesheet" type="text/css"><!--Final POP_UP CSS-->
+      <link href="../../library/css/fonts.css" rel="stylesheet" type="text/css"><!--Fonts CSS-->
+      <link href="../../menu_signed_up/css/main.css" rel="stylesheet" type="text/css"><!--Menu CSS layout-->
+      <link href="../../menu_signed_up/css/pagination.css" rel="stylesheet" type="text/css"><!--Pagination-->
+      <link href="../../search_universities/css/search.css" rel="stylesheet" type="text/css"><!--Search Advanced-->
+      <link href="css/candidates.css" rel="stylesheet" type="text/css"><!-- Candidates-->
    </head>
    <body>
       <div class="desgin-div-middle-screen"><!--Desgin div important--></div>
@@ -17,7 +17,7 @@
          <div class="left-side-top-fixed">
             <div class="sign-logo-container-mb">
                <a href="#">
-                  <img src="../library/img/logo.svg" alt="6 Ladders">
+                  <img src="../../library/img/logo.svg" alt="6 Ladders">
                </a>
             </div>
          </div>
@@ -34,7 +34,7 @@
             <!--LOGO-->
             <div class="sign-logo-container">
                <a href="#">
-                  <img src="../library/img/logo.svg" alt="6 Ladders">
+                  <img src="../../library/img/logo.svg" alt="6 Ladders">
                </a>
             </div>
             <div class="sign-pc-links-container">
@@ -334,6 +334,22 @@
                   <div class="right-side-top-white"><!--Desgin div important--></div>
                </div>
                <!--=====================================END=======================================-->
+               <div class="my-universities-flex-header-cotnainer">
+                  <div class="left-side-my-ny">
+                     <p>Candidates&nbsp;<span>(5)</span></p>
+                  </div>
+                  <div class="right-side-my-ny">
+                     <!--DROP DOWN FILTRATE-->
+                     <div class="sort-by-appl-container">
+                        <label for="sortings">Sort by:</label>
+                        <select id="sortings">
+                           <option value="0">Sophomore</option>
+                           <option value="1">Sophomore</option>
+                           <option value="2">Sophomore</option>
+                         </select>
+                     </div>
+                  </div>
+               </div>
                <!--Breadcumbs-->
                <!-------------------START--------------------->
                <div class="sgn-breadcrumbs-container" style="display: none;">
@@ -348,7 +364,7 @@
                </div>
                <!--================END======================-->
                <!--Go Back Link-->
-               <div class="sgn-go-back-container" >
+               <div class="sgn-go-back-container" style="display: none;">
                   <a href="#">
                      <div class="flex-view-back-link">
                         <div class="left-side-back-arrrow">
@@ -357,121 +373,187 @@
                            </svg>
                         </div>
                         <div class="right-side-back-text">
-                           <span>Back to&nbsp;List of the Universities</span>
+                           <span>Back to list of&nbsp;Job Postings</span>
                         </div>
                      </div>
                   </a>
                </div>
+               <div class="top-candi-oagiantion-container">
+                  <div class="flex-link-container-block-cand">
+                     <div class="link-cand-top-line active-bred-cand-top">
+                        All (4)
+                     </div>
+                     <div class="link-cand-top-line">
+                        Accepted (0)
+                     </div>
+                     <div class="link-cand-top-line">
+                        Declined (0)
+                     </div>
+                     <div class="link-cand-top-line">
+                        Pending (0)
+                     </div>
+                  </div>
+               </div>
                <!--PAGE CONTENT-->
                <!----------------------------------------------------------------->
                <div class="sign-content-container">
-                  <div class="white-manage-container">
-                     <div class="mng-width-insd-container">
-                        <p class="mng-main-header-txt">Manage Connection</p>
-                        <p class="mng-main-description-txt">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet 
-                           sint. Velit officia consequat duis enim velit mollit.
-                        </p>
-                        <!--Checkboxes-->
-                        <div class="mng-checks-container-m">
-                           <!--Flex one line -->
-                           <div class="mng-check-flex-line">
-                              <div class="left-side-mng-text">Post Jobs</div>
-                              <div class="right-side-mng-check">
-                                 <!--CHECKBOX-->
-                                 <div class="check-box-flex-child">
-                                    <input type="checkbox" id="na" name="na" value="na">
+                  <div class="white-search-uni-container-list top-vand-no-border">
+                     <!--UNIVERSITY INFO BLOCK-->
+                     <!-------------------START--------------------->
+                     <div class="uni-border-flex-block">
+                        <div class="left-side-uni-info">
+                           <div class="uni-iamge-gerb-photo"><img src="img/avatar.jpg" alt="alt name"></div>
+                           <div class="uni-text-container">
+                              <div class="flex-cand-info">
+                                 <div class="uni-gen-name-sg">Leslie Alexander</div>
+                                 <div class="short-listed-cand">
+                                    <div class="short-candi-item">
+                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M20.251 6.75H3.75098C3.33676 6.75 3.00098 7.08579 3.00098 7.5V19.5C3.00098 19.9142 3.33676 20.25 3.75098 20.25H20.251C20.6652 20.25 21.001 19.9142 21.001 19.5V7.5C21.001 7.08579 20.6652 6.75 20.251 6.75Z" stroke="#58B368" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M15.7502 6.75V5.25C15.7502 4.85218 15.5922 4.47064 15.3109 4.18934C15.0296 3.90804 14.6481 3.75 14.2502 3.75H9.75024C9.35242 3.75 8.97089 3.90804 8.68958 4.18934C8.40828 4.47064 8.25024 4.85218 8.25024 5.25V6.75" stroke="#58B368" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                       </svg>
+                                    </div>
+                                    <div class="hired-account-candid"> 
+                                       Hired
+                                    </div>
                                  </div>
-                                 <!------------END------------>
                               </div>
-                           </div>
-                           <!--Flex one line -->
-                           <div class="mng-check-flex-line">
-                              <div class="left-side-mng-text">Post Interview Schedule</div>
-                              <div class="right-side-mng-check">
-                                 <!--CHECKBOX-->
-                                 <div class="check-box-flex-child">
-                                    <input type="checkbox" id="na" name="na" value="na">
-                                 </div>
-                                 <!------------END------------>
-                              </div>
-                           </div>
-                           <!--Flex one line -->
-                           <div class="mng-check-flex-line">
-                              <div class="left-side-mng-text">Post Events</div>
-                              <div class="right-side-mng-check">
-                                 <!--CHECKBOX-->
-                                 <div class="check-box-flex-child">
-                                    <input type="checkbox" id="na" name="na" value="na">
-                                 </div>
-                                 <!------------END------------>
-                              </div>
-                           </div>
-                           <!--Flex one line -->
-                           <div class="mng-check-flex-line">
-                              <div class="left-side-mng-text">Search Students</div>
-                              <div class="right-side-mng-check">
-                                 <!--CHECKBOX-->
-                                 <div class="check-box-flex-child">
-                                    <input type="checkbox" id="na" name="na" value="na">
-                                 </div>
-                                 <!------------END------------>
-                              </div>
-                           </div>
-                           <!--Flex one line -->
-                           <div class="mng-check-flex-line">
-                              <div class="left-side-mng-text">Message Students</div>
-                              <div class="right-side-mng-check">
-                                 <!--CHECKBOX-->
-                                 <div class="check-box-flex-child">
-                                    <input type="checkbox" id="na" name="na" value="na">
-                                 </div>
-                                 <!------------END------------>
-                              </div>
+                              <p class="candi-tech-info">Technology Science,&nbsp;<span>GPA</span></p>
+                              <p class="candi-tech-inf-grad">Expected Graduation:&nbsp;<span>2023</span></p>
                            </div>
                         </div>
-                        <p class="mng-reuest-chng open-modal-mng">Request Changes</p>
+                        <div class="right-side-uni-controls" id="line-data-ftjs-1"><!--FOREACH INid NUMBER FOR JS-->
+                           <div class="label-statuses-jbs-pers">
+                              <div class="accpeted-kjhs p-b-dd">Pending</div>
+                           </div>
+                        </div>
+                        <p class="candi-tech-info" style="padding:32px 0px;"><span>Job Title</span>&nbsp;<br>
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eum aspernatur ipsam eligendi facilis, aperiam fugiat voluptatum 
+                           eius minus consequatur cumque ducimus 
+                           maxime aut architecto, voluptatem voluptas 
+                           perferendis debitis. Nemo!
+                        </p>
+                        <div class="connect-candidate-ftp">
+                           View
+                        </div>
                      </div>
-                     <div class="mng-accept-btn">Done</div>
+                     <!--================END======================-->
+                     <!--UNIVERSITY INFO BLOCK-->
+                     <!-------------------START--------------------->
+                     <div class="uni-border-flex-block">
+                        <div class="left-side-uni-info">
+                           <div class="uni-iamge-gerb-photo"><img src="img/avatar.jpg" alt="alt name"></div>
+                           <div class="uni-text-container">
+                              <div class="flex-cand-info">
+                                 <div class="uni-gen-name-sg">Leslie Alexander</div>
+                                 <div class="short-listed-cand">
+                                    <div class="short-candi-item">
+                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M20.251 6.75H3.75098C3.33676 6.75 3.00098 7.08579 3.00098 7.5V19.5C3.00098 19.9142 3.33676 20.25 3.75098 20.25H20.251C20.6652 20.25 21.001 19.9142 21.001 19.5V7.5C21.001 7.08579 20.6652 6.75 20.251 6.75Z" stroke="#58B368" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M15.7502 6.75V5.25C15.7502 4.85218 15.5922 4.47064 15.3109 4.18934C15.0296 3.90804 14.6481 3.75 14.2502 3.75H9.75024C9.35242 3.75 8.97089 3.90804 8.68958 4.18934C8.40828 4.47064 8.25024 4.85218 8.25024 5.25V6.75" stroke="#58B368" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                       </svg>
+                                    </div>
+                                    <div class="hired-account-candid"> 
+                                       Hired
+                                    </div>
+                                 </div>
+                              </div>
+                              <p class="candi-tech-info">Technology Science,&nbsp;<span>GPA</span></p>
+                              <p class="candi-tech-inf-grad">Expected Graduation:&nbsp;<span>2023</span></p>
+                           </div>
+                        </div>
+                        <div class="right-side-uni-controls" id="line-data-ftjs-1"><!--FOREACH INid NUMBER FOR JS-->
+                           <div class="label-statuses-jbs-pers">
+                              <div class="accpeted-kjhs d-b-dd">Declined</div>
+                           </div>
+                        </div>
+                        <p class="candi-tech-info" style="padding:32px 0px;"><span>Job Title</span>&nbsp;<br>
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eum aspernatur ipsam eligendi facilis, aperiam fugiat voluptatum 
+                           eius minus consequatur cumque ducimus 
+                           maxime aut architecto, voluptatem voluptas 
+                           perferendis debitis. Nemo!
+                        </p>
+                        <div class="connect-candidate-ftp">
+                           View
+                        </div>
+                     </div>
+                     <!--================END======================-->
+                     <!--UNIVERSITY INFO BLOCK-->
+                     <!-------------------START--------------------->
+                     <div class="uni-border-flex-block">
+                        <div class="left-side-uni-info">
+                           <div class="uni-iamge-gerb-photo"><img src="img/avatar.jpg" alt="alt name"></div>
+                           <div class="uni-text-container">
+                              <div class="flex-cand-info">
+                                 <div class="uni-gen-name-sg">Leslie Alexander</div>
+                                 <div class="short-listed-cand">
+                                    <div class="short-candi-item">
+                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M20.251 6.75H3.75098C3.33676 6.75 3.00098 7.08579 3.00098 7.5V19.5C3.00098 19.9142 3.33676 20.25 3.75098 20.25H20.251C20.6652 20.25 21.001 19.9142 21.001 19.5V7.5C21.001 7.08579 20.6652 6.75 20.251 6.75Z" stroke="#58B368" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M15.7502 6.75V5.25C15.7502 4.85218 15.5922 4.47064 15.3109 4.18934C15.0296 3.90804 14.6481 3.75 14.2502 3.75H9.75024C9.35242 3.75 8.97089 3.90804 8.68958 4.18934C8.40828 4.47064 8.25024 4.85218 8.25024 5.25V6.75" stroke="#58B368" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                       </svg>
+                                    </div>
+                                    <div class="hired-account-candid"> 
+                                       Hired
+                                    </div>
+                                 </div>
+                              </div>
+                              <p class="candi-tech-info">Technology Science,&nbsp;<span>GPA</span></p>
+                              <p class="candi-tech-inf-grad">Expected Graduation:&nbsp;<span>2023</span></p>
+                           </div>
+                        </div>
+                        <div class="right-side-uni-controls" id="line-data-ftjs-1"><!--FOREACH INid NUMBER FOR JS-->
+                           <div class="label-statuses-jbs-pers">
+                              <div class="accpeted-kjhs a-b-dd">Accepted</div>
+                           </div>
+                        </div>
+                        <p class="candi-tech-info" style="padding:32px 0px;"><span>Job Title</span>&nbsp;<br>
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eum aspernatur ipsam eligendi facilis, aperiam fugiat voluptatum 
+                           eius minus consequatur cumque ducimus 
+                           maxime aut architecto, voluptatem voluptas 
+                           perferendis debitis. Nemo!
+                        </p>
+                        <div class="connect-candidate-ftp">
+                           View
+                        </div>
+                     </div>
+                     <!--================END======================-->
+                     <!--PAGINATION-->
+                     <div class="pagination-main-container">
+                        <!--Results query -- pages-->
+                        <p class="results-pagination">Results: 1 - 5 of 13 </p>
+                        <div class="pagination-flex-container">
+                           <!--arrow left-->
+                           <a href="#" class="url-pagi-link">
+                              <div class="pagination-item-block mobile-always-viewed"><!--mobile viewed too-->
+                                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.5 23.5L15.5 18.5L20.5 13.5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                 </svg>
+                              </div>
+                           </a>
+                           <!--pages-->
+                           <a href="#" class="url-pagi-link"><div class="pagination-item-block">1</div></a>
+                           <a href="#" class="url-pagi-link"><div class="pagination-item-block active-page-pag mobile-always-viewed">2</div></a><!--mobile viewed too-->
+                           <a href="#" class="url-pagi-link"><div class="pagination-item-block">3</div></a>
+                           <a href="#" class="url-pagi-link"><div class="pagination-item-block">4</div></a>
+                           <a href="#" class="url-pagi-link"><div class="pagination-item-block mobile-always-viewed">...</div></a><!--mobile viewed too-->
+                           <a href="#" class="url-pagi-link"><div class="pagination-item-block mobile-always-viewed">9</div></a><!--mobile viewed too-->
+                           <!--arrow right-->
+                           <a href="#" class="url-pagi-link">
+                              <div class="pagination-item-block mobile-always-viewed"><!--mobile viewed too-->
+                                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 13.5L20.5 18.5L15.5 23.5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                 </svg>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
    </body>
-   <!--POP UP-->
-   <!-- The Modal -->
-   <div id="genralModal" class="modal-main">
-      <!-- Modal content -->
-      <div class="modal-content">
-         <span class="close">&times;</span>
-         <div class="final-popup-block">
-            <div class="mng-width-insd-container-popoup">
-               <p class="mng-main-header-txt">View Permission Level</p>
-               <p class="mng-main-description-txt">Please select.......</p>
-               <!--Checkboxes-->
-               <div class="mng-checks-container-m">
-                  <!--Flex one line -->
-                  <div class="mng-check-flex-line">
-                     <div class="left-side-mng-text">Post Jobs</div>
-                     <div class="right-side-mng-check">
-                        <a href="#">Request Permission</a>
-                     </div>
-                  </div>
-                  <!--Flex one line requested-->
-                  <div class="mng-check-flex-line">
-                     <div class="left-side-mng-text">Post Jobs</div>
-                     <div class="right-side-mng-check">
-                        <span class="mng-statu-requ-nb">Requested</span>
-                     </div>
-                  </div>
-               </div>
-               <div class="mng-accept-btn">Done</div>
-            </div>
-         </div>
-         <!--------------END--------------->
-      </div>
-   </div>
    <script type="text/javascript" src="js/menu.js"></script><!--Menu JS-->
-   <script type="text/javascript" src="js/modal.js"></script><!--Open/close modal script-->
    <script type="text/javascript" src="js/controls.js"></script><!--Open line controls-->
 </html>

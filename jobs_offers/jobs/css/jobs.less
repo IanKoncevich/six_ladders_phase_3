@@ -1,0 +1,493 @@
+@import "../../../library/css/vars.less";
+
+.top-jbs-side-back-image{
+    display: block;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-jbs-search-container{
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    background-color: white;
+    box-sizing: border-box !important; 
+}
+
+.jobs-foun-amoun{
+    color: @slate !important;
+    font-size: 28px !important;
+    font-family: @ft-semi !important;
+
+    & span{
+        font-family: @ft-reg !important;
+        font-size: 18px;
+    }
+}
+
+.line-betwen-filer-q-resutls{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #EAEAEA;
+    margin-top: 32px;
+}
+.sort-by-appl-container {
+
+    & select{
+        background-position-y: 9px !important;
+    }
+    
+}
+
+.flex-applications-filter-container{
+    padding: 0px !important;
+}
+
+.no-bottom-padding{
+    padding-bottom: 0px !important;
+}
+
+.mo-marg-top-jobs{
+    margin-top: 0px !important;
+}
+
+.to-top-job-pad-qwe{
+    padding-top: 0px !important;
+}
+
+.view-m-jbs-cmp-sd{
+    padding-top: 32px;
+    font-family: @ft-medium;
+    font-size: 16px;
+    color: @slate;
+    text-decoration: underline;
+
+    &:hover{
+        color: @algae;
+    }
+}
+
+.search-jbs-flex-block{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 24px 0px 15px 15px;
+    box-sizing: border-box;
+
+    & label{
+        display: block;
+        padding: 0px 16px;
+
+        & svg{
+            margin-top: 2px;
+            cursor: pointer;
+
+            & path{
+                fill: @algae;
+            }
+
+            &:hover{
+
+                & path{
+                    fill: @slate;
+                }
+            }
+        }
+    }
+
+    & input{
+        background-color: white;
+        padding: 12px 20px 12px 0px;
+        color: @slate;
+        font-family: @ft-reg;
+        font-size: 16px;
+        border: none;
+        width: 100%;
+        box-sizing: border-box;
+
+        &::placeholder{
+            color: #C8C8C8;
+        }
+    }
+}
+
+.city-jbs-flex-block{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 24px 0px 15px 15px;
+    box-sizing: border-box;
+    width: 50%;
+    padding-right: 30px;
+    box-sizing: border-box !important;
+
+    & label{
+        display: block;
+        padding: 0px 16px;
+
+        & svg{
+            margin-top: 2px;
+            cursor: pointer;
+        }
+    }
+
+    & select{
+        background-color: white;
+        color: @slate;
+        font-family: @ft-reg;
+        font-size: 16px;
+        border: none;
+
+        &::placeholder{
+            color: #C8C8C8;
+        }
+    }
+}
+
+.filters-jbs-flex-block{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 24px 0px 15px 15px;
+    box-sizing: border-box;
+    padding-right: 60px;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    & label{
+        display: block;
+        padding: 0px 16px;
+
+        & svg{
+            margin-top: 4px;
+            cursor: pointer;
+        }
+    }
+
+    & select{
+        background-color: white;
+        color: @slate;
+        font-family: @ft-reg;
+        font-size: 16px;
+        border: none;
+        box-sizing: border-box;
+
+        &::placeholder{
+            color: #C8C8C8;
+        }
+    }
+}
+
+.jbs-search-btn-main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: @algae;
+    font-family: @ft-bold;
+    font-size: 18px;
+    padding: 0px 77px;
+    box-sizing: border-box !important;
+    min-height: 40px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: @slate;
+    }
+}
+
+
+.flex-contant-page-jbs{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.left-page-jbsd-k{
+    display: block;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.right-page-jbsd-k{
+    display: block;
+    width: 100%;
+}
+
+.white-main-cnt-block{
+    background-color: rgb(255, 255, 255);
+    padding: 40px 30px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.jobs-container-content{
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 32px 15px;
+    box-sizing: border-box;
+}
+
+.header-page-jobs{
+    display: block;
+    color: @slate;
+    font-size: 28px;
+    font-family: @ft-bold;
+}
+
+.jobs-asd-cointainer-d{
+    display: block;
+    width: 100%;
+    padding-top: 24px;
+}
+
+.job-block-brd-jbs{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #EAEAEA;
+    padding: 32px 30px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+
+.job-block-brd-jbs:last-child{
+    margin-bottom: 0px;
+}
+
+.flex-jbs-header-job{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-side-name-kjjbs{
+    display: flex;
+    width: max-content;
+}
+
+.right-side-name-kjjbs{
+    display: block;
+    width: max-content;
+    margin: 12px 0px;
+}
+
+.jbs-m-name-asd{
+    color: @slate;
+    font-size: 18px;
+    font-family: @ft-semi;
+    margin-right: 20px;
+}
+
+.jbs-new-label{
+    background-color: @algae;
+    border-radius: 4px;
+    padding: 2px 20px;
+    box-sizing: border-box;
+    height: max-content;
+    color: white;
+    font-family: @ft-medium;
+}
+
+.right-side-name-kjjbs{
+    display: block;
+    width: max-content;
+    cursor: pointer;
+}
+
+.flex-text-info-jbs-qwe{
+    display: flex;
+    width: max-content;
+    max-width: 100%;
+    flex-wrap: wrap;
+    font-family: @ft-reg;
+    line-height: 24px;
+    color: @slate;
+}
+
+.frlx-icon-text-jbs{
+    display: flex;
+    line-height: 24px;
+    color: @slate;
+    font-size: 16px;
+    font-family: @ft-reg;
+}
+
+.svg-jbs-text-blj{
+    margin-right: 16px;
+    color: @slate;
+}
+
+.texted-mnbsdf{
+    margin-right: 40px;
+    color: @slate;
+}
+
+.job-block-main-txt-description{
+    display: block;
+    padding-top: 16px;
+    color: #A2A6B3;
+    font-size: 16px;
+    font-family: @ft-reg;
+}
+
+.flex-rgt-block-header-block{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header-rgt-mnbs{
+    color: @slate;
+    font-size: 22px;
+    font-family: @ft-bold;
+}
+
+.flex-link-cvbc{
+    display: flex;
+   
+    & div{
+        line-height: 26px;
+
+        & svg{
+            margin-left: 13px;
+            & path{
+                stroke: @algae;
+            }
+        }
+
+        
+    }
+
+    &:hover{
+        & div{
+            text-decoration: underline;
+            color: @slate !important;
+    
+            & svg{
+                & path{
+                    stroke: @slate;
+                }
+            }
+        }
+        
+    }
+}
+
+.view-more-jbs-rgt{
+    color: @algae;
+    font-size: 16px;
+    font-family: @ft-medium;
+}
+
+.info-job-ritgh-block{
+    padding-top: 28px;
+
+    & .left-side-name-kjjbs{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+.text-be-in-description-rgt{
+    color: #A2A6B3;
+    font-family: @ft-reg;
+    font-size: 16px;
+    padding-top: 6px;
+}
+
+.bot-me-bottom-marg-svb{
+    margin-bottom: 20px !important;
+}
+
+.jbs-new-label-invited{
+    background-color: #DEF0E1;
+    border-radius: 4px;
+    padding: 6px 20px;
+    box-sizing: border-box;
+    height: max-content;
+    color: @algae;
+    font-family: @ft-medium;
+}
+
+.jbs-new-label-orange{
+    background-color: #FDF7ED;
+    border-radius: 4px;
+    padding: 6px 20px;
+    box-sizing: border-box;
+    height: max-content;
+    color: #FFB74B;
+    font-family: @ft-medium;
+}
+
+.line-between-jobs-if-more{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #EAEAEA;
+    margin-bottom: 10px;
+}
+
+.f-grt-addsf{
+    padding: 15px 0px;
+}
+@media(min-width: 924px){
+    .filters-jbs-flex-block{
+        border-right:1px solid #EAEAEA;
+        padding: 24px 0px 24px 40px;
+        & label{
+            padding: 0px 24px;
+        }
+    }
+
+    .city-jbs-flex-block{
+        border-right:1px solid #EAEAEA;
+        padding: 24px 0px 24px 40px;
+
+        & label{
+            padding: 0px 24px;
+        }
+    }
+    .main-jbs-search-container{
+        flex-wrap: nowrap;
+    }
+
+    .jbs-search-btn-main{
+      width: max-content;
+      
+    }
+
+    .left-page-jbsd-k{
+        width: 70%;
+        margin-bottom: 0px;
+    }
+    
+    .right-page-jbsd-k{
+        width: 28%;
+    }
+    
+    .right-side-name-kjjbs{
+        margin: 0px 0px !important;
+    }
+
+    .search-jbs-flex-block{
+        border-right:1px solid #EAEAEA;
+        padding: 24px 0px 24px 40px;
+    }
+
+    .jobs-container-content{
+        padding: 32px 40px;
+    }
+}

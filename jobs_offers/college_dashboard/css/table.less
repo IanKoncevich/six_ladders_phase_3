@@ -1,0 +1,115 @@
+@import "../../../library/css/vars.less";
+
+.white-table-container{
+    display: block;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 22px;
+    box-sizing: border-box;
+}
+
+.table-info-block{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #EAEAEA;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.left-side-info-table{
+    display: block;
+    margin-right: 30px;
+}
+
+.strong-no-bot-pad{
+    padding-bottom: 0px !important;
+}
+
+.right-side-info-table{
+    display: block;
+}
+
+.right-side-info-table-btn{
+    display: flex;
+    align-items: center;
+
+}
+
+.info-text-table{
+    color: #A2A6B3;
+    font-size: 16px;
+    font-family: @ft-reg;
+    padding-bottom: 12px;
+
+    & span{
+       
+        color: @slate;
+    }
+}
+
+.table-page-header{
+    color: @slate;
+    font-family: @ft-bold;
+    font-size: 20px;
+    padding-bottom: 17px;
+}
+
+.left-number-tanl{
+    display: flex;
+    width: 20px;
+    padding: 0px 14px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F8F7;
+    font-family: @ft-reg;
+    font-size: 20px;
+    color: @slate;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.compared-left-main-side{
+    display: flex;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.download-btn-table{
+    display: block;
+    background-color: @slate;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 32px;
+    color: white;
+    font-family: @ft-semi;
+    font-size: 16px;
+    text-align: center;
+    width: max-content;
+    padding: 0px 23px;
+
+    &:hover{
+        background-color: @algae;
+        cursor: pointer;
+    }
+}
+
+@media(min-width: 679px){
+    .table-info-block{
+        flex-wrap: nowrap;
+    }
+
+    .left-number-tanl{
+        margin-bottom: 0px;
+    }
+
+    .compared-left-main-side{
+        margin-bottom: 0px;
+    }
+}
