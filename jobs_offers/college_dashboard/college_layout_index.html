@@ -20,6 +20,12 @@
       <link href="css/addition.css" rel="stylesheet" type="text/css"><!--This page css-->
 
       <link href="css/table.css" rel="stylesheet" type="text/css"><!--Table-->
+
+
+      <link href="../college_dashboard/css/bymajor.css" rel="stylesheet" type="text/css"><!--By Major-->
+
+      <!--MAIN STYLING, MENU, HEADER-->
+      <link href="../../employer_contact/college_library/global_lib/css/pagination.css" rel="stylesheet" type="text/css"><!--PAGINATION-->
    </head>
    <body>
       <!--Home Page BODY-->
@@ -242,133 +248,144 @@
                         <!----------------------------------------------------------------->
                         <div class="sign-content-container">
                            <div class="white-table-container">
-                              <p class="table-page-header">Top Recruiting Companies</p>
-                              <!--Table row-->
-                              <div class="table-info-block">
-                                 <div class="left-number-tanl">1</div>
-                                 <div class="compared-left-main-side">
-                                    <div class="left-side-info-table">
-                                       <p class="info-text-table">Company name:&nbsp;<span>Sixladders</span></p>
-                                       <p class="info-text-table strong-no-bot-pad">Student name:&nbsp;<span>John Malkovich</span></p>
+                              <div class="inside-data-right-container-major">
+                                 <!--CARD HEADER BLOCK INSIDE-->
+                                 <div class="flex-card-right-major-container">
+                                    <div class="left-geader-dat-container-major">
+                                       <p class="main-card-major-header">Top Recruiting Companies</p>
                                     </div>
-                                    <div class="right-side-info-table">
-                                       <p class="info-text-table">Job Title:&nbsp;<span>Mega Title</span></p>
-                                       <p class="info-text-table strong-no-bot-pad">CTC:&nbsp;<span>40</span></p>
+                                    <div class="right-geader-dat-container-major">
+                                       <div class="top-rect-flex-container">
+                                          <label for="main-select-maj" class="main-label">Filter by status:</label>
+                                          <select class="main-select-maj" id="main-select-maj">
+                                             <option value="1">Accepted</option>
+                                             <option value="2">Declined</option>
+                                             <option value="3">Pending</option>
+                                          </select>
+                                       </div>
                                     </div>
                                  </div>
-                                 <div class="right-side-info-table-btn">
-                                    <div class="download-btn-table">Download letter</div>
+                                 <!--Table row-->
+                                 <div class="table-info-block">
+                                    <div class="left-number-tanl">1</div>
+                                    <div class="compared-left-main-side">
+                                       <div class="left-side-info-table">
+                                          <p class="info-text-table">Company name:&nbsp;<span>Sixladders</span></p>
+                                          <p class="info-text-table">Student name:&nbsp;<span>John Malkovich</span></p>
+                                          <p class="info-text-table strong-no-bot-pad">Status:&nbsp;<span class="status-accpeted">Accepted</span></p>
+                                       </div>
+                                       <div class="right-side-info-table">
+                                          <p class="info-text-table">Job Title:&nbsp;<span>Mega Title</span></p>
+                                          <p class="info-text-table strong-no-bot-pad">CTC:&nbsp;<span>40</span></p>
+                                       </div>
+                                       
+                                    </div>
+                                    <div class="right-side-info-table-btn">
+                                       <div class="download-btn-table">Download letter</div>
+                                    </div>
+                                 </div>
+                                 <!--END------------------------------------------------>
+                                 <!--Table row-->
+                                 <div class="table-info-block">
+                                    <div class="left-number-tanl">2</div>
+                                    <div class="compared-left-main-side">
+                                       <div class="left-side-info-table">
+                                          <p class="info-text-table">Company name:&nbsp;<span>Sixladders</span></p>
+                                          <p class="info-text-table">Student name:&nbsp;<span>John Malkovich</span></p>
+                                          <p class="info-text-table strong-no-bot-pad">Status:&nbsp;<span class="status-declined">Declined</span></p>
+                                       </div>
+                                       <div class="right-side-info-table">
+                                          <p class="info-text-table">Job Title:&nbsp;<span>Mega Title</span></p>
+                                          <p class="info-text-table strong-no-bot-pad">CTC:&nbsp;<span>40</span></p>
+                                       </div>
+                                    </div>
+                                    <div class="right-side-info-table-btn">
+                                       <div class="download-btn-table">Download letter</div>
+                                    </div>
+                                 </div>
+                                 <!--END------------------------------------------------>
+                                 <!--Table row-->
+                                 <div class="table-info-block">
+                                    <div class="left-number-tanl">3</div>
+                                    <div class="compared-left-main-side">
+                                       <div class="left-side-info-table">
+                                          <p class="info-text-table">Company name:&nbsp;<span>Sixladders</span></p>
+                                          <p class="info-text-table">Student name:&nbsp;<span>John Malkovich</span></p>
+                                          <p class="info-text-table strong-no-bot-pad">Status:&nbsp;<span class="status-pending">Pending</span></p>
+                                       </div>
+                                       <div class="right-side-info-table">
+                                          <p class="info-text-table">Job Title:&nbsp;<span>Mega Title</span></p>
+                                          <p class="info-text-table strong-no-bot-pad">CTC:&nbsp;<span>40</span></p>
+                                       </div>
+                                    </div>
+                                    <div class="right-side-info-table-btn">
+                                       <div class="download-btn-table">Download letter</div>
+                                    </div>
+                                 </div>
+                                 <!--END------------------------------------------------>
+                           </div>
+                        </div>
+                        <!--PAGINATION-->
+                        <!--===========================================-->
+                        <div class="jbs-pagination-container">
+                           <div class="pagination-container">
+                              <!--LEFT BUTTON FIRST-->
+                              <div class="pagination-prev-button-container">
+                                 <a href="#">
+                                    <div class="pgn-prev-button">First</div>
+                                 </a>
+                              </div>
+                              <!--PAGES COUNT-->
+                              <div class="pagination-pages-buttons-container">
+                                 <a href="#">
+                                    <div class="left-page-pagin-button">
+                                       <svg width="9" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M0.710042 8.20808C0.318214 7.81734 0.318214 7.18266 0.710041 6.79192L6.54387 0.974181C7.17423 0.345557 8.25 0.792025 8.25 1.68226L8.25 13.3177C8.25 14.208 7.17423 14.6544 6.54387 14.0258L0.710042 8.20808Z"/>
+                                       </svg>
+                                    </div>
+                                 </a>
+                                 <a href="#">
+                                    <div class="pagination-page-counter active-pagination">04</div>
+                                 </a>
+                                 <a href="#">
+                                    <div class="pagination-page-counter">05</div>
+                                 </a>
+                                 <a href="#">
+                                    <div class="pagination-page-counter">...</div>
+                                 </a>
+                                 <a href="#">
+                                    <div class="pagination-page-counter">15</div>
+                                 </a>
+                                 <a href="#">
+                                    <div class="pagination-page-counter">16</div>
+                                 </a>
+                                 <a href="#">
+                                    <div class="right-page-pagin-button">
+                                       <svg width="9" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M8.28996 6.79192C8.68179 7.18266 8.68179 7.81734 8.28996 8.20808L2.45613 14.0258C1.82577 14.6544 0.75 14.208 0.75 13.3177L0.75 1.68227C0.75 0.792027 1.82577 0.345557 2.45613 0.974181L8.28996 6.79192Z"/>
+                                       </svg>
+                                    </div>
+                                 </a>
+                              </div>
+                              <!--RIGHT BUTTON LAST-->
+                              <div class="pagination-next-button-container">
+                                 <a href="#">
+                                    <div class="pgn-last-button">Last</div>
+                                 </a>
+                              </div>
+                              <!--ADDITIONAL FIRST AND LAST PAGE MOBILE ONLY-->
+                              <div class="mobile-button-controls">
+                                 <div class="pagination-prev-button-container-mobile">
+                                    <a href="#">
+                                       <div class="pgn-prev-button">First</div>
+                                    </a>
+                                 </div>
+                                 <div class="pagination-next-button-container-mobile">
+                                    <a href="#">
+                                       <div class="pgn-last-button">Last</div>
+                                    </a>
                                  </div>
                               </div>
-                              <!--END------------------------------------------------>
-                              <!--Table row-->
-                              <div class="table-info-block">
-                                 <div class="left-number-tanl">2</div>
-                                 <div class="compared-left-main-side">
-                                    <div class="left-side-info-table">
-                                       <p class="info-text-table">Company name:&nbsp;<span>Sixladders</span></p>
-                                       <p class="info-text-table strong-no-bot-pad">Student name:&nbsp;<span>John Malkovich</span></p>
-                                    </div>
-                                    <div class="right-side-info-table">
-                                       <p class="info-text-table">Job Title:&nbsp;<span>Mega Title</span></p>
-                                       <p class="info-text-table strong-no-bot-pad">CTC:&nbsp;<span>40</span></p>
-                                    </div>
-                                 </div>
-                                 <div class="right-side-info-table-btn">
-                                    <div class="download-btn-table">Download letter</div>
-                                 </div>
-                              </div>
-                              <!--END------------------------------------------------>
-                              <!--Table row-->
-                              <div class="table-info-block">
-                                 <div class="left-number-tanl">3</div>
-                                 <div class="compared-left-main-side">
-                                    <div class="left-side-info-table">
-                                       <p class="info-text-table">Company name:&nbsp;<span>Sixladders</span></p>
-                                       <p class="info-text-table strong-no-bot-pad">Student name:&nbsp;<span>John Malkovich</span></p>
-                                    </div>
-                                    <div class="right-side-info-table">
-                                       <p class="info-text-table">Job Title:&nbsp;<span>Mega Title</span></p>
-                                       <p class="info-text-table strong-no-bot-pad">CTC:&nbsp;<span>40</span></p>
-                                    </div>
-                                 </div>
-                                 <div class="right-side-info-table-btn">
-                                    <div class="download-btn-table">Download letter</div>
-                                 </div>
-                              </div>
-                              <!--END------------------------------------------------>
-                              <!--Table row-->
-                              <div class="table-info-block">
-                                 <div class="left-number-tanl">4</div>
-                                 <div class="compared-left-main-side">
-                                    <div class="left-side-info-table">
-                                       <p class="info-text-table">Company name:&nbsp;<span>Sixladders</span></p>
-                                       <p class="info-text-table strong-no-bot-pad">Student name:&nbsp;<span>John Malkovich</span></p>
-                                    </div>
-                                    <div class="right-side-info-table">
-                                       <p class="info-text-table">Job Title:&nbsp;<span>Mega Title</span></p>
-                                       <p class="info-text-table strong-no-bot-pad">CTC:&nbsp;<span>40</span></p>
-                                    </div>
-                                 </div>
-                                 <div class="right-side-info-table-btn">
-                                    <div class="download-btn-table">Download letter</div>
-                                 </div>
-                              </div>
-                              <!--END------------------------------------------------>
-                              <!--Table row-->
-                              <div class="table-info-block">
-                                 <div class="left-number-tanl">5</div>
-                                 <div class="compared-left-main-side">
-                                    <div class="left-side-info-table">
-                                       <p class="info-text-table">Company name:&nbsp;<span>Sixladders</span></p>
-                                       <p class="info-text-table strong-no-bot-pad">Student name:&nbsp;<span>John Malkovich</span></p>
-                                    </div>
-                                    <div class="right-side-info-table">
-                                       <p class="info-text-table">Job Title:&nbsp;<span>Mega Title</span></p>
-                                       <p class="info-text-table strong-no-bot-pad">CTC:&nbsp;<span>40</span></p>
-                                    </div>
-                                 </div>
-                                 <div class="right-side-info-table-btn">
-                                    <div class="download-btn-table">Download letter</div>
-                                 </div>
-                              </div>
-                              <!--END------------------------------------------------>
-                              <!--Table row-->
-                              <div class="table-info-block">
-                                 <div class="left-number-tanl">6</div>
-                                 <div class="compared-left-main-side">
-                                    <div class="left-side-info-table">
-                                       <p class="info-text-table">Company name:&nbsp;<span>Sixladders</span></p>
-                                       <p class="info-text-table strong-no-bot-pad">Student name:&nbsp;<span>John Malkovich</span></p>
-                                    </div>
-                                    <div class="right-side-info-table">
-                                       <p class="info-text-table">Job Title:&nbsp;<span>Mega Title</span></p>
-                                       <p class="info-text-table strong-no-bot-pad">CTC:&nbsp;<span>40</span></p>
-                                    </div>
-                                 </div>
-                                 <div class="right-side-info-table-btn">
-                                    <div class="download-btn-table">Download letter</div>
-                                 </div>
-                              </div>
-                              <!--END------------------------------------------------>
-                              <!--Table row-->
-                              <div class="table-info-block">
-                                 <div class="left-number-tanl">7</div>
-                                 <div class="compared-left-main-side">
-                                    <div class="left-side-info-table">
-                                       <p class="info-text-table">Company name:&nbsp;<span>Sixladders</span></p>
-                                       <p class="info-text-table strong-no-bot-pad">Student name:&nbsp;<span>John Malkovich</span></p>
-                                    </div>
-                                    <div class="right-side-info-table">
-                                       <p class="info-text-table">Job Title:&nbsp;<span>Mega Title</span></p>
-                                       <p class="info-text-table strong-no-bot-pad">CTC:&nbsp;<span>40</span></p>
-                                    </div>
-                                 </div>
-                                 <div class="right-side-info-table-btn">
-                                    <div class="download-btn-table">Download letter</div>
-                                 </div>
-                              </div>
-                              <!--END------------------------------------------------>
                            </div>
                         </div>
                      </div>

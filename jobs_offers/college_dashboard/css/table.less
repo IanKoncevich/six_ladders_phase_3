@@ -1,12 +1,8 @@
 @import "../../../library/css/vars.less";
 
 .white-table-container{
-    display: block;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-    padding: 30px 22px;
-    box-sizing: border-box;
+position: relative;
+width: 100%;
 }
 
 .table-info-block{
@@ -19,6 +15,21 @@
     box-sizing: border-box;
     border-radius: 10px;
     margin-bottom: 12px;
+}
+
+.status-accpeted{
+    color: @algae !important;
+    font-family: @ft-semi;
+}
+
+.status-declined{
+    color:#FF6353 !important;
+    font-family: @ft-semi;
+}
+
+.status-pending{
+    color: @slate !important;
+    font-family: @ft-semi;
 }
 
 .left-side-info-table{

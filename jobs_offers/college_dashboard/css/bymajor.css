@@ -1,0 +1,159 @@
+
+
+.by-major-rihgt-white-container{
+	display: block;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+	padding: 30px 15px 20px 15px;
+	box-sizing: border-box;
+}
+
+.inside-data-right-container-major{
+	display: block;
+	width: 100%;
+	position: relative;
+}
+
+.flex-card-right-major-container{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-bottom: 17px;
+}
+
+.main-card-major-header{
+	font-family: 'basier_circlebold';
+	font-size: 20px;
+	color: var(--slate);
+}
+
+.main-select-maj{
+	border: none;
+	font-family: 'basier_circleregular';
+	font-size: 14px;
+	color: var(--battleship-grey);
+}
+
+.main-label{
+	font-family: 'basier_circlesemibold';
+	font-size: 14px;
+	color: var(--slate);
+}
+
+.maj-inside-blue-container{
+	display: block;
+	width: 100%;
+	border-radius: 10px;
+	background-color: var(--ice);
+	padding: 20px;
+	box-sizing: border-box;
+	overflow-x: auto;
+}
+
+.flex-inside-major-main-data-container{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-bottom: 10px;
+	min-width: 560px;
+	padding-right: 20px;
+}
+
+.left-flex-inside-major-main-data-child{
+	display: block;
+	width: max-content;
+}
+
+.center-flex-inside-major-main-data-child{
+	display: block;
+	width: max-content;
+}
+
+.right-flex-inside-major-main-data-child{
+	display: block;
+	width: max-content;
+}
+
+.inside-maj-data-header{
+	font-family: 'basier_circlesemibold';
+	font-size: 16px;
+	color: var(--slate);
+}
+
+.inside-maj-data-info{
+	font-family: 'basier_circleregular';
+	font-size: 16px;
+	color: var(--battleship-grey);
+}
+
+/*PAGINATION CONTAINER*/
+.jbs-pagination-container{
+	display: block;
+	width: 100%;
+	margin: 0px auto 0px auto;
+	padding: 20px 0px 0px 0px;
+}
+
+
+/*TOP RECRUITING COMPAMIES*/
+/*==============================================*/
+/*===================================================*/
+.top-rect-flex-container{
+	display: flex;
+	width: max-content;
+	flex-wrap: nowrap;
+}
+
+.cmp-name-text-wrapper{
+	display: block;
+	max-width: 200px;
+	min-width: 200px;
+}
+
+.cmp-name-text-wrapper-numers{
+	display: block;
+	max-width: 60px;
+	min-width: 60px;
+}
+
+.cmp-main-name{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	max-width: 200px;
+	min-width: 200px;
+}
+
+/*JOBS PER COMPANY*/
+.bottom-jobs-counter{
+	width: 100%;
+	min-width: 530px;
+	display: block;
+	border-top: 1px solid var(--slate);
+	font-family: 'basier_circlesemibold';
+	font-size: 16px;
+	color: var(--slate);
+	text-align: right;
+	margin-top: 20px;
+	padding-top: 10px;
+}
+@media(min-width: 678px){
+
+	.flex-inside-major-main-data-container{
+		padding-right: 0px;
+	}
+}
+@media(min-width: 824px){
+
+	.jbs-pagination-container{
+		width: max-content;
+		margin: 0px 0px 0px auto;
+	}
+
+	.by-major-rihgt-white-container{
+		padding: 30px 30px 20px 30px;
+	}
+}
