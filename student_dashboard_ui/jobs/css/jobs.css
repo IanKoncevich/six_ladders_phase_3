@@ -183,7 +183,7 @@
 }
 .white-main-cnt-block {
   background-color: #ffffff;
-  padding: 40px 30px;
+  padding: 40px 15px;
   box-sizing: border-box;
   border-radius: 8px;
 }
@@ -199,11 +199,11 @@
   color: #454D66;
   font-size: 28px;
   font-family: 'basier_circlebold';
+  padding-bottom: 24px;
 }
 .jobs-asd-cointainer-d {
   display: block;
   width: 100%;
-  padding-top: 24px;
 }
 .job-block-brd-jbs {
   display: block;
@@ -413,7 +413,7 @@
   background-color: #454D66;
 }
 .no-bot-make-bot-line-v {
-  margin-top: 56px;
+  margin-top: 0px;
   padding: 20px 0px 0px 0px !important;
   border-bottom: none !important;
   border-top: 1px solid #EAEAEA;
@@ -459,6 +459,12 @@
 @media (min-width: 678px) {
   .adv-ftl-block-onbs {
     width: 47.5%;
+  }
+  .no-bot-make-bot-line-v {
+    margin-top: 56px;
+  }
+  .white-main-cnt-block {
+    padding: 40px 30px;
   }
 }
 @media (min-width: 924px) {
