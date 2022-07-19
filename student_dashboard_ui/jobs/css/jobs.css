@@ -362,6 +362,25 @@
 .f-grt-addsf {
   padding: 15px 0px;
 }
+/*Filters*/
+.flex-adv-filtr-th-lbv {
+  display: flex;
+  width: 100%;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.label-top-input-block select {
+  color: #454D66 !important;
+}
+.label-top-input-block select option {
+  color: #454D66 !important;
+}
+.adv-ftl-block-onbs {
+  display: block;
+  width: 30%;
+}
 @media (min-width: 924px) {
   .filters-jbs-flex-block {
     border-right: 1px solid #EAEAEA;
