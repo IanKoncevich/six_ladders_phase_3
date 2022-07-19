@@ -455,6 +455,17 @@
     padding-top: 40px;
 }
 
+.flex-block-radio{
+    display: flex;
+    min-height: 52px;
+    align-items: center;
+
+    & .main-radio-header{
+        margin-right: 24px;
+        padding-bottom: 0px !important;
+    }
+}
+
 .label-top-input-block{
     & select{
         color: @slate !important;
@@ -466,7 +477,89 @@
 
 .adv-ftl-block-onbs{
     display: block;
-    width: 30%;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.flex-apply-filter-container{
+    display: flex;
+    width: max-content;
+    max-width: 100%;
+    position: relative;
+    
+}
+
+.apply-btn-fltr-jbs{
+    display: block;
+    background-color: @algae;
+    font-family: @ft-semi;
+    font-size: 16px;
+    padding: 14px 24px;
+    box-sizing: border-box;
+    border-radius: 32px;
+    color: white;
+    cursor: pointer;
+    margin-right: 40px;
+
+    &:hover{
+        background-color: @slate;
+    }
+}
+
+.no-bot-make-bot-line-v{
+    margin-top: 56px;
+    padding: 20px 0px 0px 0px !important;
+    border-bottom: none !important;
+    border-top: 1px solid #EAEAEA;
+}
+
+.main-flex-flts-btn-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 56px;
+    flex-wrap: wrap;
+}
+
+.cancel-btn-fltr-jbs{
+    display: block;
+    font-family: @ft-semi;
+    font-size: 16px;
+    padding: 14px 0px;
+    box-sizing: border-box;
+    border-radius: 32px;
+    color: @slate;
+    cursor: pointer;
+    margin-right: 40px;
+    text-decoration: underline;
+
+    &:hover{
+       color: #FF6353;
+    }
+}
+
+.show-btn-fltr-jbs{
+    display: block;
+    font-family: @ft-semi;
+    font-size: 16px;
+    padding: 14px 0px;
+    box-sizing: border-box;
+    border-radius: 32px;
+    color: @algae;
+    cursor: pointer;
+    margin-right: 40px;
+    text-decoration: underline;
+
+    &:hover{
+       color: @slate;
+    }
+}
+
+@media(min-width: 678px){
+    .adv-ftl-block-onbs{
+        width: 47.5%;
+    }
 }
 @media(min-width: 924px){
     .filters-jbs-flex-block{
@@ -514,5 +607,10 @@
 
     .jobs-container-content{
         padding: 32px 40px;
+    }
+
+    .adv-ftl-block-onbs{
+        width: 30%;
+        margin-bottom: 0px;
     }
 }
