@@ -1,4 +1,4 @@
-@import "../../library/css/vars.less";
+@import "../../../library/css/vars.less";
 
 html, body{
     width: 100%;
@@ -23,9 +23,11 @@ a{
 
 .content-container{
     display: block;
-    width: 90%;
+    width: 100%;
+    padding: 0px 30px;
+    box-sizing: border-box;
     margin: 0px auto;
-    max-width: 1400px;
+    max-width: 1600px;
 }
 
 input[type="text"], input[type="password"], textarea, select { 
@@ -40,7 +42,10 @@ input[type="text"], input[type="password"], textarea, select {
 .inside-size-container{
     display: block;
     margin: 0px auto;
-    width: 90%;
+    width: 100%;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    max-width: 1600px;
 }
 
 .menu-main-container{
@@ -458,6 +463,10 @@ input[type="text"], input[type="password"], textarea, select {
         display: none !important;
     }
 
+    .content-container{
+        padding: 0px 120px;
+    }
+
 }
 
 /*Container menu width*/
@@ -465,6 +474,7 @@ input[type="text"], input[type="password"], textarea, select {
 
     .inside-size-container{
         width: 100%;
+        padding: 0px;
     }
 
     .menu-main-container{
@@ -479,7 +489,7 @@ input[type="text"], input[type="password"], textarea, select {
 }
 
 /*Show all pc menu links*/
-@media(min-width: 1200px){
+@media(min-width: 1460px){
     .center-side-menu{
         display: block;
         width: max-content;
