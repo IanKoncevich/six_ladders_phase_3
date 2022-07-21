@@ -613,7 +613,103 @@ textarea {
         text-decoration: underline;
     }
 }
+
+.flex-offer-uttons-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 40px;
+    align-items: center;
+}
+
+.flex-first-buttons-side-oof{
+    display: flex;
+    width: max-content;
+    max-width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.accept-offer-btn-ds{
+    display: block;
+    background-color: @algae;
+    font-size: 16px;
+    font-family: @ft-semi;
+    color: white;
+    padding: 14px 47px;
+    border-radius: 32px;
+    box-sizing: border-box;
+    margin-right: 17px;
+    border: 1px solid @algae;
+    cursor: pointer;
+    margin-bottom:23px;
+
+    &:hover{
+        border-color: @slate;
+        background-color: @slate;
+    }
+}
+
+.decline-offer-btn-ds{
+    cursor: pointer;
+    display: block;
+    border: 1px solid @algae;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: @ft-semi;
+    color: @algae;
+    padding: 14px 47px;
+    border-radius: 32px;
+    box-sizing: border-box;
+    margin-right: 17px;
+
+    &:hover{
+        border-color: @slate;
+        color: @slate;
+    }
+
+}
+
+.download-pdf-btn-ofr{
+    display: flex;
+    width: max-content;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    cursor: pointer;
+    margin-top: 23px;
+
+    color: @algae;
+    font-size: 16px;
+    font-family: @ft-semi;
+    line-height: 24px;
+
+    & .sv-sdp-aaa-e{
+        padding-top: 1px;
+        padding-right: 12px;
+    }
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.no-job-offers-hgf{
+    color: #A2A6B3;
+    font-family: @ft-reg;
+    font-size: 16px;
+    padding-top: 32px;
+}
+
 @media(min-width: 450px){
+
+    .download-pdf-btn-ofr{
+        margin-top: 0px;
+    }
+
+    .accept-offer-btn-ds{
+        margin-bottom:0px;
+    }
     .left-side-label-resume{
         margin-bottom: 0px;
         padding-right: 32px;
