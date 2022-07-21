@@ -3,11 +3,11 @@
 .new-left-block-text-cmp {
   display: flex;
   align-items: center;
-  width: 47.5%;
+  width: 100%;
 }
 .new-right-block-text-cmp {
   display: block;
-  width: 47.5%;
+  width: 100%;
 }
 .new-right-block-text-cmp div {
   display: block;
@@ -23,4 +23,12 @@
 }
 .strong-new-pad-eeddd {
   padding: 30px !important;
+}
+@media (min-width: 678px) {
+  .new-left-block-text-cmp {
+    width: 47.5%;
+  }
+  .new-right-block-text-cmp {
+    width: 47.5%;
+  }
 }
