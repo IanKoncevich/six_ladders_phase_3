@@ -11,6 +11,9 @@
   text-decoration: underline;
   color: #454D66;
 }
+.jbs-activated div p {
+  color: white !important;
+}
 .flex-dfgh-container-qasd {
   display: flex;
   width: 100%;
@@ -40,4 +43,9 @@
 }
 .top-padt-sdf-32 {
   margin-top: 32px;
+}
+@media (min-width: 950px) {
+  .modal-menu-container-nw::before {
+    opacity: 0 !important;
+  }
 }

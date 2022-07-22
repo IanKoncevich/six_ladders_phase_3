@@ -1,4 +1,4 @@
-@import "../../library/css/vars.less";
+@import "../../../library/css/vars.less";
 
 .colleg-add-maj-gre-pl{
     color: @algae;
@@ -10,6 +10,14 @@
     &:hover{
         text-decoration: underline;
         color: @slate;
+    }
+}
+
+.jbs-activated{
+    & div{
+        & p{
+            color: white !important;
+        }
     }
 }
 
@@ -48,3 +56,12 @@
 .top-padt-sdf-32{
     margin-top: 32px;
 }
+
+@media(min-width: 950px){
+    .modal-menu-container-nw{
+        &::before{
+            opacity: 0 !important;
+        }
+    }
+}
+

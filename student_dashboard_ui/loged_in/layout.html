@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>6 Ladders</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><!--Jquerry connection-->
+      <link href="../../library/css/fonts.css" rel="stylesheet" type="text/css"><!--Fonts CSS-->
+      <link href="../../library/forms_components/css/forms.css" rel="stylesheet" type="text/css"><!--Forms components CSS-->
+
+
+      <!--Please see that we are reusing some existing css blocks - but it copied and modified as a new one-->
+      <link href="menu_addtions/menu_logout/main.css" rel="stylesheet" type="text/css"><!--Menu CSS old logout-->
+      <link href="menu_addtions/css/main.css" rel="stylesheet" type="text/css"><!--Menu CSS layout-->
+      <link href="css/logedin.css" rel="stylesheet" type="text/css"><!--LOGED IN-->
+   </head>
+   <body>
+   <!--TOP PAGE SECTION -- MAIN MENU-->
+   <!-----------------------------START----------------------------->
+   <!--Mobile menu links-->
+   <div class="fixed-menu-mobile">
+      <div class="line-top-meu"></div>
+      <div class="mobile-loged-in-bloxk" id="mobile-user-icon">
+         <div class="user-info-all-data-container">
+            <div class="user-info-top-flex-container" id="open-modal-by-click-mobile"><!-- to add open modal func id="open-modal-by-click-notif"-->
+               <div class="user-image-avatr-container" style="background-image:url(./img/menu-user.png);"></div>
+               <div class="user-main-name-container">Student Name
+                  <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M0.426751 0.42678L3.82323 3.82322C3.92086 3.92085 4.07915 3.92085 4.17678 3.82322L7.57317 0.42678C7.73067 0.26928 7.61917 0 7.39637 0H0.603531C0.380801 0 0.269261 0.26929 0.426751 0.42678Z"></path>
+                     </svg>
+                  </div>
+            </div>
+            <!-- MODAL MENU -->
+            <!--==========================================-->
+            <div class="menu-nw-modal-und">
+               <div class="modal-menu-container-nw" id="styled-mdl-scroll-3" style="height: max-content;">
+                  <div class="scrolable-container-inside-modal">
+                     <!--ACCOUNT SETTING CONTeNT MODAL-->
+                     <div class="account-seeting-modal-content" style="">
+                       <nav class="account-settings-nav">
+                          <ul>
+                             <li><a href="#">My Profile</a></li>
+                             <li><a href="#">Data and privacy</a></li>
+                             <li><a href="#">Security</a></li>
+                             <li><a href="#">Access Settings</a></li>
+                             <li><a href="#">Payment and Subscription</a></li>
+                             <li><a href="#" class="log-acc-out-btn">Logout</a></li>
+                          </ul>
+                       </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--Mobile links menu-->
+         <div class="lgd-in-links-container">
+            <!--LInk-->
+            <div class="link-mbs-lgd"><a href="#">University Job Board</a></div>
+            <!--LInk-->
+            <div class="link-mbs-lgd"><a href="#">Blog</a></a></div>
+            <!--LInk-->
+            <div class="link-mbs-lgd"><a href="#">Schedule</a></div>
+         </div>
+      </div>
+   </div>
+   <!--Top menu view-->
+   <div class="menu-lg-container">
+      <div class="flex-menu-lg-container">
+         <!--Left main menu side-->
+         <div class="left-m-lg-child">
+            <!--Logo-->
+            <div class="left-logo-container">
+               <a href="#">
+                  <img src="../../library/img/logo.svg" alt="6 Ladders">
+               </a>
+            </div>
+            <!--Search-->
+            <div class="right-search-container pc-menu-view-only-one loged-in-cont">
+               <div class="lgd-in-links-flex-container">
+                  <!--Link-->
+                  <div class="lgd-iun-link">
+                     <a href="#">University Job Board</a>
+                  </div>
+                  <!--Link-->
+                  <div class="lgd-iun-link">
+                     <a href="#">Blog</a>
+                  </div>
+                  <!--Link-->
+                  <div class="lgd-iun-link">
+                     <a href="#">Schedule</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--Right main menu side-->
+         <div class="right-m-lg-child">
+            <div class="left-item-link-m-lg pc-menu-view-only-two">
+               <div class="flex-lgd-in-btns">
+                  <div class="lgd-in-msg">
+                     <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M7.25165 18.9259L4.23261 21.4638C4.12328 21.5557 3.98999 21.6145 3.8484 21.6332C3.70681 21.652 3.56281 21.6299 3.43334 21.5696C3.30387 21.5093 3.19431 21.4133 3.11755 21.2928C3.04078 21.1724 3 21.0325 3 20.8897V6C3 5.80109 3.07902 5.61032 3.21967 5.46967C3.36032 5.32902 3.55109 5.25 3.75 5.25H20.25C20.4489 5.25 20.6397 5.32902 20.7803 5.46967C20.921 5.61032 21 5.80109 21 6V18C21 18.1989 20.921 18.3897 20.7803 18.5303C20.6397 18.671 20.4489 18.75 20.25 18.75H7.73426C7.5577 18.75 7.3868 18.8123 7.25165 18.9259Z" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                     </a>
+                  </div>
+                  <div class="lgd-in-search">
+                     <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M17.3737 16.5252C17.1394 16.2908 16.7595 16.2908 16.5252 16.5252C16.2908 16.7595 16.2908 17.1394 16.5252 17.3737L17.3737 16.5252ZM20.5757 21.4243C20.8101 21.6586 21.1899 21.6586 21.4243 21.4243C21.6586 21.1899 21.6586 20.8101 21.4243 20.5757L20.5757 21.4243ZM11.1152 19.8304C15.9284 19.8304 19.8304 15.9284 19.8304 11.1152H18.6304C18.6304 15.2657 15.2657 18.6304 11.1152 18.6304V19.8304ZM19.8304 11.1152C19.8304 6.30194 15.9284 2.4 11.1152 2.4V3.6C15.2657 3.6 18.6304 6.96468 18.6304 11.1152H19.8304ZM11.1152 2.4C6.30194 2.4 2.4 6.30194 2.4 11.1152H3.6C3.6 6.96468 6.96468 3.6 11.1152 3.6V2.4ZM2.4 11.1152C2.4 15.9284 6.30194 19.8304 11.1152 19.8304V18.6304C6.96468 18.6304 3.6 15.2657 3.6 11.1152H2.4ZM16.5252 17.3737L20.5757 21.4243L21.4243 20.5757L17.3737 16.5252L16.5252 17.3737Z" />
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <!--Login | Signup-->
+            <div class="right-item-link-m-lg pc-menu-view-only-two lgd-in-left-pds">
+               <div class="user-info-all-data-container">
+                  <div class="user-info-top-flex-container" id="open-modal-by-click"><!-- to add open modal func id="open-modal-by-click-notif"-->
+                     <div class="user-image-avatr-container" style="background-image:url(./img/menu-user.png);"></div>
+                     <div class="user-main-name-container">Student Name
+                        <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M0.426751 0.42678L3.82323 3.82322C3.92086 3.92085 4.07915 3.92085 4.17678 3.82322L7.57317 0.42678C7.73067 0.26928 7.61917 0 7.39637 0H0.603531C0.380801 0 0.269261 0.26929 0.426751 0.42678Z"></path>
+                           </svg>
+                        </div>
+                  </div>
+                  <!-- MODAL MENU -->
+                  <!--==========================================-->
+                  <div class="menu-nw-modal-und">
+                     <div class="modal-menu-container-nw" id="styled-mdl-scroll-3" style="height: max-content;">
+                        <div class="scrolable-container-inside-modal">
+                           <!--ACCOUNT SETTING CONTeNT MODAL-->
+                           <div class="account-seeting-modal-content" style="">
+                             <nav class="account-settings-nav">
+                                <ul>
+                                   <li><a href="#">My Profile</a></li>
+                                   <li><a href="#">Data and privacy</a></li>
+                                   <li><a href="#">Security</a></li>
+                                   <li><a href="#">Access Settings</a></li>
+                                   <li><a href="#">Payment and Subscription</a></li>
+                                   <li><a href="#" class="log-acc-out-btn">Logout</a></li>
+                                </ul>
+                             </nav>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--Mobile Burger-->
+            <div class="burger-container-m-lg no-select">
+               <div class="line"></div>
+               <div class="line"></div>
+               <div class="line"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--====================MENU====================-->
+   <!--====================END====================-->
+   <!--PAGE CONTENT-->
+   <!-----------------------------START----------------------------->
+   <div class="cont-back-main-color"></div><!--background-->
+
+   </body>
+   <script type="text/javascript" src="../../menu_logout/js/menu.js"></script><!--Menu JS-->
+  <script>
+   var item =  $(".drop-down-pc-link");
+var body =  $("body");
+var burger =  $("#open-close-menu");
+
+let winheight = 0;
+
+//Open modal butons
+var user = $("#open-modal-by-click");
+var user_mobile = $("#open-modal-by-click-mobile");
+var notification = $("#open-modal-by-click-notif");
+var message = $("#open-modal-by-click-message");
+
+//SET height of menu modal
+if ($(window).width() < 678) {
+    //mobile screen
+    winheight = $(window).height();
+    winheight = winheight - 220;
+}
+else {
+    //pc screen
+    winheight = $(window).height();
+    winheight = winheight - 140;
+}
+
+
+
+//Modal
+var userDrop = $(".user-info-all-data-container");
+
+//Close modal button
+var closeModal = $(".right-side-nv-md-h");
+
+/*MENU BURGER CLOSE_OPEN*/
+$(function() {
+    burger.click(function() {
+        body.toggleClass("activeted-mobile-menu");
+    });
+});
+
+/*MENU DROP DOWN OPEN LINK*/
+$(function() {
+    item.click(function() {
+        if ( $(this).hasClass("activated-drop-d")) {
+            item.removeClass("activated-drop-d");
+        }else{
+            item.removeClass("activated-drop-d");
+            $(this).addClass("activated-drop-d");
+        }
+    });
+});
+
+
+/*USER TOP BLOCK DROP DOWN*/
+$(function() {
+    //view account modal content
+    user.click(function() {
+        //remove rest possible opened content types (notificatons, messages)
+        userDrop.removeClass("notification-view-md message-view-md");
+        //open modal and account content inside
+        userDrop.toggleClass("activated-user-data-drop account-view-md");
+
+        //get content height inside
+        var content_height = $(".account-seeting-modal-content").height();
+        //if content height bigger than wrap max height 
+        if(content_height > winheight){
+            //set this wrap height stat = win height - 140px
+            $(".modal-menu-container-nw").css('height', winheight  + 'px');
+        }else{
+            // set wrap height - max content
+            $(".modal-menu-container-nw").css('height', 'max-content');
+        }
+    });
+
+    //Mobile open drop down user links
+    user_mobile.click(function() {
+        //remove rest possible opened content types (notificatons, messages)
+        userDrop.removeClass("notification-view-md message-view-md");
+        //open modal and account content inside
+        userDrop.toggleClass("activated-user-data-drop account-view-md");
+
+        //get content height inside
+        var content_height = $(".account-seeting-modal-content").height();
+        //if content height bigger than wrap max height 
+        if(content_height > winheight){
+            //set this wrap height stat = win height - 140px
+            $(".modal-menu-container-nw").css('height', winheight  + 'px');
+        }else{
+            // set wrap height - max content
+            $(".modal-menu-container-nw").css('height', 'max-content');
+        }
+    });
+
+    //view notifications modal content
+    notification.click(function() {
+        //remove rest possible opened content types (account, messages)
+        userDrop.removeClass("account-view-md message-view-md");
+        //open modal and notifications content inside
+        userDrop.toggleClass("activated-user-data-drop notification-view-md");
+
+
+        //get content height inside
+        var content_height = $(".notifications-modal-content").height();
+        //if content height bigger than wrap max height 
+        if(content_height > winheight){
+            //set this wrap height stat = win height - 140px
+            $(".modal-menu-container-nw").css('height', winheight  + 'px');
+        }else{
+            // set wrap height - max content
+            $(".modal-menu-container-nw").css('height', 'max-content');
+        }
+    });
+
+    //message account modal content
+    message.click(function() {
+        //remove rest possible opened content types (account, notifications)
+        userDrop.removeClass("account-view-md notification-view-md");
+        //open modal and message content inside
+        userDrop.toggleClass("activated-user-data-drop message-view-md");
+
+        //get content height inside
+        var content_height = $(".messgaes-modal-content").height();
+        //if content height bigger than wrap max height 
+        if(content_height > winheight){
+            //set this wrap height stat = win height - 140px
+            $(".modal-menu-container-nw").css('height', winheight  + 'px');
+        }else{
+            // set wrap height - max content
+            $(".modal-menu-container-nw").css('height', 'max-content');
+        }
+    });
+});
+
+closeModal.click(function(){
+   userDrop.removeClass("activated-user-data-drop account-view-md notification-view-md message-view-md");
+});
+
+
+/*HIDE USER DROP DOWN ON OUTSIDE CLICK*/
+
+   $(document).mouseup(function(e) {
+   var container = userDrop
+
+   // if the target of the click isn't the container nor a descendant of the container
+      if (!container.is(e.target) && container.has(e.target).length === 0) 
+      {
+         userDrop.removeClass("activated-user-data-drop account-view-md notification-view-md message-view-md");
+      }
+   });
+  </script>
+</html>

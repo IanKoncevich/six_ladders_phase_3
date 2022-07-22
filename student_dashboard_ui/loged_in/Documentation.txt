@@ -1,0 +1,7 @@
+Hi! 
+
+For the logged in layout we are using existing css blocks BUT this css blocks are copied and modified! (css files)
+
+Use css in same order as in layout.html
+
+It is a best way to get this pages done fast and bug free as possible.

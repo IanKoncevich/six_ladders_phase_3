@@ -1,0 +1,90 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+.lgd-in-links-flex-container {
+  display: flex;
+  align-items: center;
+  height: 96%;
+  width: max-content;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+.loged-in-cont {
+  height: 100%;
+  padding-top: 0px !important;
+}
+.lgd-iun-link {
+  color: #454D66;
+  font-family: 'basier_circleregular';
+  font-size: 16px;
+  margin-right: 44px;
+}
+.lgd-iun-link a {
+  color: inherit;
+  text-decoration: none;
+}
+.lgd-iun-link:hover {
+  color: #58B368;
+}
+.lgd-iun-link:last-child {
+  margin-right: 0px;
+}
+.right-m-lg-child {
+  padding-top: 0px !important;
+}
+.flex-lgd-in-btns {
+  padding-top: 2px;
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.lgd-in-msg {
+  margin-right: 24px;
+}
+.lgd-in-msg a svg path {
+  stroke: #454D66;
+}
+.lgd-in-msg:hover a svg path {
+  stroke: #58B368;
+}
+.lgd-in-left-pds {
+  padding-left: 34px !important;
+}
+.lgd-in-search a svg path {
+  fill: #454D66;
+}
+.mobile-loged-in-bloxk {
+  display: block;
+  width: 100%;
+  border: 1px solid transparent;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#mobile-user-icon {
+  display: block;
+}
+.line-top-meu {
+  margin-top: 65px;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: relative;
+  background-image: linear-gradient(to right, #58b368, #454d66);
+}
+.lgd-in-links-container {
+  display: block;
+  padding-top: 40px;
+}
+.link-mbs-lgd {
+  color: #454D66;
+  font-family: 'basier_circleregular';
+  font-size: 16px;
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+}
+@media (min-width: 950px) {
+  #mobile-user-icon {
+    display: none !important;
+  }
+}

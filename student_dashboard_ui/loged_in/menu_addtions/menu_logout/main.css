@@ -1,0 +1,634 @@
+/*Signed Up block*/
+/*FORMS CSS VARS*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'basier_circleregular';
+  color: #454D66;
+}
+.open-modal {
+  cursor: pointer;
+}
+.cont-back-main-color {
+  width: 100%;
+  min-height: 100%;
+  height: max-content;
+  position: fixed;
+  top: 0px;
+  background-color: #F6F6F8;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.content-container {
+  display: block;
+  width: 90%;
+  margin: 0px auto;
+}
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  outline: none;
+}
+/*No border browser input onclick*/
+.no-select {
+  -webkit-tap-highlight-color: transparent;
+}
+/*Hide blue click effect*/
+/*MODAL CSS*/
+/*------------------------*/
+.modal-main {
+  display: none;
+  /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  /* Stay in place */
+  z-index: 999999;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #000000;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+  display: block;
+  background-color: #fefefe;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 50%;
+  box-shadow: 2px 5px 30px rgba(185, 191, 208, 0.3);
+  border-radius: 14px;
+  min-width: 290px;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*SIGNUP MODAL BODY*/
+/*================================*/
+.modal-main-header {
+  display: block;
+  color: #454D66;
+  font-size: 28px;
+  font-family: 'basier_circlebold';
+}
+.signup-form-container {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: 8px 0px 20px 0px;
+}
+.simple-input-signup {
+  padding-top: 18px;
+}
+.simple-input-signup label {
+  display: block;
+  width: 100%;
+  font-family: 'basier_circleregular';
+  color: #454D66;
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+.simple-input-signup input {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: 'basier_circleregular';
+}
+.simple-input-signup input::placeholder {
+  color: #A3A3A5;
+}
+.policy-signup-contiainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+.left-policy-child {
+  display: block;
+  width: max-content;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.left-policy-child:hover .policy-check-rect {
+  border: 1px solid #58B368;
+}
+.right-policy-child {
+  display: block;
+  width: 98%;
+  color: #A3A3A5;
+  font-family: 'basier_circleregular';
+  font-size: 12px;
+}
+.right-policy-child a {
+  color: #58B368;
+  text-decoration: underline;
+}
+.policy-check-rect {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #C8C8C8;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.inside-check-pol {
+  position: relative;
+  display: none;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 7px solid white;
+  background-color: #58B368;
+  border-radius: 6px;
+  opacity: 0.8;
+}
+.signup-main-button {
+  display: none;
+  background-color: #58B368;
+  border-radius: 32px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: 'basier_circlesemibold';
+  font-size: 16px;
+  height: 42px;
+  line-height: 42px;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.signup-main-button:hover {
+  letter-spacing: 1px;
+  background-color: #454D66;
+}
+.signup-main-button-fake {
+  display: block;
+  background-color: #58B368;
+  border-radius: 32px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: 'basier_circlesemibold';
+  font-size: 16px;
+  height: 42px;
+  line-height: 42px;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.signup-main-button-fake:hover {
+  letter-spacing: 1px;
+  background-color: #454D66;
+}
+.not-allow-pol .policy-check-rect {
+  border: 1px solid red;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.not-allow-pol .inside-check-pol {
+  display: none;
+}
+.not-allow-pol .signup-main-button-fake {
+  background-color: red;
+  opacity: 0.4;
+}
+.not-allow-pol .right-policy-child a {
+  color: red;
+  text-decoration: underline;
+}
+.policy-checke-yes .policy-check-rect {
+  border: 1px solid #58B368;
+}
+.policy-checke-yes .inside-check-pol {
+  display: block;
+}
+.policy-checke-yes .signup-main-button-fake {
+  background-color: #58B368;
+}
+.policy-checke-yes .right-policy-child a {
+  color: #58B368;
+}
+.policy-checke-yes .signup-main-button {
+  display: block;
+}
+.policy-checke-yes .signup-main-button-fake {
+  display: none;
+}
+.alredy-registerd-link {
+  display: block;
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
+  font-family: 'basier_circleregular';
+  color: #454D66;
+  font-size: 16px;
+}
+.alredy-registerd-link a {
+  color: #58B368;
+  font-family: 'basier_circlesemibold';
+  transition: all 0.5s ease-in-out;
+}
+.alredy-registerd-link a:hover {
+  letter-spacing: 1px;
+}
+/*MENU CSS*/
+/*-------------------------*/
+.menu-lg-container {
+  display: block;
+  position: relative;
+  width: 100%;
+  -webkit-box-shadow: 0px 14px 19px -6px rgba(185, 191, 208, 0.2);
+  -moz-box-shadow: 0px 14px 19px -6px rgba(185, 191, 208, 0.2);
+  box-shadow: 0px 14px 19px -6px rgba(185, 191, 208, 0.2);
+  padding: 10px 15px;
+  box-sizing: border-box;
+  z-index: 35;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+.clicked-menu {
+  overflow: hidden;
+}
+.clicked-menu .menu-lg-container {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.pc-menu-view-only-one {
+  display: none !important;
+}
+.pc-menu-view-only-two {
+  display: none !important;
+}
+.flex-menu-lg-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.left-m-lg-child {
+  display: flex;
+  width: max-content;
+}
+.right-m-lg-child {
+  display: flex;
+  width: max-content;
+}
+.left-logo-container {
+  display: block;
+  width: max-content;
+  margin-right: 60px;
+}
+.left-logo-container img {
+  width: 148px;
+  height: 40px;
+}
+.right-search-container {
+  display: block;
+  width: max-content;
+  padding-top: 5px;
+  height: max-content;
+}
+.right-search-container form {
+  display: flex;
+  width: max-content;
+}
+.right-search-container .lft-search-icon {
+  background-color: transparent;
+  border: none;
+  display: block;
+  padding-top: 0px;
+  cursor: pointer;
+  padding-top: 5px;
+}
+.right-search-container .lft-search-icon svg {
+  width: 100%;
+}
+.right-search-container .lft-search-icon svg path {
+  fill: #454D66;
+}
+.right-search-container .lft-search-icon:hover svg path {
+  fill: #58B368;
+}
+.right-search-container .rgt-search-text {
+  padding-left: 10px;
+}
+.right-search-container .rgt-search-text input {
+  padding: 4.5px 6px 4.5px 6px;
+  border: 1px solid transparent;
+  transition: all 0.5s ease-in-out;
+  border-radius: 4px;
+  color: #454D66;
+  font-family: 'basier_circleregular';
+  font-size: 16px;
+}
+.right-search-container .rgt-search-text input:focus {
+  border: 1px solid #a5a5a5;
+}
+.right-search-container .rgt-search-text input:not(:placeholder-shown) {
+  /* You need to add a placeholder to your fields. For example: <input "placeholder=" "/> */
+  border: 1px solid #a5a5a5;
+}
+.right-search-container .rgt-search-text input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.right-search-container:hover .rgt-search-text input {
+  border: 1px solid #a5a5a5;
+}
+.left-item-link-m-lg {
+  display: block;
+  position: relative;
+  color: #454D66;
+  font-size: 16px;
+  font-family: 'basier_circleregular';
+}
+.left-item-link-m-lg span {
+  cursor: pointer;
+}
+.left-item-link-m-lg span svg {
+  margin-left: 12px;
+}
+.left-item-link-m-lg span svg path {
+  stroke: #454D66;
+}
+.left-item-link-m-lg .services-container-absol {
+  display: none;
+  width: 100%;
+  position: absolute;
+  min-height: 40px;
+  margin-top: 10px;
+  background-color: white;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+  height: max-content;
+}
+.left-item-link-m-lg:hover .services-container-absol {
+  display: block;
+}
+.right-item-link-m-lg {
+  display: block;
+  color: #454D66;
+  font-size: 16px;
+  font-family: 'basier_circleregular';
+  padding-left: 64.5px;
+}
+.right-item-link-m-lg a:hover {
+  color: #58B368;
+}
+/*Mobile burger*/
+/*========================*/
+.burger-container-m-lg {
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  padding-top: 11px;
+}
+.line {
+  width: 30px;
+  height: 4px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  background-color: #454D66;
+  transition: all 0.4s ease-in-out 0s;
+}
+.line:nth-child(2) {
+  transition: opacity 2.5s, width 1s ease-in-out 0s;
+}
+.clicked-menu .line:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 9px !important;
+  position: relative;
+  transition: all 0.4s ease-in-out 0s;
+}
+.clicked-menu .line:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0px !important;
+  left: 0px;
+  width: 0px;
+  opacity: 0;
+  position: relative;
+  transition: all 0.4s ease-in-out 0s, opacity 0s;
+}
+.clicked-menu .line:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: -7px !important;
+  position: relative;
+  transition: all 0.4s ease-in-out 0s;
+}
+/*Mobile menu*/
+.fixed-menu-mobile {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #ffffff;
+  top: 0px;
+  right: -100%;
+  z-index: 25;
+  transition: all 0.5s ease-in-out;
+}
+.clicked-menu .fixed-menu-mobile {
+  right: 0px;
+}
+.mobile-lg-menu-items {
+  display: block;
+  width: 100%;
+  padding: 0px 15px 25px 15px;
+  box-sizing: border-box;
+  color: #454D66;
+  font-size: 16px;
+  font-family: 'basier_circlemedium';
+}
+.mobile-lg-menu-items svg {
+  margin-left: 12px;
+}
+.mobile-lg-menu-items svg path {
+  stroke: #454D66;
+}
+.mobile-lg-menu-items ul {
+  margin: 0px;
+  padding: 0px;
+}
+.mobile-lg-menu-items ul li {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+.mobile-lg-menu-items .child-mb-m {
+  font-family: 'basier_circleregular';
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-left: 10px;
+  display: none;
+}
+.activated-child-mb-m .child-mb-m {
+  display: block;
+}
+.mobile-lg-menu-items:first-child {
+  padding: 25px 15px 25px 15px;
+}
+.mobile-lg-menu-items form {
+  display: flex;
+  width: max-content;
+}
+.mobile-lg-menu-items .lft-search-icon {
+  display: none;
+  border: none;
+  display: block;
+  padding-top: 0px;
+  cursor: pointer;
+  padding-top: 5px;
+}
+.mobile-lg-menu-items .lft-search-icon svg {
+  width: 100%;
+}
+.mobile-lg-menu-items .lft-search-icon svg path {
+  fill: #454D66;
+}
+.mobile-lg-menu-items .lft-search-icon:hover svg path {
+  fill: #58B368;
+}
+.mobile-lg-menu-items .rgt-search-text {
+  padding-left: 0px;
+}
+.mobile-lg-menu-items .rgt-search-text input {
+  padding: 4.5px 6px 4.5px 6px;
+  border: 1px solid transparent;
+  transition: all 0.5s ease-in-out;
+  border-radius: 4px;
+  color: #454D66;
+  font-family: 'basier_circleregular';
+  font-size: 16px;
+}
+.mobile-lg-menu-items .rgt-search-text input:focus {
+  border: 1px solid #a5a5a5;
+}
+.mobile-lg-menu-items .rgt-search-text input:not(:placeholder-shown) {
+  /* You need to add a placeholder to your fields. For example: <input "placeholder=" "/> */
+  border: 1px solid #a5a5a5;
+}
+.mobile-lg-menu-items .rgt-search-text input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.mobile-lg-menu-items:hover .rgt-search-text input {
+  border: 1px solid #a5a5a5;
+}
+.parent-mb-m-item {
+  cursor: pointer;
+}
+.activated-child-mb-m .parent-mb-m-item {
+  color: #58B368;
+}
+.activated-child-mb-m svg {
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  transform: rotate(180deg);
+}
+.activated-child-mb-m svg path {
+  stroke: #58B368;
+}
+@media (min-width: 950px) {
+  .right-m-lg-child {
+    padding-top: 10px;
+  }
+  .burger-container-m-lg {
+    display: none;
+  }
+  .pc-menu-view-only-two {
+    display: block !important;
+  }
+  .left-item-link-m-lg span:hover {
+    color: #58B368;
+  }
+  .left-item-link-m-lg span:hover svg {
+    margin-left: 12px;
+  }
+  .left-item-link-m-lg span:hover svg path {
+    stroke: #58B368;
+  }
+}
+@media (min-width: 678px) {
+  .pc-menu-view-only-one {
+    display: block !important;
+  }
+  .fixed-menu-mobile {
+    width: 300px;
+    height: 100%;
+  }
+  .menu-lg-container {
+    padding: 10px 40px;
+  }
+  .mobile-search {
+    display: none !important;
+  }
+  .mobile-lg-menu-items:nth-child(2) {
+    padding: 15px;
+  }
+  /* Modal Content */
+  .modal-content {
+    border-radius: 24px;
+    padding: 40px 50px;
+  }
+  .simple-input-signup input {
+    padding: 10px 12px;
+  }
+}
+@media (min-width: 325px) {
+  /* Modal Content */
+  .modal-content {
+    min-width: 330px;
+    padding: 30px;
+  }
+}
