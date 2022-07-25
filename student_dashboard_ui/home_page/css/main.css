@@ -393,7 +393,7 @@ select {
   }
 }
 /*Show all pc menu links*/
-@media (min-width: 1460px) {
+@media (min-width: 1200px) {
   .center-side-menu {
     display: block;
     width: max-content;
